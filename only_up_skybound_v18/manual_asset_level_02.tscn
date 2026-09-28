@@ -1,0 +1,942 @@
+[gd_scene load_steps=70 format=3]
+[ext_resource type="PackedScene" path="res://props/ComPlaneV1.tscn" id="p0"]
+[ext_resource type="PackedScene" path="res://props/ComPlaneV2.tscn" id="p1"]
+[ext_resource type="PackedScene" path="res://props/ComPlaneV3.tscn" id="p2"]
+[ext_resource type="PackedScene" path="res://props/Done_Barril.tscn" id="p3"]
+[ext_resource type="PackedScene" path="res://props/Done_Battle_Axe.tscn" id="p4"]
+[ext_resource type="PackedScene" path="res://props/Done_Chair.tscn" id="p5"]
+[ext_resource type="PackedScene" path="res://props/Done_Chope_A.tscn" id="p6"]
+[ext_resource type="PackedScene" path="res://props/Done_Chope_B.tscn" id="p7"]
+[ext_resource type="PackedScene" path="res://props/Done_Cup.tscn" id="p8"]
+[ext_resource type="PackedScene" path="res://props/Done_Lamp.tscn" id="p9"]
+[ext_resource type="PackedScene" path="res://props/Done_Panel.tscn" id="p10"]
+[ext_resource type="PackedScene" path="res://props/Done_Pole.tscn" id="p11"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_1.tscn" id="p12"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_10.tscn" id="p13"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_2.tscn" id="p14"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_3.tscn" id="p15"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_4.tscn" id="p16"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_5.tscn" id="p17"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_6.tscn" id="p18"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_7.tscn" id="p19"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_8.tscn" id="p20"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_9.tscn" id="p21"]
+[ext_resource type="PackedScene" path="res://props/Done_Seat.tscn" id="p22"]
+[ext_resource type="PackedScene" path="res://props/Done_Shield.tscn" id="p23"]
+[ext_resource type="PackedScene" path="res://props/Done_Signal.tscn" id="p24"]
+[ext_resource type="PackedScene" path="res://props/Done_Stone.tscn" id="p25"]
+[ext_resource type="PackedScene" path="res://props/Done_Sword.tscn" id="p26"]
+[ext_resource type="PackedScene" path="res://props/Done_Table.tscn" id="p27"]
+[ext_resource type="PackedScene" path="res://props/Done_Wood_Axe.tscn" id="p28"]
+[ext_resource type="PackedScene" path="res://props/Done_Wood_Plank_A.tscn" id="p29"]
+[ext_resource type="PackedScene" path="res://props/Done_Wood_Plank_B.tscn" id="p30"]
+[ext_resource type="PackedScene" path="res://props/Done_Wood_Trunk.tscn" id="p31"]
+[ext_resource type="PackedScene" path="res://props/EaglePlane.tscn" id="p32"]
+[ext_resource type="PackedScene" path="res://props/Fisher_Boat.tscn" id="p33"]
+[ext_resource type="PackedScene" path="res://props/Fishing_Rod.tscn" id="p34"]
+[ext_resource type="PackedScene" path="res://props/HelicopterV1.tscn" id="p35"]
+[ext_resource type="PackedScene" path="res://props/HelicopterV2.tscn" id="p36"]
+[ext_resource type="PackedScene" path="res://props/JetskiV1.tscn" id="p37"]
+[ext_resource type="PackedScene" path="res://props/KA-F1000_FridgeSBS_V1.tscn" id="p38"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Dryer_V1.tscn" id="p39"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Fan_V1.tscn" id="p40"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Fridge_V1.tscn" id="p41"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Stove_V1.tscn" id="p42"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Washer_V1.tscn" id="p43"]
+[ext_resource type="PackedScene" path="res://props/KA-F800_Fan_V1.tscn" id="p44"]
+[ext_resource type="PackedScene" path="res://props/KAC-F1000_FridgeSBS_V1_FreezerDrawer.tscn" id="p45"]
+[ext_resource type="PackedScene" path="res://props/KAC-F1000_FridgeSBS_V1_FreezerDrawerHolder.tscn" id="p46"]
+[ext_resource type="PackedScene" path="res://props/KAC-F1000_FridgeSBS_V1_FreezerShelf.tscn" id="p47"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_Fridge_V1_Drawer.tscn" id="p48"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_Fridge_V1_DrawerHolder.tscn" id="p49"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_Fridge_V1_Shelf.tscn" id="p50"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_OvenTray_V2.tscn" id="p51"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_OvenTray_V3.tscn" id="p52"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_TrayGuide_V2.tscn" id="p53"]
+[ext_resource type="PackedScene" path="res://props/KAC_Micro_Tray_V2.tscn" id="p54"]
+[ext_resource type="PackedScene" path="res://props/KAC_Oven_Fan_V2.tscn" id="p55"]
+[ext_resource type="PackedScene" path="res://props/KAC_Oven_HeatingTop_V2.tscn" id="p56"]
+[ext_resource type="PackedScene" path="res://props/KA_Micro_V2.tscn" id="p57"]
+[ext_resource type="PackedScene" path="res://props/KayakPaddle.tscn" id="p58"]
+[ext_resource type="PackedScene" path="res://props/KayakV1.tscn" id="p59"]
+[ext_resource type="PackedScene" path="res://props/KayakV2.tscn" id="p60"]
+[ext_resource type="PackedScene" path="res://props/LightPlane.tscn" id="p61"]
+[ext_resource type="PackedScene" path="res://props/Paddle.tscn" id="p62"]
+[ext_resource type="PackedScene" path="res://props/Scout_Boat.tscn" id="p63"]
+[ext_resource type="PackedScene" path="res://props/Speed_Boat.tscn" id="p64"]
+[ext_resource type="PackedScene" path="res://props/Wood_BoatV1.tscn" id="p65"]
+[ext_resource type="PackedScene" path="res://props/Wood_BoatV2.tscn" id="p66"]
+[ext_resource type="PackedScene" path="res://checkpoint.tscn" id="checkpoint"]
+[ext_resource type="PackedScene" path="res://star.tscn" id="star"]
+
+[node name="BlendedLevelTwo" type="Node3D"]
+[node name="BlendRoute_000_KA-F600_Fridge_V1" parent="." instance=ExtResource("p41")]
+position = Vector3(29.00, 122.00, -417.20)
+rotation_degrees = Vector3(-2, 0, 1)
+[node name="BlendRoute_001_Done_Table" parent="." instance=ExtResource("p27")]
+position = Vector3(32.00, 122.70, -420.00)
+rotation_degrees = Vector3(1, 28, -1)
+[node name="BlendRoute_002_Speed_Boat" parent="." instance=ExtResource("p64")]
+position = Vector3(35.00, 123.40, -422.80)
+rotation_degrees = Vector3(0, -18, 2)
+[node name="BlendRoute_003_Done_Rock_1" parent="." instance=ExtResource("p12")]
+position = Vector3(38.00, 124.10, -425.60)
+rotation_degrees = Vector3(2, 42, -2)
+[node name="BlendRoute_004_ComPlaneV1" parent="." instance=ExtResource("p0")]
+position = Vector3(41.00, 124.80, -428.40)
+rotation_degrees = Vector3(-1, -35, 0)
+[node name="BlendRoute_005_Done_Wood_Trunk" parent="." instance=ExtResource("p31")]
+position = Vector3(44.00, 125.50, -431.20)
+rotation_degrees = Vector3(-2, 12, 1)
+[node name="BlendRoute_006_KAC_Micro_Tray_V2" parent="." instance=ExtResource("p54")]
+position = Vector3(47.00, 126.20, -434.00)
+rotation_degrees = Vector3(1, 0, -1)
+[node name="BlendRoute_007_Wood_BoatV1" parent="." instance=ExtResource("p65")]
+position = Vector3(50.00, 126.90, -436.80)
+rotation_degrees = Vector3(0, 28, 2)
+[node name="Checkpoint_00" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 128.90, -436.80)
+[node name="Star_00" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 130.70, -435.80)
+[node name="BlendRoute_008_JetskiV1" parent="." instance=ExtResource("p37")]
+position = Vector3(50.00, 126.90, -436.80)
+rotation_degrees = Vector3(2, -18, -2)
+[node name="BlendConnector_009_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(50.00, 126.90, -436.80)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_010_KAC-F600_TrayGuide_V2" parent="." instance=ExtResource("p53")]
+position = Vector3(47.00, 127.60, -439.60)
+rotation_degrees = Vector3(-1, 42, 0)
+[node name="BlendRoute_011_Done_Shield" parent="." instance=ExtResource("p23")]
+position = Vector3(44.00, 128.30, -442.40)
+rotation_degrees = Vector3(-2, -35, 1)
+[node name="BlendRoute_012_Done_Panel" parent="." instance=ExtResource("p10")]
+position = Vector3(41.00, 129.00, -445.20)
+rotation_degrees = Vector3(1, 12, -1)
+[node name="BlendRoute_013_KA-F1000_FridgeSBS_V1" parent="." instance=ExtResource("p38")]
+position = Vector3(38.00, 129.70, -448.00)
+rotation_degrees = Vector3(0, 0, 2)
+[node name="BlendRoute_014_KAC-F600_OvenTray_V2" parent="." instance=ExtResource("p51")]
+position = Vector3(35.00, 130.40, -450.80)
+rotation_degrees = Vector3(2, 28, -2)
+[node name="BlendRoute_015_Done_Signal" parent="." instance=ExtResource("p24")]
+position = Vector3(32.00, 131.10, -453.60)
+rotation_degrees = Vector3(-1, -18, 0)
+[node name="BlendRoute_016_Done_Rock_8" parent="." instance=ExtResource("p20")]
+position = Vector3(29.00, 131.80, -456.40)
+rotation_degrees = Vector3(-2, 42, 1)
+[node name="Checkpoint_01" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(29.00, 133.80, -456.40)
+[node name="Star_01" parent="." instance=ExtResource("star")]
+position = Vector3(27.00, 135.60, -455.40)
+[node name="BlendRoute_017_KAC-F600_Fridge_V1_Drawer" parent="." instance=ExtResource("p48")]
+position = Vector3(29.00, 131.80, -456.40)
+rotation_degrees = Vector3(1, -35, -1)
+[node name="BlendConnector_018_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(29.00, 131.80, -456.40)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_019_Done_Rock_2" parent="." instance=ExtResource("p14")]
+position = Vector3(32.00, 132.50, -459.20)
+rotation_degrees = Vector3(0, 12, 2)
+[node name="BlendRoute_020_KayakV1" parent="." instance=ExtResource("p59")]
+position = Vector3(35.00, 133.20, -462.00)
+rotation_degrees = Vector3(2, 0, -2)
+[node name="BlendRoute_021_Done_Lamp" parent="." instance=ExtResource("p9")]
+position = Vector3(38.00, 133.90, -464.80)
+rotation_degrees = Vector3(-1, 28, 0)
+[node name="BlendRoute_022_KAC-F1000_FridgeSBS_V1_FreezerDrawerHolder" parent="." instance=ExtResource("p46")]
+position = Vector3(41.00, 134.60, -467.60)
+rotation_degrees = Vector3(-2, -18, 1)
+[node name="BlendRoute_023_KAC-F1000_FridgeSBS_V1_FreezerShelf" parent="." instance=ExtResource("p47")]
+position = Vector3(44.00, 135.30, -470.40)
+rotation_degrees = Vector3(1, 42, -1)
+[node name="BlendRoute_024_KAC-F600_Fridge_V1_DrawerHolder" parent="." instance=ExtResource("p49")]
+position = Vector3(47.00, 136.00, -473.20)
+rotation_degrees = Vector3(0, -35, 2)
+[node name="BlendRoute_025_KayakV2" parent="." instance=ExtResource("p60")]
+position = Vector3(50.00, 136.70, -476.00)
+rotation_degrees = Vector3(2, 12, -2)
+[node name="Checkpoint_02" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 138.70, -476.00)
+[node name="Star_02" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 140.50, -475.00)
+[node name="BlendRoute_026_Fishing_Rod" parent="." instance=ExtResource("p34")]
+position = Vector3(50.00, 136.70, -476.00)
+rotation_degrees = Vector3(-1, 0, 0)
+[node name="BlendConnector_027_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(50.00, 136.70, -476.00)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_028_Done_Rock_10" parent="." instance=ExtResource("p13")]
+position = Vector3(47.00, 137.40, -478.80)
+rotation_degrees = Vector3(-2, 28, 1)
+[node name="BlendRoute_029_Done_Cup" parent="." instance=ExtResource("p8")]
+position = Vector3(44.00, 138.10, -481.60)
+rotation_degrees = Vector3(1, -18, -1)
+[node name="BlendRoute_030_LightPlane" parent="." instance=ExtResource("p61")]
+position = Vector3(41.00, 138.80, -484.40)
+rotation_degrees = Vector3(0, 42, 2)
+[node name="BlendRoute_031_Done_Sword" parent="." instance=ExtResource("p26")]
+position = Vector3(38.00, 139.50, -487.20)
+rotation_degrees = Vector3(2, -35, -2)
+[node name="BlendRoute_032_KA-F600_Fan_V1" parent="." instance=ExtResource("p40")]
+position = Vector3(35.00, 140.20, -490.00)
+rotation_degrees = Vector3(-1, 12, 0)
+[node name="BlendRoute_033_Done_Chope_B" parent="." instance=ExtResource("p7")]
+position = Vector3(32.00, 140.90, -492.80)
+rotation_degrees = Vector3(-2, 0, 1)
+[node name="BlendRoute_034_Done_Chair" parent="." instance=ExtResource("p5")]
+position = Vector3(29.00, 141.60, -495.60)
+rotation_degrees = Vector3(1, 28, -1)
+[node name="Checkpoint_03" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(29.00, 143.60, -495.60)
+[node name="Star_03" parent="." instance=ExtResource("star")]
+position = Vector3(27.00, 145.40, -494.60)
+[node name="BlendRoute_035_KAC_Oven_HeatingTop_V2" parent="." instance=ExtResource("p56")]
+position = Vector3(29.00, 141.60, -495.60)
+rotation_degrees = Vector3(0, -18, 2)
+[node name="BlendConnector_036_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(29.00, 141.60, -495.60)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_037_Done_Rock_7" parent="." instance=ExtResource("p19")]
+position = Vector3(32.00, 142.30, -498.40)
+rotation_degrees = Vector3(2, 42, -2)
+[node name="BlendRoute_038_Done_Pole" parent="." instance=ExtResource("p11")]
+position = Vector3(35.00, 143.00, -501.20)
+rotation_degrees = Vector3(-1, -35, 0)
+[node name="BlendRoute_039_KAC_Oven_Fan_V2" parent="." instance=ExtResource("p55")]
+position = Vector3(38.00, 143.70, -504.00)
+rotation_degrees = Vector3(-2, 12, 1)
+[node name="BlendRoute_040_Done_Rock_6" parent="." instance=ExtResource("p18")]
+position = Vector3(41.00, 144.40, -506.80)
+rotation_degrees = Vector3(1, 0, -1)
+[node name="BlendRoute_041_Done_Wood_Plank_B" parent="." instance=ExtResource("p30")]
+position = Vector3(44.00, 145.10, -509.60)
+rotation_degrees = Vector3(0, 28, 2)
+[node name="BlendRoute_042_Done_Rock_3" parent="." instance=ExtResource("p15")]
+position = Vector3(47.00, 145.80, -512.40)
+rotation_degrees = Vector3(2, -18, -2)
+[node name="BlendRoute_043_Paddle" parent="." instance=ExtResource("p62")]
+position = Vector3(50.00, 146.50, -515.20)
+rotation_degrees = Vector3(-1, 42, 0)
+[node name="Checkpoint_04" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 148.50, -515.20)
+[node name="Star_04" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 150.30, -514.20)
+[node name="BlendRoute_044_Wood_BoatV2" parent="." instance=ExtResource("p66")]
+position = Vector3(50.00, 146.50, -515.20)
+rotation_degrees = Vector3(-2, -35, 1)
+[node name="BlendConnector_045_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(50.00, 146.50, -515.20)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_046_Done_Rock_5" parent="." instance=ExtResource("p17")]
+position = Vector3(47.00, 147.20, -518.00)
+rotation_degrees = Vector3(1, 12, -1)
+[node name="BlendRoute_047_KA_Micro_V2" parent="." instance=ExtResource("p57")]
+position = Vector3(44.00, 147.90, -520.80)
+rotation_degrees = Vector3(0, 0, 2)
+[node name="BlendRoute_048_Done_Barril" parent="." instance=ExtResource("p3")]
+position = Vector3(41.00, 148.60, -523.60)
+rotation_degrees = Vector3(2, 28, -2)
+[node name="BlendRoute_049_Done_Chope_A" parent="." instance=ExtResource("p6")]
+position = Vector3(38.00, 149.30, -526.40)
+rotation_degrees = Vector3(-1, -18, 0)
+[node name="BlendRoute_050_Fisher_Boat" parent="." instance=ExtResource("p33")]
+position = Vector3(35.00, 150.00, -529.20)
+rotation_degrees = Vector3(-2, 42, 1)
+[node name="BlendRoute_051_KA-F600_Washer_V1" parent="." instance=ExtResource("p43")]
+position = Vector3(32.00, 150.70, -532.00)
+rotation_degrees = Vector3(1, -35, -1)
+[node name="BlendRoute_052_HelicopterV2" parent="." instance=ExtResource("p36")]
+position = Vector3(29.00, 151.40, -534.80)
+rotation_degrees = Vector3(0, 12, 2)
+[node name="Checkpoint_05" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(29.00, 153.40, -534.80)
+[node name="Star_05" parent="." instance=ExtResource("star")]
+position = Vector3(27.00, 155.20, -533.80)
+[node name="BlendRoute_053_Done_Stone" parent="." instance=ExtResource("p25")]
+position = Vector3(29.00, 151.40, -534.80)
+rotation_degrees = Vector3(2, 0, -2)
+[node name="BlendConnector_054_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(29.00, 151.40, -534.80)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_055_KA-F800_Fan_V1" parent="." instance=ExtResource("p44")]
+position = Vector3(32.00, 152.10, -537.60)
+rotation_degrees = Vector3(-1, 28, 0)
+[node name="BlendRoute_056_KA-F600_Stove_V1" parent="." instance=ExtResource("p42")]
+position = Vector3(35.00, 152.80, -540.40)
+rotation_degrees = Vector3(-2, -18, 1)
+[node name="BlendRoute_057_Done_Rock_4" parent="." instance=ExtResource("p16")]
+position = Vector3(38.00, 153.50, -543.20)
+rotation_degrees = Vector3(1, 42, -1)
+[node name="BlendRoute_058_ComPlaneV2" parent="." instance=ExtResource("p1")]
+position = Vector3(41.00, 154.20, -546.00)
+rotation_degrees = Vector3(0, -35, 2)
+[node name="BlendRoute_059_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(44.00, 154.90, -548.80)
+rotation_degrees = Vector3(2, 12, -2)
+[node name="BlendRoute_060_ComPlaneV3" parent="." instance=ExtResource("p2")]
+position = Vector3(47.00, 155.60, -551.60)
+rotation_degrees = Vector3(-1, 0, 0)
+[node name="BlendRoute_061_KAC-F600_OvenTray_V3" parent="." instance=ExtResource("p52")]
+position = Vector3(50.00, 156.30, -554.40)
+rotation_degrees = Vector3(-2, 28, 1)
+[node name="Checkpoint_06" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 158.30, -554.40)
+[node name="Star_06" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 160.10, -553.40)
+[node name="BlendRoute_062_EaglePlane" parent="." instance=ExtResource("p32")]
+position = Vector3(50.00, 156.30, -554.40)
+rotation_degrees = Vector3(1, -18, -1)
+[node name="BlendConnector_063_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(50.00, 156.30, -554.40)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_064_Done_Rock_9" parent="." instance=ExtResource("p21")]
+position = Vector3(47.00, 157.00, -557.20)
+rotation_degrees = Vector3(0, 42, 2)
+[node name="BlendRoute_065_KAC-F1000_FridgeSBS_V1_FreezerDrawer" parent="." instance=ExtResource("p45")]
+position = Vector3(44.00, 157.70, -560.00)
+rotation_degrees = Vector3(2, -35, -2)
+[node name="BlendRoute_066_Scout_Boat" parent="." instance=ExtResource("p63")]
+position = Vector3(41.00, 158.40, -562.80)
+rotation_degrees = Vector3(-1, 12, 0)
+[node name="BlendRoute_067_KA-F600_Dryer_V1" parent="." instance=ExtResource("p39")]
+position = Vector3(38.00, 159.10, -565.60)
+rotation_degrees = Vector3(-2, 0, 1)
+[node name="BlendRoute_068_KayakPaddle" parent="." instance=ExtResource("p58")]
+position = Vector3(35.00, 159.80, -568.40)
+rotation_degrees = Vector3(1, 28, -1)
+[node name="BlendRoute_069_Done_Seat" parent="." instance=ExtResource("p22")]
+position = Vector3(32.00, 160.50, -571.20)
+rotation_degrees = Vector3(0, -18, 2)
+[node name="BlendRoute_070_Done_Wood_Axe" parent="." instance=ExtResource("p28")]
+position = Vector3(29.00, 161.20, -574.00)
+rotation_degrees = Vector3(2, 42, -2)
+[node name="Checkpoint_07" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(29.00, 163.20, -574.00)
+[node name="Star_07" parent="." instance=ExtResource("star")]
+position = Vector3(27.00, 165.00, -573.00)
+[node name="BlendRoute_071_KAC-F600_Fridge_V1_Shelf" parent="." instance=ExtResource("p50")]
+position = Vector3(29.00, 161.20, -574.00)
+rotation_degrees = Vector3(-1, -35, 0)
+[node name="BlendConnector_072_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(29.00, 161.20, -574.00)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_073_Done_Battle_Axe" parent="." instance=ExtResource("p4")]
+position = Vector3(32.00, 161.90, -576.80)
+rotation_degrees = Vector3(-2, 12, 1)
+[node name="BlendRoute_074_HelicopterV1" parent="." instance=ExtResource("p35")]
+position = Vector3(35.00, 162.60, -579.60)
+rotation_degrees = Vector3(1, 0, -1)
+[node name="BlendRoute_075_Fisher_Boat" parent="." instance=ExtResource("p33")]
+position = Vector3(38.00, 163.30, -582.40)
+rotation_degrees = Vector3(0, 28, 2)
+[node name="BlendRoute_076_LightPlane" parent="." instance=ExtResource("p61")]
+position = Vector3(41.00, 164.00, -585.20)
+rotation_degrees = Vector3(2, -18, -2)
+[node name="BlendRoute_077_Done_Rock_3" parent="." instance=ExtResource("p15")]
+position = Vector3(44.00, 164.70, -588.00)
+rotation_degrees = Vector3(-1, 42, 0)
+[node name="BlendRoute_078_Done_Battle_Axe" parent="." instance=ExtResource("p4")]
+position = Vector3(47.00, 165.40, -590.80)
+rotation_degrees = Vector3(-2, -35, 1)
+[node name="BlendRoute_079_Done_Rock_7" parent="." instance=ExtResource("p19")]
+position = Vector3(50.00, 166.10, -593.60)
+rotation_degrees = Vector3(1, 12, -1)
+[node name="Checkpoint_08" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 168.10, -593.60)
+[node name="Star_08" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 169.90, -592.60)
+[node name="BlendRoute_080_Done_Rock_2" parent="." instance=ExtResource("p14")]
+position = Vector3(50.00, 166.10, -593.60)
+rotation_degrees = Vector3(0, 0, 2)
+[node name="BlendConnector_081_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(50.00, 166.10, -593.60)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_082_KayakV2" parent="." instance=ExtResource("p60")]
+position = Vector3(47.00, 166.80, -596.40)
+rotation_degrees = Vector3(2, 28, -2)
+[node name="BlendRoute_083_Done_Table" parent="." instance=ExtResource("p27")]
+position = Vector3(44.00, 167.50, -599.20)
+rotation_degrees = Vector3(-1, -18, 0)
+[node name="BlendRoute_084_Done_Wood_Plank_B" parent="." instance=ExtResource("p30")]
+position = Vector3(41.00, 168.20, -602.00)
+rotation_degrees = Vector3(-2, 42, 1)
+[node name="BlendRoute_085_KAC-F600_Fridge_V1_Shelf" parent="." instance=ExtResource("p50")]
+position = Vector3(38.00, 168.90, -604.80)
+rotation_degrees = Vector3(1, -35, -1)
+[node name="BlendRoute_086_Done_Lamp" parent="." instance=ExtResource("p9")]
+position = Vector3(35.00, 169.60, -607.60)
+rotation_degrees = Vector3(0, 12, 2)
+[node name="BlendRoute_087_Done_Sword" parent="." instance=ExtResource("p26")]
+position = Vector3(32.00, 170.30, -610.40)
+rotation_degrees = Vector3(2, 0, -2)
+[node name="BlendRoute_088_Done_Rock_6" parent="." instance=ExtResource("p18")]
+position = Vector3(29.00, 171.00, -613.20)
+rotation_degrees = Vector3(-1, 28, 0)
+[node name="Checkpoint_09" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(29.00, 173.00, -613.20)
+[node name="Star_09" parent="." instance=ExtResource("star")]
+position = Vector3(27.00, 174.80, -612.20)
+[node name="BlendRoute_089_Done_Barril" parent="." instance=ExtResource("p3")]
+position = Vector3(29.00, 171.00, -613.20)
+rotation_degrees = Vector3(-2, -18, 1)
+[node name="BlendConnector_090_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(29.00, 171.00, -613.20)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_091_Wood_BoatV2" parent="." instance=ExtResource("p66")]
+position = Vector3(32.00, 171.70, -616.00)
+rotation_degrees = Vector3(1, 42, -1)
+[node name="BlendRoute_092_Done_Rock_1" parent="." instance=ExtResource("p12")]
+position = Vector3(35.00, 172.40, -618.80)
+rotation_degrees = Vector3(0, -35, 2)
+[node name="BlendRoute_093_KA_Micro_V2" parent="." instance=ExtResource("p57")]
+position = Vector3(38.00, 173.10, -621.60)
+rotation_degrees = Vector3(2, 12, -2)
+[node name="BlendRoute_094_Done_Signal" parent="." instance=ExtResource("p24")]
+position = Vector3(41.00, 173.80, -624.40)
+rotation_degrees = Vector3(-1, 0, 0)
+[node name="BlendRoute_095_KAC_Oven_Fan_V2" parent="." instance=ExtResource("p55")]
+position = Vector3(44.00, 174.50, -627.20)
+rotation_degrees = Vector3(-2, 28, 1)
+[node name="BlendRoute_096_KAC-F600_TrayGuide_V2" parent="." instance=ExtResource("p53")]
+position = Vector3(47.00, 175.20, -630.00)
+rotation_degrees = Vector3(1, -18, -1)
+[node name="BlendRoute_097_Paddle" parent="." instance=ExtResource("p62")]
+position = Vector3(50.00, 175.90, -632.80)
+rotation_degrees = Vector3(0, 42, 2)
+[node name="Checkpoint_10" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 177.90, -632.80)
+[node name="Star_10" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 179.70, -631.80)
+[node name="BlendRoute_098_ComPlaneV1" parent="." instance=ExtResource("p0")]
+position = Vector3(50.00, 175.90, -632.80)
+rotation_degrees = Vector3(2, -35, -2)
+[node name="BlendConnector_099_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(50.00, 175.90, -632.80)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_100_Done_Chope_B" parent="." instance=ExtResource("p7")]
+position = Vector3(47.00, 176.60, -635.60)
+rotation_degrees = Vector3(-1, 12, 0)
+[node name="BlendRoute_101_KA-F800_Fan_V1" parent="." instance=ExtResource("p44")]
+position = Vector3(44.00, 177.30, -638.40)
+rotation_degrees = Vector3(-2, 0, 1)
+[node name="BlendRoute_102_Done_Stone" parent="." instance=ExtResource("p25")]
+position = Vector3(41.00, 178.00, -641.20)
+rotation_degrees = Vector3(1, 28, -1)
+[node name="BlendRoute_103_KAC_Micro_Tray_V2" parent="." instance=ExtResource("p54")]
+position = Vector3(38.00, 178.70, -644.00)
+rotation_degrees = Vector3(0, -18, 2)
+[node name="BlendRoute_104_Done_Rock_8" parent="." instance=ExtResource("p20")]
+position = Vector3(35.00, 179.40, -646.80)
+rotation_degrees = Vector3(2, 42, -2)
+[node name="BlendRoute_105_Done_Wood_Axe" parent="." instance=ExtResource("p28")]
+position = Vector3(32.00, 180.10, -649.60)
+rotation_degrees = Vector3(-1, -35, 0)
+[node name="BlendRoute_106_Wood_BoatV1" parent="." instance=ExtResource("p65")]
+position = Vector3(29.00, 180.80, -652.40)
+rotation_degrees = Vector3(-2, 12, 1)
+[node name="Checkpoint_11" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(29.00, 182.80, -652.40)
+[node name="Star_11" parent="." instance=ExtResource("star")]
+position = Vector3(27.00, 184.60, -651.40)
+[node name="BlendRoute_107_Done_Wood_Trunk" parent="." instance=ExtResource("p31")]
+position = Vector3(29.00, 180.80, -652.40)
+rotation_degrees = Vector3(1, 0, -1)
+[node name="BlendConnector_108_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(29.00, 180.80, -652.40)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_109_Done_Seat" parent="." instance=ExtResource("p22")]
+position = Vector3(32.00, 181.50, -655.20)
+rotation_degrees = Vector3(0, 28, 2)
+[node name="BlendRoute_110_KayakPaddle" parent="." instance=ExtResource("p58")]
+position = Vector3(35.00, 182.20, -658.00)
+rotation_degrees = Vector3(2, -18, -2)
+[node name="BlendRoute_111_KA-F600_Dryer_V1" parent="." instance=ExtResource("p39")]
+position = Vector3(38.00, 182.90, -660.80)
+rotation_degrees = Vector3(-1, 42, 0)
+[node name="BlendRoute_112_HelicopterV2" parent="." instance=ExtResource("p36")]
+position = Vector3(41.00, 183.60, -663.60)
+rotation_degrees = Vector3(-2, -35, 1)
+[node name="BlendRoute_113_KA-F1000_FridgeSBS_V1" parent="." instance=ExtResource("p38")]
+position = Vector3(44.00, 184.30, -666.40)
+rotation_degrees = Vector3(1, 12, -1)
+[node name="BlendRoute_114_KAC-F1000_FridgeSBS_V1_FreezerShelf" parent="." instance=ExtResource("p47")]
+position = Vector3(47.00, 185.00, -669.20)
+rotation_degrees = Vector3(0, 0, 2)
+[node name="BlendRoute_115_KA-F600_Fan_V1" parent="." instance=ExtResource("p40")]
+position = Vector3(50.00, 185.70, -672.00)
+rotation_degrees = Vector3(2, 28, -2)
+[node name="Checkpoint_12" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 187.70, -672.00)
+[node name="Star_12" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 189.50, -671.00)
+[node name="BlendRoute_116_KAC-F1000_FridgeSBS_V1_FreezerDrawerHolder" parent="." instance=ExtResource("p46")]
+position = Vector3(50.00, 185.70, -672.00)
+rotation_degrees = Vector3(-1, -18, 0)
+[node name="BlendConnector_117_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(50.00, 185.70, -672.00)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_118_Scout_Boat" parent="." instance=ExtResource("p63")]
+position = Vector3(47.00, 186.40, -674.80)
+rotation_degrees = Vector3(-2, 42, 1)
+[node name="BlendRoute_119_Done_Rock_9" parent="." instance=ExtResource("p21")]
+position = Vector3(44.00, 187.10, -677.60)
+rotation_degrees = Vector3(1, -35, -1)
+[node name="BlendRoute_120_Done_Panel" parent="." instance=ExtResource("p10")]
+position = Vector3(41.00, 187.80, -680.40)
+rotation_degrees = Vector3(0, 12, 2)
+[node name="BlendRoute_121_HelicopterV1" parent="." instance=ExtResource("p35")]
+position = Vector3(38.00, 188.50, -683.20)
+rotation_degrees = Vector3(2, 0, -2)
+[node name="BlendRoute_122_ComPlaneV3" parent="." instance=ExtResource("p2")]
+position = Vector3(35.00, 189.20, -686.00)
+rotation_degrees = Vector3(-1, 28, 0)
+[node name="BlendRoute_123_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(32.00, 189.90, -688.80)
+rotation_degrees = Vector3(-2, -18, 1)
+[node name="BlendRoute_124_KAC-F600_OvenTray_V2" parent="." instance=ExtResource("p51")]
+position = Vector3(29.00, 190.60, -691.60)
+rotation_degrees = Vector3(1, 42, -1)
+[node name="Checkpoint_13" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(29.00, 192.60, -691.60)
+[node name="Star_13" parent="." instance=ExtResource("star")]
+position = Vector3(27.00, 194.40, -690.60)
+[node name="BlendRoute_125_JetskiV1" parent="." instance=ExtResource("p37")]
+position = Vector3(29.00, 190.60, -691.60)
+rotation_degrees = Vector3(0, -35, 2)
+[node name="BlendConnector_126_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(29.00, 190.60, -691.60)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_127_KayakV1" parent="." instance=ExtResource("p59")]
+position = Vector3(32.00, 191.30, -694.40)
+rotation_degrees = Vector3(2, 12, -2)
+[node name="BlendRoute_128_KA-F600_Fridge_V1" parent="." instance=ExtResource("p41")]
+position = Vector3(35.00, 192.00, -697.20)
+rotation_degrees = Vector3(-1, 0, 0)
+[node name="BlendRoute_129_Speed_Boat" parent="." instance=ExtResource("p64")]
+position = Vector3(38.00, 192.70, -700.00)
+rotation_degrees = Vector3(-2, 28, 1)
+[node name="BlendRoute_130_Done_Rock_5" parent="." instance=ExtResource("p17")]
+position = Vector3(41.00, 193.40, -702.80)
+rotation_degrees = Vector3(1, -18, -1)
+[node name="BlendRoute_131_ComPlaneV2" parent="." instance=ExtResource("p1")]
+position = Vector3(44.00, 194.10, -705.60)
+rotation_degrees = Vector3(0, 42, 2)
+[node name="BlendRoute_132_KAC_Oven_HeatingTop_V2" parent="." instance=ExtResource("p56")]
+position = Vector3(47.00, 194.80, -708.40)
+rotation_degrees = Vector3(2, -35, -2)
+[node name="BlendRoute_133_KAC-F600_Fridge_V1_Drawer" parent="." instance=ExtResource("p48")]
+position = Vector3(50.00, 195.50, -711.20)
+rotation_degrees = Vector3(-1, 12, 0)
+[node name="Checkpoint_14" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 197.50, -711.20)
+[node name="Star_14" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 199.30, -710.20)
+[node name="BlendRoute_134_KAC-F600_Fridge_V1_DrawerHolder" parent="." instance=ExtResource("p49")]
+position = Vector3(50.00, 195.50, -711.20)
+rotation_degrees = Vector3(-2, 0, 1)
+[node name="BlendConnector_135_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(50.00, 195.50, -711.20)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_136_KAC-F600_OvenTray_V3" parent="." instance=ExtResource("p52")]
+position = Vector3(47.00, 196.20, -714.00)
+rotation_degrees = Vector3(1, 28, -1)
+[node name="BlendRoute_137_Done_Rock_10" parent="." instance=ExtResource("p13")]
+position = Vector3(44.00, 196.90, -716.80)
+rotation_degrees = Vector3(0, -18, 2)
+[node name="BlendRoute_138_Fishing_Rod" parent="." instance=ExtResource("p34")]
+position = Vector3(41.00, 197.60, -719.60)
+rotation_degrees = Vector3(2, 42, -2)
+[node name="BlendRoute_139_EaglePlane" parent="." instance=ExtResource("p32")]
+position = Vector3(38.00, 198.30, -722.40)
+rotation_degrees = Vector3(-1, -35, 0)
+[node name="BlendRoute_140_Done_Chair" parent="." instance=ExtResource("p5")]
+position = Vector3(35.00, 199.00, -725.20)
+rotation_degrees = Vector3(-2, 12, 1)
+[node name="BlendRoute_141_Done_Chope_A" parent="." instance=ExtResource("p6")]
+position = Vector3(32.00, 199.70, -728.00)
+rotation_degrees = Vector3(1, 0, -1)
+[node name="BlendRoute_142_KA-F600_Stove_V1" parent="." instance=ExtResource("p42")]
+position = Vector3(29.00, 200.40, -730.80)
+rotation_degrees = Vector3(0, 28, 2)
+[node name="Checkpoint_15" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(29.00, 202.40, -730.80)
+[node name="Star_15" parent="." instance=ExtResource("star")]
+position = Vector3(27.00, 204.20, -729.80)
+[node name="BlendRoute_143_KA-F600_Washer_V1" parent="." instance=ExtResource("p43")]
+position = Vector3(29.00, 200.40, -730.80)
+rotation_degrees = Vector3(2, -18, -2)
+[node name="BlendConnector_144_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(29.00, 200.40, -730.80)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_145_Done_Shield" parent="." instance=ExtResource("p23")]
+position = Vector3(32.00, 201.10, -733.60)
+rotation_degrees = Vector3(-1, 42, 0)
+[node name="BlendRoute_146_KAC-F1000_FridgeSBS_V1_FreezerDrawer" parent="." instance=ExtResource("p45")]
+position = Vector3(35.00, 201.80, -736.40)
+rotation_degrees = Vector3(-2, -35, 1)
+[node name="BlendRoute_147_Done_Cup" parent="." instance=ExtResource("p8")]
+position = Vector3(38.00, 202.50, -739.20)
+rotation_degrees = Vector3(1, 12, -1)
+[node name="BlendRoute_148_Done_Pole" parent="." instance=ExtResource("p11")]
+position = Vector3(41.00, 203.20, -742.00)
+rotation_degrees = Vector3(0, 0, 2)
+[node name="BlendRoute_149_Done_Rock_4" parent="." instance=ExtResource("p16")]
+position = Vector3(44.00, 203.90, -744.80)
+rotation_degrees = Vector3(2, 28, -2)
+[node name="BlendRoute_150_KayakV1" parent="." instance=ExtResource("p59")]
+position = Vector3(47.00, 204.60, -747.60)
+rotation_degrees = Vector3(-1, -18, 0)
+[node name="BlendRoute_151_Done_Rock_4" parent="." instance=ExtResource("p16")]
+position = Vector3(50.00, 205.30, -750.40)
+rotation_degrees = Vector3(-2, 42, 1)
+[node name="Checkpoint_16" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 207.30, -750.40)
+[node name="Star_16" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 209.10, -749.40)
+[node name="BlendRoute_152_Wood_BoatV2" parent="." instance=ExtResource("p66")]
+position = Vector3(50.00, 205.30, -750.40)
+rotation_degrees = Vector3(1, -35, -1)
+[node name="BlendConnector_153_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(50.00, 205.30, -750.40)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_154_Done_Rock_9" parent="." instance=ExtResource("p21")]
+position = Vector3(47.00, 206.00, -753.20)
+rotation_degrees = Vector3(0, 12, 2)
+[node name="BlendRoute_155_Scout_Boat" parent="." instance=ExtResource("p63")]
+position = Vector3(44.00, 206.70, -756.00)
+rotation_degrees = Vector3(2, 0, -2)
+[node name="BlendRoute_156_KAC-F600_Fridge_V1_DrawerHolder" parent="." instance=ExtResource("p49")]
+position = Vector3(41.00, 207.40, -758.80)
+rotation_degrees = Vector3(-1, 28, 0)
+[node name="BlendRoute_157_Done_Rock_10" parent="." instance=ExtResource("p13")]
+position = Vector3(38.00, 208.10, -761.60)
+rotation_degrees = Vector3(-2, -18, 1)
+[node name="BlendRoute_158_KA-F600_Dryer_V1" parent="." instance=ExtResource("p39")]
+position = Vector3(35.00, 208.80, -764.40)
+rotation_degrees = Vector3(1, 42, -1)
+[node name="BlendRoute_159_Done_Panel" parent="." instance=ExtResource("p10")]
+position = Vector3(32.00, 209.50, -767.20)
+rotation_degrees = Vector3(0, -35, 2)
+[node name="BlendRoute_160_HelicopterV1" parent="." instance=ExtResource("p35")]
+position = Vector3(29.00, 210.20, -770.00)
+rotation_degrees = Vector3(2, 12, -2)
+[node name="Checkpoint_17" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(29.00, 212.20, -770.00)
+[node name="Star_17" parent="." instance=ExtResource("star")]
+position = Vector3(27.00, 214.00, -769.00)
+[node name="BlendRoute_161_Fishing_Rod" parent="." instance=ExtResource("p34")]
+position = Vector3(29.00, 210.20, -770.00)
+rotation_degrees = Vector3(-1, 0, 0)
+[node name="BlendConnector_162_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(29.00, 210.20, -770.00)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_163_Done_Wood_Plank_B" parent="." instance=ExtResource("p30")]
+position = Vector3(32.00, 210.90, -772.80)
+rotation_degrees = Vector3(-2, 28, 1)
+[node name="BlendRoute_164_Done_Rock_1" parent="." instance=ExtResource("p12")]
+position = Vector3(35.00, 211.60, -775.60)
+rotation_degrees = Vector3(1, -18, -1)
+[node name="BlendRoute_165_KA-F600_Washer_V1" parent="." instance=ExtResource("p43")]
+position = Vector3(38.00, 212.30, -778.40)
+rotation_degrees = Vector3(0, 42, 2)
+[node name="BlendRoute_166_KAC_Micro_Tray_V2" parent="." instance=ExtResource("p54")]
+position = Vector3(41.00, 213.00, -781.20)
+rotation_degrees = Vector3(2, -35, -2)
+[node name="BlendRoute_167_Done_Wood_Trunk" parent="." instance=ExtResource("p31")]
+position = Vector3(44.00, 213.70, -784.00)
+rotation_degrees = Vector3(-1, 12, 0)
+[node name="BlendRoute_168_Done_Rock_2" parent="." instance=ExtResource("p14")]
+position = Vector3(47.00, 214.40, -786.80)
+rotation_degrees = Vector3(-2, 0, 1)
+[node name="BlendRoute_169_ComPlaneV3" parent="." instance=ExtResource("p2")]
+position = Vector3(50.00, 215.10, -789.60)
+rotation_degrees = Vector3(1, 28, -1)
+[node name="Checkpoint_18" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 217.10, -789.60)
+[node name="Star_18" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 218.90, -788.60)
+[node name="BlendRoute_170_KAC_Oven_Fan_V2" parent="." instance=ExtResource("p55")]
+position = Vector3(50.00, 215.10, -789.60)
+rotation_degrees = Vector3(0, -18, 2)
+[node name="BlendConnector_171_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(50.00, 215.10, -789.60)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_172_KAC-F1000_FridgeSBS_V1_FreezerDrawerHolder" parent="." instance=ExtResource("p46")]
+position = Vector3(47.00, 215.80, -792.40)
+rotation_degrees = Vector3(2, 42, -2)
+[node name="BlendRoute_173_Paddle" parent="." instance=ExtResource("p62")]
+position = Vector3(44.00, 216.50, -795.20)
+rotation_degrees = Vector3(-1, -35, 0)
+[node name="BlendRoute_174_KayakV2" parent="." instance=ExtResource("p60")]
+position = Vector3(41.00, 217.20, -798.00)
+rotation_degrees = Vector3(-2, 12, 1)
+[node name="BlendRoute_175_Done_Sword" parent="." instance=ExtResource("p26")]
+position = Vector3(38.00, 217.90, -800.80)
+rotation_degrees = Vector3(1, 0, -1)
+[node name="BlendRoute_176_KAC-F600_Fridge_V1_Drawer" parent="." instance=ExtResource("p48")]
+position = Vector3(35.00, 218.60, -803.60)
+rotation_degrees = Vector3(0, 28, 2)
+[node name="BlendRoute_177_Fisher_Boat" parent="." instance=ExtResource("p33")]
+position = Vector3(32.00, 219.30, -806.40)
+rotation_degrees = Vector3(2, -18, -2)
+[node name="BlendRoute_178_Done_Seat" parent="." instance=ExtResource("p22")]
+position = Vector3(29.00, 220.00, -809.20)
+rotation_degrees = Vector3(-1, 42, 0)
+[node name="Checkpoint_19" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(29.00, 222.00, -809.20)
+[node name="Star_19" parent="." instance=ExtResource("star")]
+position = Vector3(27.00, 223.80, -808.20)
+[node name="BlendRoute_179_KA-F1000_FridgeSBS_V1" parent="." instance=ExtResource("p38")]
+position = Vector3(29.00, 220.00, -809.20)
+rotation_degrees = Vector3(-2, -35, 1)
+[node name="BlendConnector_180_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(29.00, 220.00, -809.20)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_181_Done_Cup" parent="." instance=ExtResource("p8")]
+position = Vector3(32.00, 220.70, -812.00)
+rotation_degrees = Vector3(1, 12, -1)
+[node name="BlendRoute_182_Done_Rock_8" parent="." instance=ExtResource("p20")]
+position = Vector3(35.00, 221.40, -814.80)
+rotation_degrees = Vector3(0, 0, 2)
+[node name="BlendRoute_183_Done_Chair" parent="." instance=ExtResource("p5")]
+position = Vector3(38.00, 222.10, -817.60)
+rotation_degrees = Vector3(2, 28, -2)
+[node name="BlendRoute_184_Done_Chope_A" parent="." instance=ExtResource("p6")]
+position = Vector3(41.00, 222.80, -820.40)
+rotation_degrees = Vector3(-1, -18, 0)
+[node name="BlendRoute_185_KA-F600_Fridge_V1" parent="." instance=ExtResource("p41")]
+position = Vector3(44.00, 223.50, -823.20)
+rotation_degrees = Vector3(-2, 42, 1)
+[node name="BlendRoute_186_KA-F600_Fan_V1" parent="." instance=ExtResource("p40")]
+position = Vector3(47.00, 224.20, -826.00)
+rotation_degrees = Vector3(1, -35, -1)
+[node name="BlendRoute_187_Done_Wood_Axe" parent="." instance=ExtResource("p28")]
+position = Vector3(50.00, 224.90, -828.80)
+rotation_degrees = Vector3(0, 12, 2)
+[node name="Checkpoint_20" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 226.90, -828.80)
+[node name="Star_20" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 228.70, -827.80)
+[node name="BlendRoute_188_Done_Lamp" parent="." instance=ExtResource("p9")]
+position = Vector3(50.00, 224.90, -828.80)
+rotation_degrees = Vector3(2, 0, -2)
+[node name="BlendConnector_189_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(50.00, 224.90, -828.80)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_190_Speed_Boat" parent="." instance=ExtResource("p64")]
+position = Vector3(47.00, 225.60, -831.60)
+rotation_degrees = Vector3(-1, 28, 0)
+[node name="BlendRoute_191_KAC_Oven_HeatingTop_V2" parent="." instance=ExtResource("p56")]
+position = Vector3(44.00, 226.30, -834.40)
+rotation_degrees = Vector3(-2, -18, 1)
+[node name="BlendRoute_192_ComPlaneV2" parent="." instance=ExtResource("p1")]
+position = Vector3(41.00, 227.00, -837.20)
+rotation_degrees = Vector3(1, 42, -1)
+[node name="BlendRoute_193_KAC-F1000_FridgeSBS_V1_FreezerDrawer" parent="." instance=ExtResource("p45")]
+position = Vector3(38.00, 227.70, -840.00)
+rotation_degrees = Vector3(0, -35, 2)
+[node name="BlendRoute_194_KAC-F1000_FridgeSBS_V1_FreezerShelf" parent="." instance=ExtResource("p47")]
+position = Vector3(35.00, 228.40, -842.80)
+rotation_degrees = Vector3(2, 12, -2)
+[node name="BlendRoute_195_Done_Shield" parent="." instance=ExtResource("p23")]
+position = Vector3(32.00, 229.10, -845.60)
+rotation_degrees = Vector3(-1, 0, 0)
+[node name="BlendRoute_196_EaglePlane" parent="." instance=ExtResource("p32")]
+position = Vector3(29.00, 229.80, -848.40)
+rotation_degrees = Vector3(-2, 28, 1)
+[node name="Checkpoint_21" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(29.00, 231.80, -848.40)
+[node name="Star_21" parent="." instance=ExtResource("star")]
+position = Vector3(27.00, 233.60, -847.40)
+[node name="BlendRoute_197_KayakPaddle" parent="." instance=ExtResource("p58")]
+position = Vector3(29.00, 229.80, -848.40)
+rotation_degrees = Vector3(1, -18, -1)
+[node name="BlendConnector_198_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(29.00, 229.80, -848.40)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_199_Done_Barril" parent="." instance=ExtResource("p3")]
+position = Vector3(32.00, 230.50, -851.20)
+rotation_degrees = Vector3(0, 42, 2)
+[node name="BlendRoute_200_Done_Rock_3" parent="." instance=ExtResource("p15")]
+position = Vector3(35.00, 231.20, -854.00)
+rotation_degrees = Vector3(2, -35, -2)
+[node name="BlendRoute_201_KAC-F600_OvenTray_V3" parent="." instance=ExtResource("p52")]
+position = Vector3(38.00, 231.90, -856.80)
+rotation_degrees = Vector3(-1, 12, 0)
+[node name="BlendRoute_202_KA-F800_Fan_V1" parent="." instance=ExtResource("p44")]
+position = Vector3(41.00, 232.60, -859.60)
+rotation_degrees = Vector3(-2, 0, 1)
+[node name="BlendRoute_203_JetskiV1" parent="." instance=ExtResource("p37")]
+position = Vector3(44.00, 233.30, -862.40)
+rotation_degrees = Vector3(1, 28, -1)
+[node name="BlendRoute_204_Done_Stone" parent="." instance=ExtResource("p25")]
+position = Vector3(47.00, 234.00, -865.20)
+rotation_degrees = Vector3(0, -18, 2)
+[node name="BlendRoute_205_KA-F600_Stove_V1" parent="." instance=ExtResource("p42")]
+position = Vector3(50.00, 234.70, -868.00)
+rotation_degrees = Vector3(2, 42, -2)
+[node name="Checkpoint_22" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 236.70, -868.00)
+[node name="Star_22" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 238.50, -867.00)
+[node name="BlendRoute_206_Done_Rock_5" parent="." instance=ExtResource("p17")]
+position = Vector3(50.00, 234.70, -868.00)
+rotation_degrees = Vector3(-1, -35, 0)
+[node name="BlendConnector_207_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(50.00, 234.70, -868.00)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_208_Done_Battle_Axe" parent="." instance=ExtResource("p4")]
+position = Vector3(47.00, 235.40, -870.80)
+rotation_degrees = Vector3(-2, 12, 1)
+[node name="BlendRoute_209_Done_Rock_7" parent="." instance=ExtResource("p19")]
+position = Vector3(44.00, 236.10, -873.60)
+rotation_degrees = Vector3(1, 0, -1)
+[node name="BlendRoute_210_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(41.00, 236.80, -876.40)
+rotation_degrees = Vector3(0, 28, 2)
+[node name="BlendRoute_211_Done_Pole" parent="." instance=ExtResource("p11")]
+position = Vector3(38.00, 237.50, -879.20)
+rotation_degrees = Vector3(2, -18, -2)
+[node name="BlendRoute_212_KA_Micro_V2" parent="." instance=ExtResource("p57")]
+position = Vector3(35.00, 238.20, -882.00)
+rotation_degrees = Vector3(-1, 42, 0)
+[node name="BlendRoute_213_ComPlaneV1" parent="." instance=ExtResource("p0")]
+position = Vector3(32.00, 238.90, -884.80)
+rotation_degrees = Vector3(-2, -35, 1)
+[node name="BlendRoute_214_Wood_BoatV1" parent="." instance=ExtResource("p65")]
+position = Vector3(29.00, 239.60, -887.60)
+rotation_degrees = Vector3(1, 12, -1)
+[node name="Checkpoint_23" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(29.00, 241.60, -887.60)
+[node name="Star_23" parent="." instance=ExtResource("star")]
+position = Vector3(27.00, 243.40, -886.60)
+[node name="BlendRoute_215_Done_Chope_B" parent="." instance=ExtResource("p7")]
+position = Vector3(29.00, 239.60, -887.60)
+rotation_degrees = Vector3(0, 0, 2)
+[node name="BlendConnector_216_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(29.00, 239.60, -887.60)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendRoute_217_Done_Table" parent="." instance=ExtResource("p27")]
+position = Vector3(32.00, 240.30, -890.40)
+rotation_degrees = Vector3(2, 28, -2)
+[node name="BlendRoute_218_HelicopterV2" parent="." instance=ExtResource("p36")]
+position = Vector3(35.00, 241.00, -893.20)
+rotation_degrees = Vector3(-1, -18, 0)
+[node name="BlendRoute_219_Done_Signal" parent="." instance=ExtResource("p24")]
+position = Vector3(38.00, 241.70, -896.00)
+rotation_degrees = Vector3(-2, 42, 1)
+[node name="BlendRoute_220_KAC-F600_Fridge_V1_Shelf" parent="." instance=ExtResource("p50")]
+position = Vector3(41.00, 242.40, -898.80)
+rotation_degrees = Vector3(1, -35, -1)
+[node name="BlendRoute_221_KAC-F600_OvenTray_V2" parent="." instance=ExtResource("p51")]
+position = Vector3(44.00, 243.10, -901.60)
+rotation_degrees = Vector3(0, 12, 2)
+[node name="BlendRoute_222_KAC-F600_TrayGuide_V2" parent="." instance=ExtResource("p53")]
+position = Vector3(47.00, 243.80, -904.40)
+rotation_degrees = Vector3(2, 0, -2)
+[node name="BlendRoute_223_LightPlane" parent="." instance=ExtResource("p61")]
+position = Vector3(50.00, 244.50, -907.20)
+rotation_degrees = Vector3(-1, 28, 0)
+[node name="Checkpoint_24" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 246.50, -907.20)
+[node name="Star_24" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 248.30, -906.20)
+[node name="BlendRoute_224_Done_Rock_6" parent="." instance=ExtResource("p18")]
+position = Vector3(50.00, 244.50, -907.20)
+rotation_degrees = Vector3(-2, -18, 1)
+[node name="Checkpoint_25" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 246.50, -907.20)
+[node name="Star_25" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 248.30, -906.20)
+[node name="BlendConnector_225_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(50.00, 244.50, -907.20)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BlendFinal_226_Done_Rock_6" parent="." instance=ExtResource("p18")]
+position = Vector3(50.00, 244.50, -907.20)
+rotation_degrees = Vector3(0, 15, 0)
+[node name="BlendFinal_227_KA-F600_Fan_V1" parent="." instance=ExtResource("p40")]
+position = Vector3(53.00, 245.22, -910.00)
+rotation_degrees = Vector3(2, -22, -2)
+[node name="BlendFinal_228_Fisher_Boat" parent="." instance=ExtResource("p33")]
+position = Vector3(56.00, 245.94, -912.80)
+rotation_degrees = Vector3(-1, 35, 2)
+[node name="BlendFinal_229_Done_Chair" parent="." instance=ExtResource("p5")]
+position = Vector3(59.00, 246.66, -915.60)
+rotation_degrees = Vector3(1, -10, 1)
+[node name="BlendFinal_230_HelicopterV1" parent="." instance=ExtResource("p35")]
+position = Vector3(62.00, 247.38, -918.40)
+rotation_degrees = Vector3(0, 15, 0)
+[node name="BlendFinal_231_KAC-F600_OvenTray_V3" parent="." instance=ExtResource("p52")]
+position = Vector3(65.00, 248.10, -921.20)
+rotation_degrees = Vector3(2, -22, -2)
+[node name="Checkpoint_26" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(65.00, 250.10, -921.20)
+[node name="Star_26" parent="." instance=ExtResource("star")]
+position = Vector3(63.00, 251.90, -920.20)
+[node name="BlendFinal_232_EaglePlane" parent="." instance=ExtResource("p32")]
+position = Vector3(65.00, 248.10, -921.20)
+rotation_degrees = Vector3(-1, 35, 2)
+[node name="BlendFinal_233_Done_Wood_Plank_B" parent="." instance=ExtResource("p30")]
+position = Vector3(62.00, 248.82, -924.00)
+rotation_degrees = Vector3(1, -10, 1)
+[node name="BlendFinal_234_KA_Micro_V2" parent="." instance=ExtResource("p57")]
+position = Vector3(59.00, 249.54, -926.80)
+rotation_degrees = Vector3(0, 15, 0)
+[node name="BlendFinal_235_Scout_Boat" parent="." instance=ExtResource("p63")]
+position = Vector3(56.00, 250.26, -929.60)
+rotation_degrees = Vector3(2, -22, -2)
+[node name="BlendFinal_236_Done_Stone" parent="." instance=ExtResource("p25")]
+position = Vector3(53.00, 250.98, -932.40)
+rotation_degrees = Vector3(-1, 35, 2)
+[node name="BlendFinal_237_LightPlane" parent="." instance=ExtResource("p61")]
+position = Vector3(50.00, 251.70, -935.20)
+rotation_degrees = Vector3(1, -10, 1)
+[node name="Checkpoint_27" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 253.70, -935.20)
+[node name="Star_27" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 255.50, -934.20)
+[node name="BlendFinal_238_Done_Rock_6" parent="." instance=ExtResource("p18")]
+position = Vector3(50.00, 251.70, -935.20)
+rotation_degrees = Vector3(0, 15, 0)
+[node name="BlendFinal_239_KA-F600_Fan_V1" parent="." instance=ExtResource("p40")]
+position = Vector3(53.00, 252.42, -938.00)
+rotation_degrees = Vector3(2, -22, -2)
+[node name="BlendFinal_240_Fisher_Boat" parent="." instance=ExtResource("p33")]
+position = Vector3(56.00, 253.14, -940.80)
+rotation_degrees = Vector3(-1, 35, 2)
+[node name="BlendFinal_241_Done_Chair" parent="." instance=ExtResource("p5")]
+position = Vector3(59.00, 253.86, -943.60)
+rotation_degrees = Vector3(1, -10, 1)
+[node name="BlendFinal_242_HelicopterV1" parent="." instance=ExtResource("p35")]
+position = Vector3(62.00, 254.58, -946.40)
+rotation_degrees = Vector3(0, 15, 0)
+[node name="BlendFinal_243_KAC-F600_OvenTray_V3" parent="." instance=ExtResource("p52")]
+position = Vector3(65.00, 255.30, -949.20)
+rotation_degrees = Vector3(2, -22, -2)
+[node name="Checkpoint_28" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(65.00, 257.30, -949.20)
+[node name="Star_28" parent="." instance=ExtResource("star")]
+position = Vector3(63.00, 259.10, -948.20)
+[node name="BlendFinal_244_EaglePlane" parent="." instance=ExtResource("p32")]
+position = Vector3(65.00, 255.30, -949.20)
+rotation_degrees = Vector3(-1, 35, 2)
+[node name="BlendFinal_245_Done_Wood_Plank_B" parent="." instance=ExtResource("p30")]
+position = Vector3(62.00, 256.02, -952.00)
+rotation_degrees = Vector3(1, -10, 1)
+[node name="BlendFinal_246_KA_Micro_V2" parent="." instance=ExtResource("p57")]
+position = Vector3(59.00, 256.74, -954.80)
+rotation_degrees = Vector3(0, 15, 0)
+[node name="BlendFinal_247_Scout_Boat" parent="." instance=ExtResource("p63")]
+position = Vector3(56.00, 257.46, -957.60)
+rotation_degrees = Vector3(2, -22, -2)
+[node name="BlendFinal_248_Done_Stone" parent="." instance=ExtResource("p25")]
+position = Vector3(53.00, 258.18, -960.40)
+rotation_degrees = Vector3(-1, 35, 2)
+[node name="BlendFinal_249_LightPlane" parent="." instance=ExtResource("p61")]
+position = Vector3(50.00, 258.90, -963.20)
+rotation_degrees = Vector3(1, -10, 1)
+[node name="Checkpoint_29" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 260.90, -963.20)
+[node name="Star_29" parent="." instance=ExtResource("star")]
+position = Vector3(48.00, 262.70, -962.20)

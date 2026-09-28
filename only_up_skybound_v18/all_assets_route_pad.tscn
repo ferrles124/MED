@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=3]
+
+[sub_resource type="BoxMesh" id="BoxMesh_pad"]
+size = Vector3(6, 0.32, 6)
+
+[sub_resource type="StandardMaterial3D" id="Material_pad"]
+albedo_color = Color(0.18, 0.32, 0.38, 1)
+metallic = 0.15
+roughness = 0.72
+
+[sub_resource type="BoxShape3D" id="BoxShape_pad"]
+size = Vector3(6, 0.32, 6)
+
+[node name="RoutePad" type="StaticBody3D"]
+collision_layer = 1
+collision_mask = 1
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_pad")
+material_override = SubResource("Material_pad")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape_pad")

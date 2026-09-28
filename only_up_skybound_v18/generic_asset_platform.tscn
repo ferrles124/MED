@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://generic_asset_platform.gd" id="1_generic"]
+
+[node name="GenericAssetPlatform" type="AnimatableBody3D"]
+script = ExtResource("1_generic")
+model_scale = 3.3
+generate_full_mesh_collision = true
+collision_layer_override = 1
+movement_enabled = false
+rotating = false

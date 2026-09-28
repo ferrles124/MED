@@ -1,0 +1,59 @@
+[gd_scene format=4]
+
+[ext_resource type="PackedScene" path="res://assets/KAC-F1000_FridgeSBS_V1_FreezerShelf.glb" id="1_le1uf"]
+[ext_resource type="Texture2D" path="res://assets/KAC-F1000_FridgeSBS_V1_FreezerShelf_AlstraInfinite1024_Main.png" id="2_0ad6b"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w2rbg"]
+resource_name = "Main_Slot.019"
+cull_mode = 2
+albedo_texture = ExtResource("2_0ad6b")
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6itgf"]
+_surfaces = [{
+"aabb": AABB(0, 0, -1.9999981, 33, 50, 1.9999981),
+"format": 34359742465,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAACAAEABQAAAAIABQACAAQABgAAAAUABgADAAAABwABAAMABwADAAYABAABAAcABQAIAAYABAAJAAUABQAJAAgABwAKAAQABAAKAAkABgALAAcABgAIAAsABwALAAoACQAMAAgACwANAAoACgAOAAkACQAOAAwACgANAA4ACAAMAA8ACAAPAAsADgAPAAwACwAPAA0ADgANAA8A"),
+"name": "Main_Slot.019",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 16,
+"vertex_data": PackedByteArray("AgD0QQEAIEAAAACA//8fQAEAPkIAAACAAgD0QQEAPkIAAACA//8fQAEAIEAAAACAAAAEQgAASEIAAACAAAAEQgAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAASEIAAACAAAAAAAAAAADw//+/AAAEQgAAAADw//+/AAAEQgAASELw//+/AAAAAAAASELw//+///8fQAEAIEDw//+/AgD0QQEAPkLw//+/AgD0QQEAIEDw//+///8fQAEAPkLw//+/")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_b5li8"]
+resource_name = "KAC-F1000_FridgeSBS_V1_FreezerShelf_Cube_391"
+_surfaces = [{
+"aabb": AABB(0, 0, -1.9999981, 33, 50, 1.9999981),
+"attribute_data": PackedByteArray("VvuWPug3cz6Bb94+iKkLP1X7lj7sN3M+CtcjPBgJ+D1V+5Y+6DdzPgrXIzyIqQs/VfuWPuw3cz6Bb94+GAn4PVb7lj7kN3M+gW/ePqRwfT9V+5Y+7DdzPgrXIzxAyBA/VfuWPvA3cz4K1yM8pHB9P1b7lj7oN3M+gW/ePkDIED9W+5Y+vO5wPoepCz9AyBA/VvuWPrzucD7xrOg+pHB9P1b7lj687nA+h6kLP6RwfT9W+5Y+vO5wPvGs6D5AyBA/VvuWPrzucD7xrOg+8qzoPlb7lj687nA+3f5gP4ipCz9W+5Y+vO5wPt3+YD/yrOg+VvuWPrzucD7xrOg+iKkLP1b7lj687nA+TxsoP0DIED9W+5Y+vO5wPkDIED+kcH0/VvuWPrzucD5PGyg/pHB9P1b7lj687nA+QMgQP0DIED9W+5Y+vO5wPvGs6D5iya8+VvuWPrzucD7d/mA/gG/ePlb7lj687nA+3f5gP2LJrz5W+5Y+vO5wPvGs6D6Ab94+VvuWPrzucD4WjUQ/QMgQP1X7lj687nA+BzotP6RwfT9W+5Y+vO5wPhaNRD+kcH0/VvuWPrzucD4HOi0/QMgQP1b7lj687nA+8azoPqjLbT5V+5Y+wO5wPt3+YD/yi6U+VvuWPrzucD7d/mA/qMttPlX7lj687nA+8azoPvKLpT5W+5Y+vO5wPt3+YD9AyBA/VfuWPsDucD7Oq0k/pHB9P1b7lj687nA+3f5gP6RwfT9V+5Y+wO5wPs6rST9AyBA/VvuWPrzucD7xrOg+GAn4PVb7lj687nA+3f5gP8hQWT5W+5Y+vO5wPt3+YD8YCfg9VfuWPsDucD7xrOg+yFBZPlb7lj687nA+pHB9P0DIED9V+5Y+xO5wPpUdZj+kcH0/VvuWPrzucD6kcH0/pHB9P1b7lj647nA+lR1mP0DIED9W+5Y+vO5wPgrXIzwA1yM8VfuWPsDucD6Bb94+WBPPPVb7lj687nA+gW/ePgDXIzxV+5Y+xO5wPgrXIzxYE889VvuWPrzucD6kcH0/GAn4PVb7lj687nA+lR1mP4ipCz9W+5Y+vO5wPqRwfT+IqQs/VfuWPsDucD6VHWY/GAn4PVb7lj687nA+8azoPgDXIzxW+5Y+uO5wPt3+YD9YE889VvuWPrzucD7d/mA/ANcjPFb7lj687nA+8azoPlgTzz0="),
+"format": 34359742519,
+"index_count": 84,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADAAPAA0AEAARABIAEAATABEAFAAVABYAFAAXABUAGAAZABoAGAAbABkAHAAdAB4AHAAfAB0AIAAhACIAIAAjACEAJAAlACYAJAAnACUAKAApACoAKAArACkALAAtAC4ALAAvAC0AMAAxADIAMAAzADEANAA1ADYANAA3ADUA"),
+"material": SubResource("StandardMaterial3D_w2rbg"),
+"name": "Main_Slot.019",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 56,
+"vertex_data": PackedByteArray("AgD0QQEAIEAAAACA//8fQAEAPkIAAACAAgD0QQEAPkIAAACA//8fQAEAIEAAAACAAgD0QQEAIEDw//+///8fQAEAPkLw//+///8fQAEAIEDw//+/AgD0QQEAPkLw//+/AAAAAAAAAAAAAACAAAAAAAAASELw//+/AAAAAAAASEIAAACAAAAAAAAAAADw//+/AAAEQgAASEIAAACAAAAEQgAAAADw//+/AAAEQgAAAAAAAACAAAAEQgAASELw//+/AAAEQgAAAAAAAACAAAAAAAAAAADw//+/AAAAAAAAAAAAAACAAAAEQgAAAADw//+/AAAAAAAASEIAAACAAAAEQgAASELw//+/AAAEQgAASEIAAACAAAAAAAAASELw//+/AAAEQgAAAAAAAACAAgD0QQEAPkIAAACAAAAEQgAASEIAAACAAgD0QQEAIEAAAACAAAAEQgAASEIAAACA//8fQAEAPkIAAACAAAAAAAAASEIAAACAAgD0QQEAPkIAAACAAAAAAAAASEIAAACA//8fQAEAIEAAAACAAAAAAAAAAAAAAACA//8fQAEAPkIAAACAAAAAAAAAAAAAAACAAgD0QQEAIEAAAACAAAAEQgAAAAAAAACA//8fQAEAIEAAAACAAAAEQgAAAADw//+///8fQAEAIEDw//+/AAAAAAAAAADw//+/AgD0QQEAIEDw//+/AAAAAAAAAADw//+///8fQAEAPkLw//+/AAAAAAAASELw//+///8fQAEAIEDw//+/AAAAAAAASELw//+/AgD0QQEAPkLw//+/AAAEQgAASELw//+///8fQAEAPkLw//+/AAAEQgAASELw//+/AgD0QQEAIEDw//+/AAAEQgAAAADw//+/AgD0QQEAPkLw//+//3//f/9/AID/f/9//38AgP9//3//fwCA/3//f////z//////F7Fy5/////8XsXLn//////yVAXX/////F7Fy5wAA/3////+/AAD/f////78AAP9/////vwAA/3////+/////f////7////9/////v////3////+/////f////7//fwAA////v/9/AAD///+//38AAP///7//fwAA////v/9///////+//3///////7//f///////v/9///////+//3//f////z//f/9//7//H/9//3//v/8f/3//f////z//f/9//7//H/9//3//v/8f/3//f////z//f/9//7//H/9//3////8//3//f////z//f/9/////P/9//3//v/8f/3//f////z//f/9/////P/9//3////8//3//f////z//////q+kpS/////+r6SlL/////////7//////q+kpS/////+hfK6B/////6F8roH/////////v/////+hfK6B/////////7//////////v/////////+//////6F8roH/////////v/////+r6SlL/////6vpKUv/////////vw==")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_6itgf")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_ymf81"]
+data = PackedVector3Array(30.5, 2.5, 0, 2.5, 47.5, 0, 30.5, 47.5, 0, 30.5, 2.5, 0, 2.5, 2.5, 0, 2.5, 47.5, 0, 30.5, 2.5, -2, 2.5, 47.5, -2, 2.5, 2.5, -2, 30.5, 2.5, -2, 30.5, 47.5, -2, 2.5, 47.5, -2, 0, 0, 0, 0, 50, -2, 0, 50, 0, 0, 0, 0, 0, 0, -2, 0, 50, -2, 33, 50, 0, 33, 0, -2, 33, 0, 0, 33, 50, 0, 33, 50, -2, 33, 0, -2, 33, 0, 0, 0, 0, -2, 0, 0, 0, 33, 0, 0, 33, 0, -2, 0, 0, -2, 0, 50, 0, 33, 50, -2, 33, 50, 0, 0, 50, 0, 0, 50, -2, 33, 50, -2, 33, 0, 0, 30.5, 47.5, 0, 33, 50, 0, 33, 0, 0, 30.5, 2.5, 0, 30.5, 47.5, 0, 33, 50, 0, 2.5, 47.5, 0, 0, 50, 0, 33, 50, 0, 30.5, 47.5, 0, 2.5, 47.5, 0, 0, 50, 0, 2.5, 2.5, 0, 0, 0, 0, 0, 50, 0, 2.5, 47.5, 0, 2.5, 2.5, 0, 0, 0, 0, 30.5, 2.5, 0, 33, 0, 0, 0, 0, 0, 2.5, 2.5, 0, 30.5, 2.5, 0, 33, 0, -2, 2.5, 2.5, -2, 0, 0, -2, 33, 0, -2, 30.5, 2.5, -2, 2.5, 2.5, -2, 0, 0, -2, 2.5, 47.5, -2, 0, 50, -2, 0, 0, -2, 2.5, 2.5, -2, 2.5, 47.5, -2, 0, 50, -2, 30.5, 47.5, -2, 33, 50, -2, 0, 50, -2, 2.5, 47.5, -2, 30.5, 47.5, -2, 33, 50, -2, 30.5, 2.5, -2, 33, 0, -2, 33, 50, -2, 30.5, 47.5, -2, 30.5, 2.5, -2)
+
+[node name="Prop_KAC_F1000_FridgeSBS_V1_FreezerShelf" type="StaticBody3D" unique_id=1237946404]
+
+[node name="Model" type="Node3D" parent="." unique_id=188317335 instance=ExtResource("1_le1uf")]
+transform = Transform3D(3.3, 0, 0, 0, 3.3, 0, 0, 0, 3.3, 0, 0, 0)
+
+[node name="KAC-F1000_FridgeSBS_V1_FreezerShelf" type="MeshInstance3D" parent="Model" unique_id=714900257]
+transform = Transform3D(0.01, 0, 0, 0, 0, -0.01, 0, 0.01, 0, 0, 0, 0)
+mesh = SubResource("ArrayMesh_b5li8")
+
+[node name="BakedSurface_KAC-F1000_FridgeSBS_V1_FreezerShelf" type="CollisionShape3D" parent="." unique_id=200395823]
+transform = Transform3D(0.033, 0, 0, 0, 0, -0.033, 0, 0.033, 0, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_ymf81")

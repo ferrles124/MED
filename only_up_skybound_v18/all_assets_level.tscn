@@ -1,0 +1,2446 @@
+[gd_scene load_steps=336 format=3]
+[ext_resource type="PackedScene" path="res://props/ComPlaneV1.tscn" id="p0"]
+[ext_resource type="PackedScene" path="res://props/ComPlaneV2.tscn" id="p1"]
+[ext_resource type="PackedScene" path="res://props/ComPlaneV3.tscn" id="p2"]
+[ext_resource type="PackedScene" path="res://props/Done_Barril.tscn" id="p3"]
+[ext_resource type="PackedScene" path="res://props/Done_Battle_Axe.tscn" id="p4"]
+[ext_resource type="PackedScene" path="res://props/Done_Chair.tscn" id="p5"]
+[ext_resource type="PackedScene" path="res://props/Done_Chope_A.tscn" id="p6"]
+[ext_resource type="PackedScene" path="res://props/Done_Chope_B.tscn" id="p7"]
+[ext_resource type="PackedScene" path="res://props/Done_Cup.tscn" id="p8"]
+[ext_resource type="PackedScene" path="res://props/Done_Lamp.tscn" id="p9"]
+[ext_resource type="PackedScene" path="res://props/Done_Panel.tscn" id="p10"]
+[ext_resource type="PackedScene" path="res://props/Done_Pole.tscn" id="p11"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_1.tscn" id="p12"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_10.tscn" id="p13"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_2.tscn" id="p14"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_3.tscn" id="p15"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_4.tscn" id="p16"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_5.tscn" id="p17"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_6.tscn" id="p18"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_7.tscn" id="p19"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_8.tscn" id="p20"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_9.tscn" id="p21"]
+[ext_resource type="PackedScene" path="res://props/Done_Seat.tscn" id="p22"]
+[ext_resource type="PackedScene" path="res://props/Done_Shield.tscn" id="p23"]
+[ext_resource type="PackedScene" path="res://props/Done_Signal.tscn" id="p24"]
+[ext_resource type="PackedScene" path="res://props/Done_Stone.tscn" id="p25"]
+[ext_resource type="PackedScene" path="res://props/Done_Sword.tscn" id="p26"]
+[ext_resource type="PackedScene" path="res://props/Done_Table.tscn" id="p27"]
+[ext_resource type="PackedScene" path="res://props/Done_Wood_Axe.tscn" id="p28"]
+[ext_resource type="PackedScene" path="res://props/Done_Wood_Plank_A.tscn" id="p29"]
+[ext_resource type="PackedScene" path="res://props/Done_Wood_Plank_B.tscn" id="p30"]
+[ext_resource type="PackedScene" path="res://props/Done_Wood_Trunk.tscn" id="p31"]
+[ext_resource type="PackedScene" path="res://props/EaglePlane.tscn" id="p32"]
+[ext_resource type="PackedScene" path="res://props/Farm_apple.tscn" id="p33"]
+[ext_resource type="PackedScene" path="res://props/Farm_applegreen.tscn" id="p34"]
+[ext_resource type="PackedScene" path="res://props/Farm_banana.tscn" id="p35"]
+[ext_resource type="PackedScene" path="res://props/Farm_bananagreen.tscn" id="p36"]
+[ext_resource type="PackedScene" path="res://props/Farm_barnlvl1.tscn" id="p37"]
+[ext_resource type="PackedScene" path="res://props/Farm_barnlvl2.tscn" id="p38"]
+[ext_resource type="PackedScene" path="res://props/Farm_barnlvl3.tscn" id="p39"]
+[ext_resource type="PackedScene" path="res://props/Farm_barrel.tscn" id="p40"]
+[ext_resource type="PackedScene" path="res://props/Farm_benchlittle.tscn" id="p41"]
+[ext_resource type="PackedScene" path="res://props/Farm_billboard.tscn" id="p42"]
+[ext_resource type="PackedScene" path="res://props/Farm_bucket.tscn" id="p43"]
+[ext_resource type="PackedScene" path="res://props/Farm_bucketwooden.tscn" id="p44"]
+[ext_resource type="PackedScene" path="res://props/Farm_bushescubegreen.tscn" id="p45"]
+[ext_resource type="PackedScene" path="res://props/Farm_bushescubeyellow.tscn" id="p46"]
+[ext_resource type="PackedScene" path="res://props/Farm_bushesgreen.tscn" id="p47"]
+[ext_resource type="PackedScene" path="res://props/Farm_bushesportalgreen.tscn" id="p48"]
+[ext_resource type="PackedScene" path="res://props/Farm_bushesportalyellow.tscn" id="p49"]
+[ext_resource type="PackedScene" path="res://props/Farm_bushesyellow.tscn" id="p50"]
+[ext_resource type="PackedScene" path="res://props/Farm_carrot_.tscn" id="p51"]
+[ext_resource type="PackedScene" path="res://props/Farm_cart.tscn" id="p52"]
+[ext_resource type="PackedScene" path="res://props/Farm_cheese.tscn" id="p53"]
+[ext_resource type="PackedScene" path="res://props/Farm_cherry.tscn" id="p54"]
+[ext_resource type="PackedScene" path="res://props/Farm_corn.tscn" id="p55"]
+[ext_resource type="PackedScene" path="res://props/Farm_egg.tscn" id="p56"]
+[ext_resource type="PackedScene" path="res://props/Farm_eggplant.tscn" id="p57"]
+[ext_resource type="PackedScene" path="res://props/Farm_fence_.tscn" id="p58"]
+[ext_resource type="PackedScene" path="res://props/Farm_fenceclean.tscn" id="p59"]
+[ext_resource type="PackedScene" path="res://props/Farm_fencemiddle.tscn" id="p60"]
+[ext_resource type="PackedScene" path="res://props/Farm_fencemiddleclean.tscn" id="p61"]
+[ext_resource type="PackedScene" path="res://props/Farm_fencemiddlemirror.tscn" id="p62"]
+[ext_resource type="PackedScene" path="res://props/Farm_fish.tscn" id="p63"]
+[ext_resource type="PackedScene" path="res://props/Farm_fish_001.tscn" id="p64"]
+[ext_resource type="PackedScene" path="res://props/Farm_fish_002.tscn" id="p65"]
+[ext_resource type="PackedScene" path="res://props/Farm_fishalmostdead.tscn" id="p66"]
+[ext_resource type="PackedScene" path="res://props/Farm_fishalmostdead_001.tscn" id="p67"]
+[ext_resource type="PackedScene" path="res://props/Farm_fishalmostdead_002.tscn" id="p68"]
+[ext_resource type="PackedScene" path="res://props/Farm_fishdead.tscn" id="p69"]
+[ext_resource type="PackedScene" path="res://props/Farm_fishingrod.tscn" id="p70"]
+[ext_resource type="PackedScene" path="res://props/Farm_fishingrod_001.tscn" id="p71"]
+[ext_resource type="PackedScene" path="res://props/Farm_flower.tscn" id="p72"]
+[ext_resource type="PackedScene" path="res://props/Farm_flowerno.tscn" id="p73"]
+[ext_resource type="PackedScene" path="res://props/Farm_flowerstack.tscn" id="p74"]
+[ext_resource type="PackedScene" path="res://props/Farm_gas.tscn" id="p75"]
+[ext_resource type="PackedScene" path="res://props/Farm_grape.tscn" id="p76"]
+[ext_resource type="PackedScene" path="res://props/Farm_grapered.tscn" id="p77"]
+[ext_resource type="PackedScene" path="res://props/Farm_grassblade_001.tscn" id="p78"]
+[ext_resource type="PackedScene" path="res://props/Farm_grassblade_002.tscn" id="p79"]
+[ext_resource type="PackedScene" path="res://props/Farm_haystackcube.tscn" id="p80"]
+[ext_resource type="PackedScene" path="res://props/Farm_haystackround.tscn" id="p81"]
+[ext_resource type="PackedScene" path="res://props/Farm_haystackthick.tscn" id="p82"]
+[ext_resource type="PackedScene" path="res://props/Farm_haystackthin.tscn" id="p83"]
+[ext_resource type="PackedScene" path="res://props/Farm_leaf.tscn" id="p84"]
+[ext_resource type="PackedScene" path="res://props/Farm_mailbox.tscn" id="p85"]
+[ext_resource type="PackedScene" path="res://props/Farm_mango.tscn" id="p86"]
+[ext_resource type="PackedScene" path="res://props/Farm_pond.tscn" id="p87"]
+[ext_resource type="PackedScene" path="res://props/Farm_pondscene.tscn" id="p88"]
+[ext_resource type="PackedScene" path="res://props/Farm_rocks.tscn" id="p89"]
+[ext_resource type="PackedScene" path="res://props/Farm_rocks_001.tscn" id="p90"]
+[ext_resource type="PackedScene" path="res://props/Farm_rocks_002.tscn" id="p91"]
+[ext_resource type="PackedScene" path="res://props/Farm_rocks_003.tscn" id="p92"]
+[ext_resource type="PackedScene" path="res://props/Farm_rocks_004.tscn" id="p93"]
+[ext_resource type="PackedScene" path="res://props/Farm_rocks_005.tscn" id="p94"]
+[ext_resource type="PackedScene" path="res://props/Farm_rocks_006.tscn" id="p95"]
+[ext_resource type="PackedScene" path="res://props/Farm_rocks_007.tscn" id="p96"]
+[ext_resource type="PackedScene" path="res://props/Farm_shark.tscn" id="p97"]
+[ext_resource type="PackedScene" path="res://props/Farm_smelter_lv3.tscn" id="p98"]
+[ext_resource type="PackedScene" path="res://props/Farm_smelter_lvl1.tscn" id="p99"]
+[ext_resource type="PackedScene" path="res://props/Farm_smelter_lvl2.tscn" id="p100"]
+[ext_resource type="PackedScene" path="res://props/Farm_soil.tscn" id="p101"]
+[ext_resource type="PackedScene" path="res://props/Farm_sword.tscn" id="p102"]
+[ext_resource type="PackedScene" path="res://props/Farm_sword_001.tscn" id="p103"]
+[ext_resource type="PackedScene" path="res://props/Farm_tomato.tscn" id="p104"]
+[ext_resource type="PackedScene" path="res://props/Farm_tool.tscn" id="p105"]
+[ext_resource type="PackedScene" path="res://props/Farm_tool_001.tscn" id="p106"]
+[ext_resource type="PackedScene" path="res://props/Farm_tool_002.tscn" id="p107"]
+[ext_resource type="PackedScene" path="res://props/Farm_tool_003.tscn" id="p108"]
+[ext_resource type="PackedScene" path="res://props/Farm_tool_004.tscn" id="p109"]
+[ext_resource type="PackedScene" path="res://props/Farm_tool_005.tscn" id="p110"]
+[ext_resource type="PackedScene" path="res://props/Farm_towerlv2.tscn" id="p111"]
+[ext_resource type="PackedScene" path="res://props/Farm_towerlv3.tscn" id="p112"]
+[ext_resource type="PackedScene" path="res://props/Farm_towerlvl1.tscn" id="p113"]
+[ext_resource type="PackedScene" path="res://props/Farm_truck.tscn" id="p114"]
+[ext_resource type="PackedScene" path="res://props/Farm_truck_001.tscn" id="p115"]
+[ext_resource type="PackedScene" path="res://props/Farm_truck_002.tscn" id="p116"]
+[ext_resource type="PackedScene" path="res://props/Farm_waterdrop.tscn" id="p117"]
+[ext_resource type="PackedScene" path="res://props/Farm_waterdrop_001.tscn" id="p118"]
+[ext_resource type="PackedScene" path="res://props/Farm_waterdrop_002.tscn" id="p119"]
+[ext_resource type="PackedScene" path="res://props/Farm_wateringcan_001.tscn" id="p120"]
+[ext_resource type="PackedScene" path="res://props/Farm_wateringcan_003.tscn" id="p121"]
+[ext_resource type="PackedScene" path="res://props/Farm_wateringcan_005.tscn" id="p122"]
+[ext_resource type="PackedScene" path="res://props/Farm_wateringcanwflower.tscn" id="p123"]
+[ext_resource type="PackedScene" path="res://props/Farm_wateringcanwflower_001.tscn" id="p124"]
+[ext_resource type="PackedScene" path="res://props/Farm_wateringcanwflower_002.tscn" id="p125"]
+[ext_resource type="PackedScene" path="res://props/Farm_wheat.tscn" id="p126"]
+[ext_resource type="PackedScene" path="res://props/Farm_woodenbox.tscn" id="p127"]
+[ext_resource type="PackedScene" path="res://props/Farm_woodenbox_001.tscn" id="p128"]
+[ext_resource type="PackedScene" path="res://props/Farm_woodenboxvar.tscn" id="p129"]
+[ext_resource type="PackedScene" path="res://props/Farm_woodenmixer.tscn" id="p130"]
+[ext_resource type="PackedScene" path="res://props/Farm_yaourt.tscn" id="p131"]
+[ext_resource type="PackedScene" path="res://props/Farm_yaourt_001.tscn" id="p132"]
+[ext_resource type="PackedScene" path="res://props/Farm_yaourt_002.tscn" id="p133"]
+[ext_resource type="PackedScene" path="res://props/Fisher_Boat.tscn" id="p134"]
+[ext_resource type="PackedScene" path="res://props/Fishing_Rod.tscn" id="p135"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Books01.tscn" id="p136"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Books02.tscn" id="p137"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Books03.tscn" id="p138"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Books04.tscn" id="p139"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Bookshelf01.tscn" id="p140"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Chair01.tscn" id="p141"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Chair02.tscn" id="p142"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Chair03.tscn" id="p143"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Chair04.tscn" id="p144"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Chair05.tscn" id="p145"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Couch01.tscn" id="p146"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Plant01.tscn" id="p147"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Table01.tscn" id="p148"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Table02.tscn" id="p149"]
+[ext_resource type="PackedScene" path="res://props/HelicopterV1.tscn" id="p150"]
+[ext_resource type="PackedScene" path="res://props/HelicopterV2.tscn" id="p151"]
+[ext_resource type="PackedScene" path="res://props/JetskiV1.tscn" id="p152"]
+[ext_resource type="PackedScene" path="res://props/KA-F1000_FridgeSBS_V1.tscn" id="p153"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Dryer_V1.tscn" id="p154"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Fan_V1.tscn" id="p155"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Fridge_V1.tscn" id="p156"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Stove_V1.tscn" id="p157"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Washer_V1.tscn" id="p158"]
+[ext_resource type="PackedScene" path="res://props/KA-F800_Fan_V1.tscn" id="p159"]
+[ext_resource type="PackedScene" path="res://props/KAC-F1000_FridgeSBS_V1_FreezerDrawer.tscn" id="p160"]
+[ext_resource type="PackedScene" path="res://props/KAC-F1000_FridgeSBS_V1_FreezerDrawerHolder.tscn" id="p161"]
+[ext_resource type="PackedScene" path="res://props/KAC-F1000_FridgeSBS_V1_FreezerShelf.tscn" id="p162"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_Fridge_V1_Drawer.tscn" id="p163"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_Fridge_V1_DrawerHolder.tscn" id="p164"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_Fridge_V1_Shelf.tscn" id="p165"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_OvenTray_V2.tscn" id="p166"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_OvenTray_V3.tscn" id="p167"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_TrayGuide_V2.tscn" id="p168"]
+[ext_resource type="PackedScene" path="res://props/KAC_Micro_Tray_V2.tscn" id="p169"]
+[ext_resource type="PackedScene" path="res://props/KAC_Oven_Fan_V2.tscn" id="p170"]
+[ext_resource type="PackedScene" path="res://props/KAC_Oven_HeatingTop_V2.tscn" id="p171"]
+[ext_resource type="PackedScene" path="res://props/KA_Micro_V2.tscn" id="p172"]
+[ext_resource type="PackedScene" path="res://props/KayakPaddle.tscn" id="p173"]
+[ext_resource type="PackedScene" path="res://props/KayakV1.tscn" id="p174"]
+[ext_resource type="PackedScene" path="res://props/KayakV2.tscn" id="p175"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMESTRYtable.tscn" id="p176"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYbarrel.tscn" id="p177"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYcentrifuge.tscn" id="p178"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYchairwithwheels.tscn" id="p179"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYcork.tscn" id="p180"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYcupboard_3.tscn" id="p181"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYfireextinguisher.tscn" id="p182"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYglobe_1.tscn" id="p183"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYlabdemoscene.tscn" id="p184"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYmicroscope.tscn" id="p185"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYsolarsystem_9.tscn" id="p186"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYvial.tscn" id="p187"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYvial_001.tscn" id="p188"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYvial_002.tscn" id="p189"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYvial_003.tscn" id="p190"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYvial_004.tscn" id="p191"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYvial_005.tscn" id="p192"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYvial_006.tscn" id="p193"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYvial_007.tscn" id="p194"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYvialholders.tscn" id="p195"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHESMISTRYatoms.tscn" id="p196"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERchair.tscn" id="p197"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERdemoscene.tscn" id="p198"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERkeyboard.tscn" id="p199"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERmouse.tscn" id="p200"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERpc.tscn" id="p201"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERpcold.tscn" id="p202"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERprinter.tscn" id="p203"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERprojector.tscn" id="p204"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERrouter.tscn" id="p205"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERscreen.tscn" id="p206"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERscreenold.tscn" id="p207"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERtable.tscn" id="p208"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERusb.tscn" id="p209"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERusb_001.tscn" id="p210"]
+[ext_resource type="PackedScene" path="res://props/LightPlane.tscn" id="p211"]
+[ext_resource type="PackedScene" path="res://props/Paddle.tscn" id="p212"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAcake.tscn" id="p213"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAcake_001.tscn" id="p214"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAcake_002.tscn" id="p215"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAcaketray.tscn" id="p216"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAcan.tscn" id="p217"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAcan_001.tscn" id="p218"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAcan_002.tscn" id="p219"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAcan_003.tscn" id="p220"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAcarrot.tscn" id="p221"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAchair.tscn" id="p222"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAchair_001.tscn" id="p223"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAchair_002.tscn" id="p224"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAcoffemaker.tscn" id="p225"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAdemoscene.tscn" id="p226"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAonion.tscn" id="p227"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIApingpongtable.tscn" id="p228"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIApotato.tscn" id="p229"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAshowcasetable.tscn" id="p230"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAshowcasewood.tscn" id="p231"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAspringonion.tscn" id="p232"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAtable.tscn" id="p233"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAtomato.tscn" id="p234"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAtraycafet.tscn" id="p235"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAvendingmachine.tscn" id="p236"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAwallfloor.tscn" id="p237"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEbinderfolder.tscn" id="p238"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEbinderfolder_001.tscn" id="p239"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEbinderfolder_002.tscn" id="p240"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEchair.tscn" id="p241"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEdemoscene.tscn" id="p242"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEdesk.tscn" id="p243"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEdrawer.tscn" id="p244"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEnotebook.tscn" id="p245"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEnotebook_001.tscn" id="p246"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEnotebook_002.tscn" id="p247"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEpenholder.tscn" id="p248"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEpicture.tscn" id="p249"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEplant.tscn" id="p250"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEprincipalchair.tscn" id="p251"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEshelf.tscn" id="p252"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEtelephone.tscn" id="p253"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEwallsfloor.tscn" id="p254"]
+[ext_resource type="PackedScene" path="res://props/School_TV.tscn" id="p255"]
+[ext_resource type="PackedScene" path="res://props/School_TVNew.tscn" id="p256"]
+[ext_resource type="PackedScene" path="res://props/School_blackboardbig.tscn" id="p257"]
+[ext_resource type="PackedScene" path="res://props/School_blackboardbig_1.tscn" id="p258"]
+[ext_resource type="PackedScene" path="res://props/School_blackboardlittle.tscn" id="p259"]
+[ext_resource type="PackedScene" path="res://props/School_book.tscn" id="p260"]
+[ext_resource type="PackedScene" path="res://props/School_book_.tscn" id="p261"]
+[ext_resource type="PackedScene" path="res://props/School_book_001.tscn" id="p262"]
+[ext_resource type="PackedScene" path="res://props/School_book_002.tscn" id="p263"]
+[ext_resource type="PackedScene" path="res://props/School_book_003.tscn" id="p264"]
+[ext_resource type="PackedScene" path="res://props/School_book__001.tscn" id="p265"]
+[ext_resource type="PackedScene" path="res://props/School_book__002.tscn" id="p266"]
+[ext_resource type="PackedScene" path="res://props/School_book__003.tscn" id="p267"]
+[ext_resource type="PackedScene" path="res://props/School_book__004.tscn" id="p268"]
+[ext_resource type="PackedScene" path="res://props/School_chair.tscn" id="p269"]
+[ext_resource type="PackedScene" path="res://props/School_chairtable.tscn" id="p270"]
+[ext_resource type="PackedScene" path="res://props/School_chalk.tscn" id="p271"]
+[ext_resource type="PackedScene" path="res://props/School_chalk_001.tscn" id="p272"]
+[ext_resource type="PackedScene" path="res://props/School_chalk_002.tscn" id="p273"]
+[ext_resource type="PackedScene" path="res://props/School_chalkboard_sponge_.tscn" id="p274"]
+[ext_resource type="PackedScene" path="res://props/School_classroom_demoscene.tscn" id="p275"]
+[ext_resource type="PackedScene" path="res://props/School_compass_1.tscn" id="p276"]
+[ext_resource type="PackedScene" path="res://props/School_curtains.tscn" id="p277"]
+[ext_resource type="PackedScene" path="res://props/School_curtains_.tscn" id="p278"]
+[ext_resource type="PackedScene" path="res://props/School_desk.tscn" id="p279"]
+[ext_resource type="PackedScene" path="res://props/School_lamp.tscn" id="p280"]
+[ext_resource type="PackedScene" path="res://props/School_locker.tscn" id="p281"]
+[ext_resource type="PackedScene" path="res://props/School_locker_001.tscn" id="p282"]
+[ext_resource type="PackedScene" path="res://props/School_markers.tscn" id="p283"]
+[ext_resource type="PackedScene" path="res://props/School_markers_001.tscn" id="p284"]
+[ext_resource type="PackedScene" path="res://props/School_markers_002.tscn" id="p285"]
+[ext_resource type="PackedScene" path="res://props/School_pen.tscn" id="p286"]
+[ext_resource type="PackedScene" path="res://props/School_pen4colors.tscn" id="p287"]
+[ext_resource type="PackedScene" path="res://props/School_pen_001.tscn" id="p288"]
+[ext_resource type="PackedScene" path="res://props/School_pen_002.tscn" id="p289"]
+[ext_resource type="PackedScene" path="res://props/School_pencil.tscn" id="p290"]
+[ext_resource type="PackedScene" path="res://props/School_pencil_001.tscn" id="p291"]
+[ext_resource type="PackedScene" path="res://props/School_pencil_002.tscn" id="p292"]
+[ext_resource type="PackedScene" path="res://props/School_pencil_003.tscn" id="p293"]
+[ext_resource type="PackedScene" path="res://props/School_pencil_004.tscn" id="p294"]
+[ext_resource type="PackedScene" path="res://props/School_pencil_005.tscn" id="p295"]
+[ext_resource type="PackedScene" path="res://props/School_pencil_006.tscn" id="p296"]
+[ext_resource type="PackedScene" path="res://props/School_pencil_007.tscn" id="p297"]
+[ext_resource type="PackedScene" path="res://props/School_pencilcase.tscn" id="p298"]
+[ext_resource type="PackedScene" path="res://props/School_postit.tscn" id="p299"]
+[ext_resource type="PackedScene" path="res://props/School_postit_001.tscn" id="p300"]
+[ext_resource type="PackedScene" path="res://props/School_radio.tscn" id="p301"]
+[ext_resource type="PackedScene" path="res://props/School_schoolbus.tscn" id="p302"]
+[ext_resource type="PackedScene" path="res://props/School_scissors_1.tscn" id="p303"]
+[ext_resource type="PackedScene" path="res://props/School_shelf.tscn" id="p304"]
+[ext_resource type="PackedScene" path="res://props/School_shelf_001.tscn" id="p305"]
+[ext_resource type="PackedScene" path="res://props/School_shelfwithwheels.tscn" id="p306"]
+[ext_resource type="PackedScene" path="res://props/School_table.tscn" id="p307"]
+[ext_resource type="PackedScene" path="res://props/School_toiletbasictoilet.tscn" id="p308"]
+[ext_resource type="PackedScene" path="res://props/School_toiletdemoscene.tscn" id="p309"]
+[ext_resource type="PackedScene" path="res://props/School_toiletdoor.tscn" id="p310"]
+[ext_resource type="PackedScene" path="res://props/School_toiletpaper.tscn" id="p311"]
+[ext_resource type="PackedScene" path="res://props/School_toiletpaperhandler.tscn" id="p312"]
+[ext_resource type="PackedScene" path="res://props/School_toiletpartition.tscn" id="p313"]
+[ext_resource type="PackedScene" path="res://props/School_toiletpartition_001.tscn" id="p314"]
+[ext_resource type="PackedScene" path="res://props/School_toiletpipeforsink.tscn" id="p315"]
+[ext_resource type="PackedScene" path="res://props/School_toiletpipteforurinal.tscn" id="p316"]
+[ext_resource type="PackedScene" path="res://props/School_toiletpoop.tscn" id="p317"]
+[ext_resource type="PackedScene" path="res://props/School_toiletsink.tscn" id="p318"]
+[ext_resource type="PackedScene" path="res://props/School_toiletsoap.tscn" id="p319"]
+[ext_resource type="PackedScene" path="res://props/School_toiletsoap_001.tscn" id="p320"]
+[ext_resource type="PackedScene" path="res://props/School_toiletsoap_002.tscn" id="p321"]
+[ext_resource type="PackedScene" path="res://props/School_toiletsoapdish.tscn" id="p322"]
+[ext_resource type="PackedScene" path="res://props/School_toileturinal.tscn" id="p323"]
+[ext_resource type="PackedScene" path="res://props/School_toiletwallsfloor.tscn" id="p324"]
+[ext_resource type="PackedScene" path="res://props/School_toiletwater_1.tscn" id="p325"]
+[ext_resource type="PackedScene" path="res://props/School_wallsfloor.tscn" id="p326"]
+[ext_resource type="PackedScene" path="res://props/School_watch.tscn" id="p327"]
+[ext_resource type="PackedScene" path="res://props/Scout_Boat.tscn" id="p328"]
+[ext_resource type="PackedScene" path="res://props/Speed_Boat.tscn" id="p329"]
+[ext_resource type="PackedScene" path="res://props/Wood_BoatV1.tscn" id="p330"]
+[ext_resource type="PackedScene" path="res://props/Wood_BoatV2.tscn" id="p331"]
+[ext_resource type="PackedScene" path="res://all_assets_route_pad.tscn" id="pad"]
+[ext_resource type="PackedScene" path="res://checkpoint.tscn" id="checkpoint"]
+[ext_resource type="PackedScene" path="res://star.tscn" id="star"]
+
+[node name="AllAssetsSkyway" type="Node3D"]
+[node name="Pad_000" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 7.00, -0.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_000_ComPlaneV1" parent="." instance=ExtResource("p0")]
+position = Vector3(0.00, 7.45, -0.00)
+rotation_degrees = Vector3(0, 0, 0)
+[node name="Checkpoint_00" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(0.00, 7.70, -0.00)
+[node name="Star_00" parent="." instance=ExtResource("star")]
+position = Vector3(2.20, 9.40, 0.50)
+[node name="Pad_001" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 7.54, -4.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_001_Farm_apple" parent="." instance=ExtResource("p33")]
+position = Vector3(3.00, 7.99, -4.25)
+rotation_degrees = Vector3(1, 37, -1)
+[node name="Pad_002" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 8.08, -8.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_002_Furniture_Books01" parent="." instance=ExtResource("p136")]
+position = Vector3(5.20, 8.53, -8.50)
+rotation_degrees = Vector3(-1, 74, 0)
+[node name="Pad_003" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 8.62, -12.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_003_Lab_CHEMESTRYtable" parent="." instance=ExtResource("p176")]
+position = Vector3(2.40, 9.07, -12.75)
+rotation_degrees = Vector3(2, 111, 2)
+[node name="Pad_004" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 9.16, -17.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_004_School_CAFETERIAcake" parent="." instance=ExtResource("p213")]
+position = Vector3(-0.50, 9.61, -17.00)
+rotation_degrees = Vector3(-2, 148, -2)
+[node name="Pad_005" parent="." instance=ExtResource("pad")]
+position = Vector3(-1.81, 9.70, -21.25)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_005_ComPlaneV2" parent="." instance=ExtResource("p1")]
+position = Vector3(-1.81, 10.15, -21.25)
+rotation_degrees = Vector3(0, 185, 0)
+[node name="Pad_006" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 10.24, -25.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_006_Farm_applegreen" parent="." instance=ExtResource("p34")]
+position = Vector3(-5.00, 10.69, -25.50)
+rotation_degrees = Vector3(1, 222, -1)
+[node name="Pad_007" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 10.78, -29.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_007_Furniture_Books02" parent="." instance=ExtResource("p137")]
+position = Vector3(-2.20, 11.23, -29.75)
+rotation_degrees = Vector3(-1, 259, 0)
+[node name="Pad_008" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 11.32, -34.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_008_Lab_CHEMISTRYbarrel" parent="." instance=ExtResource("p177")]
+position = Vector3(1.00, 11.77, -34.00)
+rotation_degrees = Vector3(2, 296, 2)
+[node name="Pad_009" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 11.86, -38.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_009_School_CAFETERIAcake_001" parent="." instance=ExtResource("p214")]
+position = Vector3(3.80, 12.31, -38.25)
+rotation_degrees = Vector3(-2, 333, -2)
+[node name="Pad_010" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 12.40, -42.50)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_010_ComPlaneV3" parent="." instance=ExtResource("p2")]
+position = Vector3(0.00, 12.85, -42.50)
+rotation_degrees = Vector3(0, 10, 0)
+[node name="Pad_011" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 12.94, -46.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_011_Farm_banana" parent="." instance=ExtResource("p35")]
+position = Vector3(3.00, 13.39, -46.75)
+rotation_degrees = Vector3(1, 47, -1)
+[node name="Pad_012" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 13.48, -51.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_012_Furniture_Books03" parent="." instance=ExtResource("p138")]
+position = Vector3(5.20, 13.93, -51.00)
+rotation_degrees = Vector3(-1, 84, 0)
+[node name="Checkpoint_01" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(5.20, 14.18, -51.00)
+[node name="Star_01" parent="." instance=ExtResource("star")]
+position = Vector3(7.40, 15.88, -50.50)
+[node name="Pad_013" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 14.02, -55.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_013_Lab_CHEMISTRYcentrifuge" parent="." instance=ExtResource("p178")]
+position = Vector3(2.40, 14.47, -55.25)
+rotation_degrees = Vector3(2, 121, 2)
+[node name="Pad_014" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 14.56, -59.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_014_School_CAFETERIAcake_002" parent="." instance=ExtResource("p215")]
+position = Vector3(-0.50, 15.01, -59.50)
+rotation_degrees = Vector3(-2, 158, -2)
+[node name="Pad_015" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 15.10, -63.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_015_Done_Barril" parent="." instance=ExtResource("p3")]
+position = Vector3(-3.30, 15.55, -63.75)
+rotation_degrees = Vector3(0, 195, 1)
+[node name="Pad_016" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 15.64, -68.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_016_Farm_bananagreen" parent="." instance=ExtResource("p36")]
+position = Vector3(-5.00, 16.09, -68.00)
+rotation_degrees = Vector3(1, 232, -1)
+[node name="Pad_017" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 16.18, -72.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_017_Furniture_Books04" parent="." instance=ExtResource("p139")]
+position = Vector3(-2.20, 16.63, -72.25)
+rotation_degrees = Vector3(-1, 269, 0)
+[node name="Pad_018" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 16.72, -76.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_018_Lab_CHEMISTRYchairwithwheels" parent="." instance=ExtResource("p179")]
+position = Vector3(1.00, 17.17, -76.50)
+rotation_degrees = Vector3(2, 306, 2)
+[node name="Pad_019" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 17.26, -80.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_019_School_CAFETERIAcaketray" parent="." instance=ExtResource("p216")]
+position = Vector3(3.80, 17.71, -80.75)
+rotation_degrees = Vector3(-2, 343, -2)
+[node name="Pad_020" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 17.80, -85.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_020_Done_Battle_Axe" parent="." instance=ExtResource("p4")]
+position = Vector3(0.00, 18.25, -85.00)
+rotation_degrees = Vector3(0, 20, 1)
+[node name="Pad_021" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 18.34, -89.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_021_Farm_barnlvl1" parent="." instance=ExtResource("p37")]
+position = Vector3(3.00, 18.79, -89.25)
+rotation_degrees = Vector3(1, 57, -1)
+[node name="Pad_022" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 18.88, -93.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_022_Furniture_Bookshelf01" parent="." instance=ExtResource("p140")]
+position = Vector3(5.20, 19.33, -93.50)
+rotation_degrees = Vector3(-1, 94, 0)
+[node name="Pad_023" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 19.42, -97.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_023_Lab_CHEMISTRYcork" parent="." instance=ExtResource("p180")]
+position = Vector3(2.40, 19.87, -97.75)
+rotation_degrees = Vector3(2, 131, 2)
+[node name="Pad_024" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 19.96, -102.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_024_School_CAFETERIAcan" parent="." instance=ExtResource("p217")]
+position = Vector3(-0.50, 20.41, -102.00)
+rotation_degrees = Vector3(-2, 168, -2)
+[node name="Checkpoint_02" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(-0.50, 20.66, -102.00)
+[node name="Star_02" parent="." instance=ExtResource("star")]
+position = Vector3(1.70, 22.36, -101.50)
+[node name="Pad_025" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 20.50, -106.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_025_Done_Chair" parent="." instance=ExtResource("p5")]
+position = Vector3(-3.30, 20.95, -106.25)
+rotation_degrees = Vector3(0, 205, 1)
+[node name="Pad_026" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 21.04, -110.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_026_Farm_barnlvl2" parent="." instance=ExtResource("p38")]
+position = Vector3(-5.00, 21.49, -110.50)
+rotation_degrees = Vector3(1, 242, -1)
+[node name="Pad_027" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 21.58, -114.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_027_Furniture_Chair01" parent="." instance=ExtResource("p141")]
+position = Vector3(-2.20, 22.03, -114.75)
+rotation_degrees = Vector3(-1, 279, 0)
+[node name="Pad_028" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 22.12, -119.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_028_Lab_CHEMISTRYcupboard_3" parent="." instance=ExtResource("p181")]
+position = Vector3(1.00, 22.57, -119.00)
+rotation_degrees = Vector3(2, 316, 2)
+[node name="Pad_029" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 22.66, -123.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_029_School_CAFETERIAcan_001" parent="." instance=ExtResource("p218")]
+position = Vector3(3.80, 23.11, -123.25)
+rotation_degrees = Vector3(-2, 353, -2)
+[node name="Pad_030" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 23.20, -127.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_030_Done_Chope_A" parent="." instance=ExtResource("p6")]
+position = Vector3(0.00, 23.65, -127.50)
+rotation_degrees = Vector3(0, 30, 1)
+[node name="Pad_031" parent="." instance=ExtResource("pad")]
+position = Vector3(1.65, 23.74, -131.75)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_031_Farm_barnlvl3" parent="." instance=ExtResource("p39")]
+position = Vector3(1.65, 24.19, -131.75)
+rotation_degrees = Vector3(0, 67, 0)
+[node name="Pad_032" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 24.28, -136.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_032_Furniture_Chair02" parent="." instance=ExtResource("p142")]
+position = Vector3(5.20, 24.73, -136.00)
+rotation_degrees = Vector3(-1, 104, 0)
+[node name="Pad_033" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 24.82, -140.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_033_Lab_CHEMISTRYfireextinguisher" parent="." instance=ExtResource("p182")]
+position = Vector3(2.40, 25.27, -140.25)
+rotation_degrees = Vector3(2, 141, 2)
+[node name="Pad_034" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 25.36, -144.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_034_School_CAFETERIAcan_002" parent="." instance=ExtResource("p219")]
+position = Vector3(-0.50, 25.81, -144.50)
+rotation_degrees = Vector3(-2, 178, -2)
+[node name="Pad_035" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 25.90, -148.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_035_Done_Chope_B" parent="." instance=ExtResource("p7")]
+position = Vector3(-3.30, 26.35, -148.75)
+rotation_degrees = Vector3(0, 215, 1)
+[node name="Pad_036" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 26.44, -153.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_036_Farm_barrel" parent="." instance=ExtResource("p40")]
+position = Vector3(-5.00, 26.89, -153.00)
+rotation_degrees = Vector3(1, 252, -1)
+[node name="Checkpoint_03" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(-5.00, 27.14, -153.00)
+[node name="Star_03" parent="." instance=ExtResource("star")]
+position = Vector3(-2.80, 28.84, -152.50)
+[node name="Pad_037" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 26.98, -157.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_037_Furniture_Chair03" parent="." instance=ExtResource("p143")]
+position = Vector3(-2.20, 27.43, -157.25)
+rotation_degrees = Vector3(-1, 289, 0)
+[node name="Pad_038" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 27.52, -161.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_038_Lab_CHEMISTRYglobe_1" parent="." instance=ExtResource("p183")]
+position = Vector3(1.00, 27.97, -161.50)
+rotation_degrees = Vector3(2, 326, 2)
+[node name="Pad_039" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 28.06, -165.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_039_School_CAFETERIAcan_003" parent="." instance=ExtResource("p220")]
+position = Vector3(3.80, 28.51, -165.75)
+rotation_degrees = Vector3(-2, 3, -2)
+[node name="Pad_040" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 28.60, -170.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_040_Done_Cup" parent="." instance=ExtResource("p8")]
+position = Vector3(0.00, 29.05, -170.00)
+rotation_degrees = Vector3(0, 40, 1)
+[node name="Pad_041" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 29.14, -174.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_041_Farm_benchlittle" parent="." instance=ExtResource("p41")]
+position = Vector3(3.00, 29.59, -174.25)
+rotation_degrees = Vector3(1, 77, -1)
+[node name="Pad_042" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 29.68, -178.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_042_Furniture_Chair04" parent="." instance=ExtResource("p144")]
+position = Vector3(5.20, 30.13, -178.50)
+rotation_degrees = Vector3(-1, 114, 0)
+[node name="Pad_043" parent="." instance=ExtResource("pad")]
+position = Vector3(1.32, 30.22, -182.75)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_043_Lab_CHEMISTRYlabdemoscene" parent="." instance=ExtResource("p184")]
+position = Vector3(1.32, 30.67, -182.75)
+rotation_degrees = Vector3(0, 151, 0)
+[node name="Pad_044" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 30.76, -187.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_044_School_CAFETERIAcarrot" parent="." instance=ExtResource("p221")]
+position = Vector3(-0.50, 31.21, -187.00)
+rotation_degrees = Vector3(-2, 188, -2)
+[node name="Pad_045" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 31.30, -191.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_045_Done_Lamp" parent="." instance=ExtResource("p9")]
+position = Vector3(-3.30, 31.75, -191.25)
+rotation_degrees = Vector3(0, 225, 1)
+[node name="Pad_046" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 31.84, -195.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_046_Farm_billboard" parent="." instance=ExtResource("p42")]
+position = Vector3(-5.00, 32.29, -195.50)
+rotation_degrees = Vector3(1, 262, -1)
+[node name="Pad_047" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 32.38, -199.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_047_Furniture_Chair05" parent="." instance=ExtResource("p145")]
+position = Vector3(-2.20, 32.83, -199.75)
+rotation_degrees = Vector3(-1, 299, 0)
+[node name="Pad_048" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 32.92, -204.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_048_Lab_CHEMISTRYmicroscope" parent="." instance=ExtResource("p185")]
+position = Vector3(1.00, 33.37, -204.00)
+rotation_degrees = Vector3(2, 336, 2)
+[node name="Checkpoint_04" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(1.00, 33.62, -204.00)
+[node name="Star_04" parent="." instance=ExtResource("star")]
+position = Vector3(3.20, 35.32, -203.50)
+[node name="Pad_049" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 33.46, -208.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_049_School_CAFETERIAchair" parent="." instance=ExtResource("p222")]
+position = Vector3(3.80, 33.91, -208.25)
+rotation_degrees = Vector3(-2, 13, -2)
+[node name="Pad_050" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 34.00, -212.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_050_Done_Panel" parent="." instance=ExtResource("p10")]
+position = Vector3(0.00, 34.45, -212.50)
+rotation_degrees = Vector3(0, 50, 1)
+[node name="Pad_051" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 34.54, -216.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_051_Farm_bucket" parent="." instance=ExtResource("p43")]
+position = Vector3(3.00, 34.99, -216.75)
+rotation_degrees = Vector3(1, 87, -1)
+[node name="Pad_052" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 35.08, -221.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_052_Furniture_Couch01" parent="." instance=ExtResource("p146")]
+position = Vector3(5.20, 35.53, -221.00)
+rotation_degrees = Vector3(-1, 124, 0)
+[node name="Pad_053" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 35.62, -225.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_053_Lab_CHEMISTRYsolarsystem_9" parent="." instance=ExtResource("p186")]
+position = Vector3(2.40, 36.07, -225.25)
+rotation_degrees = Vector3(2, 161, 2)
+[node name="Pad_054" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 36.16, -229.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_054_School_CAFETERIAchair_001" parent="." instance=ExtResource("p223")]
+position = Vector3(-0.50, 36.61, -229.50)
+rotation_degrees = Vector3(-2, 198, -2)
+[node name="Pad_055" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 36.70, -233.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_055_Done_Pole" parent="." instance=ExtResource("p11")]
+position = Vector3(-3.30, 37.15, -233.75)
+rotation_degrees = Vector3(0, 235, 1)
+[node name="Pad_056" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 37.24, -238.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_056_Farm_bucketwooden" parent="." instance=ExtResource("p44")]
+position = Vector3(-5.00, 37.69, -238.00)
+rotation_degrees = Vector3(1, 272, -1)
+[node name="Pad_057" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 37.78, -242.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_057_Furniture_Plant01" parent="." instance=ExtResource("p147")]
+position = Vector3(-2.20, 38.23, -242.25)
+rotation_degrees = Vector3(-1, 309, 0)
+[node name="Pad_058" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 38.32, -246.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_058_Lab_CHEMISTRYvial" parent="." instance=ExtResource("p187")]
+position = Vector3(1.00, 38.77, -246.50)
+rotation_degrees = Vector3(2, 346, 2)
+[node name="Pad_059" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 38.86, -250.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_059_School_CAFETERIAchair_002" parent="." instance=ExtResource("p224")]
+position = Vector3(3.80, 39.31, -250.75)
+rotation_degrees = Vector3(-2, 23, -2)
+[node name="Pad_060" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 39.40, -255.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_060_Done_Rock_1" parent="." instance=ExtResource("p12")]
+position = Vector3(0.00, 39.85, -255.00)
+rotation_degrees = Vector3(0, 60, 1)
+[node name="Checkpoint_05" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(0.00, 40.10, -255.00)
+[node name="Star_05" parent="." instance=ExtResource("star")]
+position = Vector3(2.20, 41.80, -254.50)
+[node name="Pad_061" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 39.94, -259.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_061_Farm_bushescubegreen" parent="." instance=ExtResource("p45")]
+position = Vector3(3.00, 40.39, -259.25)
+rotation_degrees = Vector3(1, 97, -1)
+[node name="Pad_062" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 40.48, -263.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_062_Furniture_Table01" parent="." instance=ExtResource("p148")]
+position = Vector3(5.20, 40.93, -263.50)
+rotation_degrees = Vector3(-1, 134, 0)
+[node name="Pad_063" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 41.02, -267.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_063_Lab_CHEMISTRYvial_001" parent="." instance=ExtResource("p188")]
+position = Vector3(2.40, 41.47, -267.75)
+rotation_degrees = Vector3(2, 171, 2)
+[node name="Pad_064" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 41.56, -272.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_064_School_CAFETERIAcoffemaker" parent="." instance=ExtResource("p225")]
+position = Vector3(-0.50, 42.01, -272.00)
+rotation_degrees = Vector3(-2, 208, -2)
+[node name="Pad_065" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 42.10, -276.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_065_Done_Rock_10" parent="." instance=ExtResource("p13")]
+position = Vector3(-3.30, 42.55, -276.25)
+rotation_degrees = Vector3(0, 245, 1)
+[node name="Pad_066" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 42.64, -280.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_066_Farm_bushescubeyellow" parent="." instance=ExtResource("p46")]
+position = Vector3(-5.00, 43.09, -280.50)
+rotation_degrees = Vector3(1, 282, -1)
+[node name="Pad_067" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 43.18, -284.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_067_Furniture_Table02" parent="." instance=ExtResource("p149")]
+position = Vector3(-2.20, 43.63, -284.75)
+rotation_degrees = Vector3(-1, 319, 0)
+[node name="Pad_068" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 43.72, -289.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_068_Lab_CHEMISTRYvial_002" parent="." instance=ExtResource("p189")]
+position = Vector3(1.00, 44.17, -289.00)
+rotation_degrees = Vector3(2, 356, 2)
+[node name="Pad_069" parent="." instance=ExtResource("pad")]
+position = Vector3(2.09, 44.26, -293.25)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_069_School_CAFETERIAdemoscene" parent="." instance=ExtResource("p226")]
+position = Vector3(2.09, 44.71, -293.25)
+rotation_degrees = Vector3(0, 33, 0)
+[node name="Pad_070" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 44.80, -297.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_070_Done_Rock_2" parent="." instance=ExtResource("p14")]
+position = Vector3(0.00, 45.25, -297.50)
+rotation_degrees = Vector3(0, 70, 1)
+[node name="Pad_071" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 45.34, -301.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_071_Farm_bushesgreen" parent="." instance=ExtResource("p47")]
+position = Vector3(3.00, 45.79, -301.75)
+rotation_degrees = Vector3(1, 107, -1)
+[node name="Pad_072" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 45.88, -306.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_072_Lab_CHEMISTRYvial_003" parent="." instance=ExtResource("p190")]
+position = Vector3(5.20, 46.33, -306.00)
+rotation_degrees = Vector3(-1, 144, 0)
+[node name="Checkpoint_06" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(5.20, 46.58, -306.00)
+[node name="Star_06" parent="." instance=ExtResource("star")]
+position = Vector3(7.40, 48.28, -305.50)
+[node name="Pad_073" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 46.42, -310.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_073_School_CAFETERIAonion" parent="." instance=ExtResource("p227")]
+position = Vector3(2.40, 46.87, -310.25)
+rotation_degrees = Vector3(2, 181, 2)
+[node name="Pad_074" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 46.96, -314.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_074_Done_Rock_3" parent="." instance=ExtResource("p15")]
+position = Vector3(-0.50, 47.41, -314.50)
+rotation_degrees = Vector3(-2, 218, -2)
+[node name="Pad_075" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 47.50, -318.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_075_Farm_bushesportalgreen" parent="." instance=ExtResource("p48")]
+position = Vector3(-3.30, 47.95, -318.75)
+rotation_degrees = Vector3(0, 255, 1)
+[node name="Pad_076" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 48.04, -323.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_076_Lab_CHEMISTRYvial_004" parent="." instance=ExtResource("p191")]
+position = Vector3(-5.00, 48.49, -323.00)
+rotation_degrees = Vector3(1, 292, -1)
+[node name="Pad_077" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 48.58, -327.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_077_School_CAFETERIApingpongtable" parent="." instance=ExtResource("p228")]
+position = Vector3(-2.20, 49.03, -327.25)
+rotation_degrees = Vector3(-1, 329, 0)
+[node name="Pad_078" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 49.12, -331.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_078_Done_Rock_4" parent="." instance=ExtResource("p16")]
+position = Vector3(1.00, 49.57, -331.50)
+rotation_degrees = Vector3(2, 6, 2)
+[node name="Pad_079" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 49.66, -335.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_079_Farm_bushesportalyellow" parent="." instance=ExtResource("p49")]
+position = Vector3(3.80, 50.11, -335.75)
+rotation_degrees = Vector3(-2, 43, -2)
+[node name="Pad_080" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 50.20, -340.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_080_Lab_CHEMISTRYvial_005" parent="." instance=ExtResource("p192")]
+position = Vector3(0.00, 50.65, -340.00)
+rotation_degrees = Vector3(0, 80, 1)
+[node name="Pad_081" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 50.74, -344.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_081_School_CAFETERIApotato" parent="." instance=ExtResource("p229")]
+position = Vector3(3.00, 51.19, -344.25)
+rotation_degrees = Vector3(1, 117, -1)
+[node name="Pad_082" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 51.28, -348.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_082_Done_Rock_5" parent="." instance=ExtResource("p17")]
+position = Vector3(5.20, 51.73, -348.50)
+rotation_degrees = Vector3(-1, 154, 0)
+[node name="Pad_083" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 51.82, -352.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_083_Farm_bushesyellow" parent="." instance=ExtResource("p50")]
+position = Vector3(2.40, 52.27, -352.75)
+rotation_degrees = Vector3(2, 191, 2)
+[node name="Pad_084" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 52.36, -357.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_084_Lab_CHEMISTRYvial_006" parent="." instance=ExtResource("p193")]
+position = Vector3(-0.50, 52.81, -357.00)
+rotation_degrees = Vector3(-2, 228, -2)
+[node name="Checkpoint_07" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(-0.50, 53.06, -357.00)
+[node name="Star_07" parent="." instance=ExtResource("star")]
+position = Vector3(1.70, 54.76, -356.50)
+[node name="Pad_085" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 52.90, -361.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_085_School_CAFETERIAshowcasetable" parent="." instance=ExtResource("p230")]
+position = Vector3(-3.30, 53.35, -361.25)
+rotation_degrees = Vector3(0, 265, 1)
+[node name="Pad_086" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 53.44, -365.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_086_Done_Rock_6" parent="." instance=ExtResource("p18")]
+position = Vector3(-5.00, 53.89, -365.50)
+rotation_degrees = Vector3(1, 302, -1)
+[node name="Pad_087" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 53.98, -369.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_087_Farm_carrot_" parent="." instance=ExtResource("p51")]
+position = Vector3(-2.20, 54.43, -369.75)
+rotation_degrees = Vector3(-1, 339, 0)
+[node name="Pad_088" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 54.52, -374.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_088_Lab_CHEMISTRYvial_007" parent="." instance=ExtResource("p194")]
+position = Vector3(1.00, 54.97, -374.00)
+rotation_degrees = Vector3(2, 16, 2)
+[node name="Pad_089" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 55.06, -378.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_089_School_CAFETERIAshowcasewood" parent="." instance=ExtResource("p231")]
+position = Vector3(3.80, 55.51, -378.25)
+rotation_degrees = Vector3(-2, 53, -2)
+[node name="Pad_090" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 55.60, -382.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_090_Done_Rock_7" parent="." instance=ExtResource("p19")]
+position = Vector3(0.00, 56.05, -382.50)
+rotation_degrees = Vector3(0, 90, 1)
+[node name="Pad_091" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 56.14, -386.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_091_Farm_cart" parent="." instance=ExtResource("p52")]
+position = Vector3(3.00, 56.59, -386.75)
+rotation_degrees = Vector3(1, 127, -1)
+[node name="Pad_092" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 56.68, -391.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_092_Lab_CHEMISTRYvialholders" parent="." instance=ExtResource("p195")]
+position = Vector3(5.20, 57.13, -391.00)
+rotation_degrees = Vector3(-1, 164, 0)
+[node name="Pad_093" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 57.22, -395.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_093_School_CAFETERIAspringonion" parent="." instance=ExtResource("p232")]
+position = Vector3(2.40, 57.67, -395.25)
+rotation_degrees = Vector3(2, 201, 2)
+[node name="Pad_094" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 57.76, -399.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_094_Done_Rock_8" parent="." instance=ExtResource("p20")]
+position = Vector3(-0.50, 58.21, -399.50)
+rotation_degrees = Vector3(-2, 238, -2)
+[node name="Pad_095" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 58.30, -403.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_095_Farm_cheese" parent="." instance=ExtResource("p53")]
+position = Vector3(-3.30, 58.75, -403.75)
+rotation_degrees = Vector3(0, 275, 1)
+[node name="Pad_096" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 58.84, -408.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_096_Lab_CHESMISTRYatoms" parent="." instance=ExtResource("p196")]
+position = Vector3(-5.00, 59.29, -408.00)
+rotation_degrees = Vector3(1, 312, -1)
+[node name="Checkpoint_08" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(-5.00, 59.54, -408.00)
+[node name="Star_08" parent="." instance=ExtResource("star")]
+position = Vector3(-2.80, 61.24, -407.50)
+[node name="Pad_097" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 59.38, -412.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_097_School_CAFETERIAtable" parent="." instance=ExtResource("p233")]
+position = Vector3(-2.20, 59.83, -412.25)
+rotation_degrees = Vector3(-1, 349, 0)
+[node name="Pad_098" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 59.92, -416.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_098_Done_Rock_9" parent="." instance=ExtResource("p21")]
+position = Vector3(1.00, 60.37, -416.50)
+rotation_degrees = Vector3(2, 26, 2)
+[node name="Pad_099" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 60.46, -420.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_099_Farm_cherry" parent="." instance=ExtResource("p54")]
+position = Vector3(3.80, 60.91, -420.75)
+rotation_degrees = Vector3(-2, 63, -2)
+[node name="Pad_100" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 61.00, -425.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_100_Lab_COMPUTERchair" parent="." instance=ExtResource("p197")]
+position = Vector3(0.00, 61.45, -425.00)
+rotation_degrees = Vector3(0, 100, 1)
+[node name="Pad_101" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 61.54, -429.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_101_School_CAFETERIAtomato" parent="." instance=ExtResource("p234")]
+position = Vector3(3.00, 61.99, -429.25)
+rotation_degrees = Vector3(1, 137, -1)
+[node name="Pad_102" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 62.08, -433.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_102_Done_Seat" parent="." instance=ExtResource("p22")]
+position = Vector3(5.20, 62.53, -433.50)
+rotation_degrees = Vector3(-1, 174, 0)
+[node name="Pad_103" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 62.62, -437.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_103_Farm_corn" parent="." instance=ExtResource("p55")]
+position = Vector3(2.40, 63.07, -437.75)
+rotation_degrees = Vector3(2, 211, 2)
+[node name="Pad_104" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.28, 63.16, -442.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_104_Lab_COMPUTERdemoscene" parent="." instance=ExtResource("p198")]
+position = Vector3(-0.28, 63.61, -442.00)
+rotation_degrees = Vector3(0, 248, 0)
+[node name="Pad_105" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 63.70, -446.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_105_School_CAFETERIAtraycafet" parent="." instance=ExtResource("p235")]
+position = Vector3(-3.30, 64.15, -446.25)
+rotation_degrees = Vector3(0, 285, 1)
+[node name="Pad_106" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 64.24, -450.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_106_Done_Shield" parent="." instance=ExtResource("p23")]
+position = Vector3(-5.00, 64.69, -450.50)
+rotation_degrees = Vector3(1, 322, -1)
+[node name="Pad_107" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 64.78, -454.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_107_Farm_egg" parent="." instance=ExtResource("p56")]
+position = Vector3(-2.20, 65.23, -454.75)
+rotation_degrees = Vector3(-1, 359, 0)
+[node name="Pad_108" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 65.32, -459.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_108_Lab_COMPUTERkeyboard" parent="." instance=ExtResource("p199")]
+position = Vector3(1.00, 65.77, -459.00)
+rotation_degrees = Vector3(2, 36, 2)
+[node name="Checkpoint_09" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(1.00, 66.02, -459.00)
+[node name="Star_09" parent="." instance=ExtResource("star")]
+position = Vector3(3.20, 67.72, -458.50)
+[node name="Pad_109" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 65.86, -463.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_109_School_CAFETERIAvendingmachine" parent="." instance=ExtResource("p236")]
+position = Vector3(3.80, 66.31, -463.25)
+rotation_degrees = Vector3(-2, 73, -2)
+[node name="Pad_110" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 66.40, -467.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_110_Done_Signal" parent="." instance=ExtResource("p24")]
+position = Vector3(0.00, 66.85, -467.50)
+rotation_degrees = Vector3(0, 110, 1)
+[node name="Pad_111" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 66.94, -471.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_111_Farm_eggplant" parent="." instance=ExtResource("p57")]
+position = Vector3(3.00, 67.39, -471.75)
+rotation_degrees = Vector3(1, 147, -1)
+[node name="Pad_112" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 67.48, -476.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_112_Lab_COMPUTERmouse" parent="." instance=ExtResource("p200")]
+position = Vector3(5.20, 67.93, -476.00)
+rotation_degrees = Vector3(-1, 184, 0)
+[node name="Pad_113" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 68.02, -480.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_113_School_CAFETERIAwallfloor" parent="." instance=ExtResource("p237")]
+position = Vector3(2.40, 68.47, -480.25)
+rotation_degrees = Vector3(2, 221, 2)
+[node name="Pad_114" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 68.56, -484.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_114_Done_Stone" parent="." instance=ExtResource("p25")]
+position = Vector3(-0.50, 69.01, -484.50)
+rotation_degrees = Vector3(-2, 258, -2)
+[node name="Pad_115" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 69.10, -488.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_115_Farm_fence_" parent="." instance=ExtResource("p58")]
+position = Vector3(-3.30, 69.55, -488.75)
+rotation_degrees = Vector3(0, 295, 1)
+[node name="Pad_116" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 69.64, -493.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_116_Lab_COMPUTERpc" parent="." instance=ExtResource("p201")]
+position = Vector3(-5.00, 70.09, -493.00)
+rotation_degrees = Vector3(1, 332, -1)
+[node name="Pad_117" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 70.18, -497.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_117_School_PRINCIPALOFFICEbinderfolder" parent="." instance=ExtResource("p238")]
+position = Vector3(-2.20, 70.63, -497.25)
+rotation_degrees = Vector3(-1, 9, 0)
+[node name="Pad_118" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 70.72, -501.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_118_Done_Sword" parent="." instance=ExtResource("p26")]
+position = Vector3(1.00, 71.17, -501.50)
+rotation_degrees = Vector3(2, 46, 2)
+[node name="Pad_119" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 71.26, -505.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_119_Farm_fenceclean" parent="." instance=ExtResource("p59")]
+position = Vector3(3.80, 71.71, -505.75)
+rotation_degrees = Vector3(-2, 83, -2)
+[node name="Pad_120" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 71.80, -510.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_120_Lab_COMPUTERpcold" parent="." instance=ExtResource("p202")]
+position = Vector3(0.00, 72.25, -510.00)
+rotation_degrees = Vector3(0, 120, 1)
+[node name="Checkpoint_10" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(0.00, 72.50, -510.00)
+[node name="Star_10" parent="." instance=ExtResource("star")]
+position = Vector3(2.20, 74.20, -509.50)
+[node name="Pad_121" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 72.34, -514.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_121_School_PRINCIPALOFFICEbinderfolder_001" parent="." instance=ExtResource("p239")]
+position = Vector3(3.00, 72.79, -514.25)
+rotation_degrees = Vector3(1, 157, -1)
+[node name="Pad_122" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 72.88, -518.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_122_Done_Table" parent="." instance=ExtResource("p27")]
+position = Vector3(5.20, 73.33, -518.50)
+rotation_degrees = Vector3(-1, 194, 0)
+[node name="Pad_123" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 73.42, -522.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_123_Farm_fencemiddle" parent="." instance=ExtResource("p60")]
+position = Vector3(2.40, 73.87, -522.75)
+rotation_degrees = Vector3(2, 231, 2)
+[node name="Pad_124" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 73.96, -527.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_124_Lab_COMPUTERprinter" parent="." instance=ExtResource("p203")]
+position = Vector3(-0.50, 74.41, -527.00)
+rotation_degrees = Vector3(-2, 268, -2)
+[node name="Pad_125" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 74.50, -531.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_125_School_PRINCIPALOFFICEbinderfolder_002" parent="." instance=ExtResource("p240")]
+position = Vector3(-3.30, 74.95, -531.25)
+rotation_degrees = Vector3(0, 305, 1)
+[node name="Pad_126" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 75.04, -535.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_126_Done_Wood_Axe" parent="." instance=ExtResource("p28")]
+position = Vector3(-5.00, 75.49, -535.50)
+rotation_degrees = Vector3(1, 342, -1)
+[node name="Pad_127" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 75.58, -539.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_127_Farm_fencemiddleclean" parent="." instance=ExtResource("p61")]
+position = Vector3(-2.20, 76.03, -539.75)
+rotation_degrees = Vector3(-1, 19, 0)
+[node name="Pad_128" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 76.12, -544.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_128_Lab_COMPUTERprojector" parent="." instance=ExtResource("p204")]
+position = Vector3(1.00, 76.57, -544.00)
+rotation_degrees = Vector3(2, 56, 2)
+[node name="Pad_129" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 76.66, -548.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_129_School_PRINCIPALOFFICEchair" parent="." instance=ExtResource("p241")]
+position = Vector3(3.80, 77.11, -548.25)
+rotation_degrees = Vector3(-2, 93, -2)
+[node name="Pad_130" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 77.20, -552.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_130_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(0.00, 77.65, -552.50)
+rotation_degrees = Vector3(0, 130, 1)
+[node name="Pad_131" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 77.74, -556.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_131_Farm_fencemiddlemirror" parent="." instance=ExtResource("p62")]
+position = Vector3(3.00, 78.19, -556.75)
+rotation_degrees = Vector3(1, 167, -1)
+[node name="Pad_132" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 78.28, -561.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_132_Lab_COMPUTERrouter" parent="." instance=ExtResource("p205")]
+position = Vector3(5.20, 78.73, -561.00)
+rotation_degrees = Vector3(-1, 204, 0)
+[node name="Checkpoint_11" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(5.20, 78.98, -561.00)
+[node name="Star_11" parent="." instance=ExtResource("star")]
+position = Vector3(7.40, 80.68, -560.50)
+[node name="Pad_133" parent="." instance=ExtResource("pad")]
+position = Vector3(1.32, 78.82, -565.25)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_133_School_PRINCIPALOFFICEdemoscene" parent="." instance=ExtResource("p242")]
+position = Vector3(1.32, 79.27, -565.25)
+rotation_degrees = Vector3(0, 241, 0)
+[node name="Pad_134" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 79.36, -569.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_134_Done_Wood_Plank_B" parent="." instance=ExtResource("p30")]
+position = Vector3(-0.50, 79.81, -569.50)
+rotation_degrees = Vector3(-2, 278, -2)
+[node name="Pad_135" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 79.90, -573.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_135_Farm_fish" parent="." instance=ExtResource("p63")]
+position = Vector3(-3.30, 80.35, -573.75)
+rotation_degrees = Vector3(0, 315, 1)
+[node name="Pad_136" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 80.44, -578.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_136_Lab_COMPUTERscreen" parent="." instance=ExtResource("p206")]
+position = Vector3(-5.00, 80.89, -578.00)
+rotation_degrees = Vector3(1, 352, -1)
+[node name="Pad_137" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 80.98, -582.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_137_School_PRINCIPALOFFICEdesk" parent="." instance=ExtResource("p243")]
+position = Vector3(-2.20, 81.43, -582.25)
+rotation_degrees = Vector3(-1, 29, 0)
+[node name="Pad_138" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 81.52, -586.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_138_Done_Wood_Trunk" parent="." instance=ExtResource("p31")]
+position = Vector3(1.00, 81.97, -586.50)
+rotation_degrees = Vector3(2, 66, 2)
+[node name="Pad_139" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 82.06, -590.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_139_Farm_fish_001" parent="." instance=ExtResource("p64")]
+position = Vector3(3.80, 82.51, -590.75)
+rotation_degrees = Vector3(-2, 103, -2)
+[node name="Pad_140" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 82.60, -595.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_140_Lab_COMPUTERscreenold" parent="." instance=ExtResource("p207")]
+position = Vector3(0.00, 83.05, -595.00)
+rotation_degrees = Vector3(0, 140, 1)
+[node name="Pad_141" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 83.14, -599.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_141_School_PRINCIPALOFFICEdrawer" parent="." instance=ExtResource("p244")]
+position = Vector3(3.00, 83.59, -599.25)
+rotation_degrees = Vector3(1, 177, -1)
+[node name="Pad_142" parent="." instance=ExtResource("pad")]
+position = Vector3(2.86, 83.68, -603.50)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_142_EaglePlane" parent="." instance=ExtResource("p32")]
+position = Vector3(2.86, 84.13, -603.50)
+rotation_degrees = Vector3(0, 214, 0)
+[node name="Pad_143" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 84.22, -607.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_143_Farm_fish_002" parent="." instance=ExtResource("p65")]
+position = Vector3(2.40, 84.67, -607.75)
+rotation_degrees = Vector3(2, 251, 2)
+[node name="Pad_144" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 84.76, -612.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_144_Lab_COMPUTERtable" parent="." instance=ExtResource("p208")]
+position = Vector3(-0.50, 85.21, -612.00)
+rotation_degrees = Vector3(-2, 288, -2)
+[node name="Checkpoint_12" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(-0.50, 85.46, -612.00)
+[node name="Star_12" parent="." instance=ExtResource("star")]
+position = Vector3(1.70, 87.16, -611.50)
+[node name="Pad_145" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 85.30, -616.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_145_School_PRINCIPALOFFICEnotebook" parent="." instance=ExtResource("p245")]
+position = Vector3(-3.30, 85.75, -616.25)
+rotation_degrees = Vector3(0, 325, 1)
+[node name="Pad_146" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.75, 85.84, -620.50)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_146_Fisher_Boat" parent="." instance=ExtResource("p134")]
+position = Vector3(-2.75, 86.29, -620.50)
+rotation_degrees = Vector3(0, 2, 0)
+[node name="Pad_147" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 86.38, -624.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_147_Farm_fishalmostdead" parent="." instance=ExtResource("p66")]
+position = Vector3(-2.20, 86.83, -624.75)
+rotation_degrees = Vector3(-1, 39, 0)
+[node name="Pad_148" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 86.92, -629.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_148_Lab_COMPUTERusb" parent="." instance=ExtResource("p209")]
+position = Vector3(1.00, 87.37, -629.00)
+rotation_degrees = Vector3(2, 76, 2)
+[node name="Pad_149" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 87.46, -633.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_149_School_PRINCIPALOFFICEnotebook_001" parent="." instance=ExtResource("p246")]
+position = Vector3(3.80, 87.91, -633.25)
+rotation_degrees = Vector3(-2, 113, -2)
+[node name="Pad_150" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 88.00, -637.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_150_Fishing_Rod" parent="." instance=ExtResource("p135")]
+position = Vector3(0.00, 88.45, -637.50)
+rotation_degrees = Vector3(0, 150, 1)
+[node name="Pad_151" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 88.54, -641.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_151_Farm_fishalmostdead_001" parent="." instance=ExtResource("p67")]
+position = Vector3(3.00, 88.99, -641.75)
+rotation_degrees = Vector3(1, 187, -1)
+[node name="Pad_152" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 89.08, -646.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_152_Lab_COMPUTERusb_001" parent="." instance=ExtResource("p210")]
+position = Vector3(5.20, 89.53, -646.00)
+rotation_degrees = Vector3(-1, 224, 0)
+[node name="Pad_153" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 89.62, -650.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_153_School_PRINCIPALOFFICEnotebook_002" parent="." instance=ExtResource("p247")]
+position = Vector3(2.40, 90.07, -650.25)
+rotation_degrees = Vector3(2, 261, 2)
+[node name="Pad_154" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.28, 90.16, -654.50)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_154_HelicopterV1" parent="." instance=ExtResource("p150")]
+position = Vector3(-0.28, 90.61, -654.50)
+rotation_degrees = Vector3(0, 298, 0)
+[node name="Pad_155" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 90.70, -658.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_155_Farm_fishalmostdead_002" parent="." instance=ExtResource("p68")]
+position = Vector3(-3.30, 91.15, -658.75)
+rotation_degrees = Vector3(0, 335, 1)
+[node name="Pad_156" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 91.24, -663.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_156_School_PRINCIPALOFFICEpenholder" parent="." instance=ExtResource("p248")]
+position = Vector3(-5.00, 91.69, -663.00)
+rotation_degrees = Vector3(1, 12, -1)
+[node name="Checkpoint_13" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(-5.00, 91.94, -663.00)
+[node name="Star_13" parent="." instance=ExtResource("star")]
+position = Vector3(-2.80, 93.64, -662.50)
+[node name="Pad_157" parent="." instance=ExtResource("pad")]
+position = Vector3(-1.21, 91.78, -667.25)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_157_HelicopterV2" parent="." instance=ExtResource("p151")]
+position = Vector3(-1.21, 92.23, -667.25)
+rotation_degrees = Vector3(0, 49, 0)
+[node name="Pad_158" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 92.32, -671.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_158_Farm_fishdead" parent="." instance=ExtResource("p69")]
+position = Vector3(1.00, 92.77, -671.50)
+rotation_degrees = Vector3(2, 86, 2)
+[node name="Pad_159" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 92.86, -675.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_159_School_PRINCIPALOFFICEpicture" parent="." instance=ExtResource("p249")]
+position = Vector3(3.80, 93.31, -675.75)
+rotation_degrees = Vector3(-2, 123, -2)
+[node name="Pad_160" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 93.40, -680.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_160_JetskiV1" parent="." instance=ExtResource("p152")]
+position = Vector3(0.00, 93.85, -680.00)
+rotation_degrees = Vector3(0, 160, 1)
+[node name="Pad_161" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 93.94, -684.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_161_Farm_fishingrod" parent="." instance=ExtResource("p70")]
+position = Vector3(3.00, 94.39, -684.25)
+rotation_degrees = Vector3(1, 197, -1)
+[node name="Pad_162" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 94.48, -688.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_162_School_PRINCIPALOFFICEplant" parent="." instance=ExtResource("p250")]
+position = Vector3(5.20, 94.93, -688.50)
+rotation_degrees = Vector3(-1, 234, 0)
+[node name="Pad_163" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 95.02, -692.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_163_KA-F1000_FridgeSBS_V1" parent="." instance=ExtResource("p153")]
+position = Vector3(2.40, 95.47, -692.75)
+rotation_degrees = Vector3(2, 271, 2)
+[node name="Pad_164" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 95.56, -697.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_164_Farm_fishingrod_001" parent="." instance=ExtResource("p71")]
+position = Vector3(-0.50, 96.01, -697.00)
+rotation_degrees = Vector3(-2, 308, -2)
+[node name="Pad_165" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 96.10, -701.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_165_School_PRINCIPALOFFICEprincipalchair" parent="." instance=ExtResource("p251")]
+position = Vector3(-3.30, 96.55, -701.25)
+rotation_degrees = Vector3(0, 345, 1)
+[node name="Pad_166" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 96.64, -705.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_166_KA-F600_Dryer_V1" parent="." instance=ExtResource("p154")]
+position = Vector3(-5.00, 97.09, -705.50)
+rotation_degrees = Vector3(1, 22, -1)
+[node name="Pad_167" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 97.18, -709.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_167_Farm_flower" parent="." instance=ExtResource("p72")]
+position = Vector3(-2.20, 97.63, -709.75)
+rotation_degrees = Vector3(-1, 59, 0)
+[node name="Pad_168" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 97.72, -714.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_168_School_PRINCIPALOFFICEshelf" parent="." instance=ExtResource("p252")]
+position = Vector3(1.00, 98.17, -714.00)
+rotation_degrees = Vector3(2, 96, 2)
+[node name="Checkpoint_14" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(1.00, 98.42, -714.00)
+[node name="Star_14" parent="." instance=ExtResource("star")]
+position = Vector3(3.20, 100.12, -713.50)
+[node name="Pad_169" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 98.26, -718.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_169_KA-F600_Fan_V1" parent="." instance=ExtResource("p155")]
+position = Vector3(3.80, 98.71, -718.25)
+rotation_degrees = Vector3(-2, 133, -2)
+[node name="Pad_170" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 98.80, -722.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_170_Farm_flowerno" parent="." instance=ExtResource("p73")]
+position = Vector3(0.00, 99.25, -722.50)
+rotation_degrees = Vector3(0, 170, 1)
+[node name="Pad_171" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 99.34, -726.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_171_School_PRINCIPALOFFICEtelephone" parent="." instance=ExtResource("p253")]
+position = Vector3(3.00, 99.79, -726.75)
+rotation_degrees = Vector3(1, 207, -1)
+[node name="Pad_172" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 99.88, -731.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_172_KA-F600_Fridge_V1" parent="." instance=ExtResource("p156")]
+position = Vector3(5.20, 100.33, -731.00)
+rotation_degrees = Vector3(-1, 244, 0)
+[node name="Pad_173" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 100.42, -735.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_173_Farm_flowerstack" parent="." instance=ExtResource("p74")]
+position = Vector3(2.40, 100.87, -735.25)
+rotation_degrees = Vector3(2, 281, 2)
+[node name="Pad_174" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 100.96, -739.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_174_School_PRINCIPALOFFICEwallsfloor" parent="." instance=ExtResource("p254")]
+position = Vector3(-0.50, 101.41, -739.50)
+rotation_degrees = Vector3(-2, 318, -2)
+[node name="Pad_175" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 101.50, -743.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_175_KA-F600_Stove_V1" parent="." instance=ExtResource("p157")]
+position = Vector3(-3.30, 101.95, -743.75)
+rotation_degrees = Vector3(0, 355, 1)
+[node name="Pad_176" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 102.04, -748.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_176_Farm_gas" parent="." instance=ExtResource("p75")]
+position = Vector3(-5.00, 102.49, -748.00)
+rotation_degrees = Vector3(1, 32, -1)
+[node name="Pad_177" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 102.58, -752.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_177_School_TV" parent="." instance=ExtResource("p255")]
+position = Vector3(-2.20, 103.03, -752.25)
+rotation_degrees = Vector3(-1, 69, 0)
+[node name="Pad_178" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 103.12, -756.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_178_KA-F600_Washer_V1" parent="." instance=ExtResource("p158")]
+position = Vector3(1.00, 103.57, -756.50)
+rotation_degrees = Vector3(2, 106, 2)
+[node name="Pad_179" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 103.66, -760.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_179_Farm_grape" parent="." instance=ExtResource("p76")]
+position = Vector3(3.80, 104.11, -760.75)
+rotation_degrees = Vector3(-2, 143, -2)
+[node name="Pad_180" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 104.20, -765.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_180_School_TVNew" parent="." instance=ExtResource("p256")]
+position = Vector3(0.00, 104.65, -765.00)
+rotation_degrees = Vector3(0, 180, 1)
+[node name="Checkpoint_15" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(0.00, 104.90, -765.00)
+[node name="Star_15" parent="." instance=ExtResource("star")]
+position = Vector3(2.20, 106.60, -764.50)
+[node name="Pad_181" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 104.74, -769.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_181_KA-F800_Fan_V1" parent="." instance=ExtResource("p159")]
+position = Vector3(3.00, 105.19, -769.25)
+rotation_degrees = Vector3(1, 217, -1)
+[node name="Pad_182" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 105.28, -773.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_182_Farm_grapered" parent="." instance=ExtResource("p77")]
+position = Vector3(5.20, 105.73, -773.50)
+rotation_degrees = Vector3(-1, 254, 0)
+[node name="Pad_183" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 105.82, -777.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_183_School_blackboardbig" parent="." instance=ExtResource("p257")]
+position = Vector3(2.40, 106.27, -777.75)
+rotation_degrees = Vector3(2, 291, 2)
+[node name="Pad_184" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 106.36, -782.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_184_KAC-F1000_FridgeSBS_V1_FreezerDrawer" parent="." instance=ExtResource("p160")]
+position = Vector3(-0.50, 106.81, -782.00)
+rotation_degrees = Vector3(-2, 328, -2)
+[node name="Pad_185" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 106.90, -786.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_185_Farm_grassblade_001" parent="." instance=ExtResource("p78")]
+position = Vector3(-3.30, 107.35, -786.25)
+rotation_degrees = Vector3(0, 5, 1)
+[node name="Pad_186" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 107.44, -790.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_186_School_blackboardbig_1" parent="." instance=ExtResource("p258")]
+position = Vector3(-5.00, 107.89, -790.50)
+rotation_degrees = Vector3(1, 42, -1)
+[node name="Pad_187" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 107.98, -794.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_187_KAC-F1000_FridgeSBS_V1_FreezerDrawerHolder" parent="." instance=ExtResource("p161")]
+position = Vector3(-2.20, 108.43, -794.75)
+rotation_degrees = Vector3(-1, 79, 0)
+[node name="Pad_188" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 108.52, -799.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_188_Farm_grassblade_002" parent="." instance=ExtResource("p79")]
+position = Vector3(1.00, 108.97, -799.00)
+rotation_degrees = Vector3(2, 116, 2)
+[node name="Pad_189" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 109.06, -803.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_189_School_blackboardlittle" parent="." instance=ExtResource("p259")]
+position = Vector3(3.80, 109.51, -803.25)
+rotation_degrees = Vector3(-2, 153, -2)
+[node name="Pad_190" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 109.60, -807.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_190_KAC-F1000_FridgeSBS_V1_FreezerShelf" parent="." instance=ExtResource("p162")]
+position = Vector3(0.00, 110.05, -807.50)
+rotation_degrees = Vector3(0, 190, 1)
+[node name="Pad_191" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 110.14, -811.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_191_Farm_haystackcube" parent="." instance=ExtResource("p80")]
+position = Vector3(3.00, 110.59, -811.75)
+rotation_degrees = Vector3(1, 227, -1)
+[node name="Pad_192" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 110.68, -816.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_192_School_book" parent="." instance=ExtResource("p260")]
+position = Vector3(5.20, 111.13, -816.00)
+rotation_degrees = Vector3(-1, 264, 0)
+[node name="Checkpoint_16" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(5.20, 111.38, -816.00)
+[node name="Star_16" parent="." instance=ExtResource("star")]
+position = Vector3(7.40, 113.08, -815.50)
+[node name="Pad_193" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 111.22, -820.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_193_KAC-F600_Fridge_V1_Drawer" parent="." instance=ExtResource("p163")]
+position = Vector3(2.40, 111.67, -820.25)
+rotation_degrees = Vector3(2, 301, 2)
+[node name="Pad_194" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 111.76, -824.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_194_Farm_haystackround" parent="." instance=ExtResource("p81")]
+position = Vector3(-0.50, 112.21, -824.50)
+rotation_degrees = Vector3(-2, 338, -2)
+[node name="Pad_195" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 112.30, -828.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_195_School_book_" parent="." instance=ExtResource("p261")]
+position = Vector3(-3.30, 112.75, -828.75)
+rotation_degrees = Vector3(0, 15, 1)
+[node name="Pad_196" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 112.84, -833.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_196_KAC-F600_Fridge_V1_DrawerHolder" parent="." instance=ExtResource("p164")]
+position = Vector3(-5.00, 113.29, -833.00)
+rotation_degrees = Vector3(1, 52, -1)
+[node name="Pad_197" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 113.38, -837.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_197_Farm_haystackthick" parent="." instance=ExtResource("p82")]
+position = Vector3(-2.20, 113.83, -837.25)
+rotation_degrees = Vector3(-1, 89, 0)
+[node name="Pad_198" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 113.92, -841.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_198_School_book_001" parent="." instance=ExtResource("p262")]
+position = Vector3(1.00, 114.37, -841.50)
+rotation_degrees = Vector3(2, 126, 2)
+[node name="Pad_199" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 114.46, -845.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_199_KAC-F600_Fridge_V1_Shelf" parent="." instance=ExtResource("p165")]
+position = Vector3(3.80, 114.91, -845.75)
+rotation_degrees = Vector3(-2, 163, -2)
+[node name="Pad_200" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 115.00, -850.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_200_Farm_haystackthin" parent="." instance=ExtResource("p83")]
+position = Vector3(0.00, 115.45, -850.00)
+rotation_degrees = Vector3(0, 200, 1)
+[node name="Pad_201" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 115.54, -854.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_201_School_book_002" parent="." instance=ExtResource("p263")]
+position = Vector3(3.00, 115.99, -854.25)
+rotation_degrees = Vector3(1, 237, -1)
+[node name="Pad_202" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 116.08, -858.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_202_KAC-F600_OvenTray_V2" parent="." instance=ExtResource("p166")]
+position = Vector3(5.20, 116.53, -858.50)
+rotation_degrees = Vector3(-1, 274, 0)
+[node name="Pad_203" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 116.62, -862.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_203_Farm_leaf" parent="." instance=ExtResource("p84")]
+position = Vector3(2.40, 117.07, -862.75)
+rotation_degrees = Vector3(2, 311, 2)
+[node name="Pad_204" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 117.16, -867.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_204_School_book_003" parent="." instance=ExtResource("p264")]
+position = Vector3(-0.50, 117.61, -867.00)
+rotation_degrees = Vector3(-2, 348, -2)
+[node name="Checkpoint_17" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(-0.50, 117.86, -867.00)
+[node name="Star_17" parent="." instance=ExtResource("star")]
+position = Vector3(1.70, 119.56, -866.50)
+[node name="Pad_205" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 117.70, -871.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_205_KAC-F600_OvenTray_V3" parent="." instance=ExtResource("p167")]
+position = Vector3(-3.30, 118.15, -871.25)
+rotation_degrees = Vector3(0, 25, 1)
+[node name="Pad_206" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 118.24, -875.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_206_Farm_mailbox" parent="." instance=ExtResource("p85")]
+position = Vector3(-5.00, 118.69, -875.50)
+rotation_degrees = Vector3(1, 62, -1)
+[node name="Pad_207" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 118.78, -879.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_207_School_book__001" parent="." instance=ExtResource("p265")]
+position = Vector3(-2.20, 119.23, -879.75)
+rotation_degrees = Vector3(-1, 99, 0)
+[node name="Pad_208" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 119.32, -884.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_208_KAC-F600_TrayGuide_V2" parent="." instance=ExtResource("p168")]
+position = Vector3(1.00, 119.77, -884.00)
+rotation_degrees = Vector3(2, 136, 2)
+[node name="Pad_209" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 119.86, -888.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_209_Farm_mango" parent="." instance=ExtResource("p86")]
+position = Vector3(3.80, 120.31, -888.25)
+rotation_degrees = Vector3(-2, 173, -2)
+[node name="Pad_210" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 120.40, -892.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_210_School_book__002" parent="." instance=ExtResource("p266")]
+position = Vector3(0.00, 120.85, -892.50)
+rotation_degrees = Vector3(0, 210, 1)
+[node name="Pad_211" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 120.94, -896.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_211_KAC_Micro_Tray_V2" parent="." instance=ExtResource("p169")]
+position = Vector3(3.00, 121.39, -896.75)
+rotation_degrees = Vector3(1, 247, -1)
+[node name="Pad_212" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 121.48, -901.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_212_Farm_pond" parent="." instance=ExtResource("p87")]
+position = Vector3(5.20, 121.93, -901.00)
+rotation_degrees = Vector3(-1, 284, 0)
+[node name="Pad_213" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 122.02, -905.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_213_School_book__003" parent="." instance=ExtResource("p267")]
+position = Vector3(2.40, 122.47, -905.25)
+rotation_degrees = Vector3(2, 321, 2)
+[node name="Pad_214" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 122.56, -909.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_214_KAC_Oven_Fan_V2" parent="." instance=ExtResource("p170")]
+position = Vector3(-0.50, 123.01, -909.50)
+rotation_degrees = Vector3(-2, 358, -2)
+[node name="Pad_215" parent="." instance=ExtResource("pad")]
+position = Vector3(-1.81, 123.10, -913.75)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_215_Farm_pondscene" parent="." instance=ExtResource("p88")]
+position = Vector3(-1.81, 123.55, -913.75)
+rotation_degrees = Vector3(0, 35, 0)
+[node name="Pad_216" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 123.64, -918.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_216_School_book__004" parent="." instance=ExtResource("p268")]
+position = Vector3(-5.00, 124.09, -918.00)
+rotation_degrees = Vector3(1, 72, -1)
+[node name="Checkpoint_18" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(-5.00, 124.34, -918.00)
+[node name="Star_18" parent="." instance=ExtResource("star")]
+position = Vector3(-2.80, 126.04, -917.50)
+[node name="Pad_217" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 124.18, -922.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_217_KAC_Oven_HeatingTop_V2" parent="." instance=ExtResource("p171")]
+position = Vector3(-2.20, 124.63, -922.25)
+rotation_degrees = Vector3(-1, 109, 0)
+[node name="Pad_218" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 124.72, -926.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_218_Farm_rocks" parent="." instance=ExtResource("p89")]
+position = Vector3(1.00, 125.17, -926.50)
+rotation_degrees = Vector3(2, 146, 2)
+[node name="Pad_219" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 125.26, -930.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_219_School_chair" parent="." instance=ExtResource("p269")]
+position = Vector3(3.80, 125.71, -930.75)
+rotation_degrees = Vector3(-2, 183, -2)
+[node name="Pad_220" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 125.80, -935.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_220_KA_Micro_V2" parent="." instance=ExtResource("p172")]
+position = Vector3(0.00, 126.25, -935.00)
+rotation_degrees = Vector3(0, 220, 1)
+[node name="Pad_221" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 126.34, -939.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_221_Farm_rocks_001" parent="." instance=ExtResource("p90")]
+position = Vector3(3.00, 126.79, -939.25)
+rotation_degrees = Vector3(1, 257, -1)
+[node name="Pad_222" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 126.88, -943.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_222_School_chairtable" parent="." instance=ExtResource("p270")]
+position = Vector3(5.20, 127.33, -943.50)
+rotation_degrees = Vector3(-1, 294, 0)
+[node name="Pad_223" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 127.42, -947.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_223_KayakPaddle" parent="." instance=ExtResource("p173")]
+position = Vector3(2.40, 127.87, -947.75)
+rotation_degrees = Vector3(2, 331, 2)
+[node name="Pad_224" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 127.96, -952.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_224_Farm_rocks_002" parent="." instance=ExtResource("p91")]
+position = Vector3(-0.50, 128.41, -952.00)
+rotation_degrees = Vector3(-2, 8, -2)
+[node name="Pad_225" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 128.50, -956.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_225_School_chalk" parent="." instance=ExtResource("p271")]
+position = Vector3(-3.30, 128.95, -956.25)
+rotation_degrees = Vector3(0, 45, 1)
+[node name="Pad_226" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 129.04, -960.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_226_KayakV1" parent="." instance=ExtResource("p174")]
+position = Vector3(-5.00, 129.49, -960.50)
+rotation_degrees = Vector3(1, 82, -1)
+[node name="Pad_227" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 129.58, -964.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_227_Farm_rocks_003" parent="." instance=ExtResource("p92")]
+position = Vector3(-2.20, 130.03, -964.75)
+rotation_degrees = Vector3(-1, 119, 0)
+[node name="Pad_228" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 130.12, -969.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_228_School_chalk_001" parent="." instance=ExtResource("p272")]
+position = Vector3(1.00, 130.57, -969.00)
+rotation_degrees = Vector3(2, 156, 2)
+[node name="Checkpoint_19" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(1.00, 130.82, -969.00)
+[node name="Star_19" parent="." instance=ExtResource("star")]
+position = Vector3(3.20, 132.52, -968.50)
+[node name="Pad_229" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 130.66, -973.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_229_KayakV2" parent="." instance=ExtResource("p175")]
+position = Vector3(3.80, 131.11, -973.25)
+rotation_degrees = Vector3(-2, 193, -2)
+[node name="Pad_230" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 131.20, -977.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_230_Farm_rocks_004" parent="." instance=ExtResource("p93")]
+position = Vector3(0.00, 131.65, -977.50)
+rotation_degrees = Vector3(0, 230, 1)
+[node name="Pad_231" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 131.74, -981.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_231_School_chalk_002" parent="." instance=ExtResource("p273")]
+position = Vector3(3.00, 132.19, -981.75)
+rotation_degrees = Vector3(1, 267, -1)
+[node name="Pad_232" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 132.28, -986.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_232_LightPlane" parent="." instance=ExtResource("p211")]
+position = Vector3(5.20, 132.73, -986.00)
+rotation_degrees = Vector3(-1, 304, 0)
+[node name="Pad_233" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 132.82, -990.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_233_Farm_rocks_005" parent="." instance=ExtResource("p94")]
+position = Vector3(2.40, 133.27, -990.25)
+rotation_degrees = Vector3(2, 341, 2)
+[node name="Pad_234" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 133.36, -994.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_234_School_chalkboard_sponge_" parent="." instance=ExtResource("p274")]
+position = Vector3(-0.50, 133.81, -994.50)
+rotation_degrees = Vector3(-2, 18, -2)
+[node name="Pad_235" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 133.90, -998.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_235_Paddle" parent="." instance=ExtResource("p212")]
+position = Vector3(-3.30, 134.35, -998.75)
+rotation_degrees = Vector3(0, 55, 1)
+[node name="Pad_236" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 134.44, -1003.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_236_Farm_rocks_006" parent="." instance=ExtResource("p95")]
+position = Vector3(-5.00, 134.89, -1003.00)
+rotation_degrees = Vector3(1, 92, -1)
+[node name="Pad_237" parent="." instance=ExtResource("pad")]
+position = Vector3(-1.21, 134.98, -1007.25)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_237_School_classroom_demoscene" parent="." instance=ExtResource("p275")]
+position = Vector3(-1.21, 135.43, -1007.25)
+rotation_degrees = Vector3(0, 129, 0)
+[node name="Pad_238" parent="." instance=ExtResource("pad")]
+position = Vector3(0.55, 135.52, -1011.50)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_238_Scout_Boat" parent="." instance=ExtResource("p328")]
+position = Vector3(0.55, 135.97, -1011.50)
+rotation_degrees = Vector3(0, 166, 0)
+[node name="Pad_239" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 136.06, -1015.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_239_Farm_rocks_007" parent="." instance=ExtResource("p96")]
+position = Vector3(3.80, 136.51, -1015.75)
+rotation_degrees = Vector3(-2, 203, -2)
+[node name="Pad_240" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 136.60, -1020.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_240_School_compass_1" parent="." instance=ExtResource("p276")]
+position = Vector3(0.00, 137.05, -1020.00)
+rotation_degrees = Vector3(0, 240, 1)
+[node name="Checkpoint_20" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(0.00, 137.30, -1020.00)
+[node name="Star_20" parent="." instance=ExtResource("star")]
+position = Vector3(2.20, 139.00, -1019.50)
+[node name="Pad_241" parent="." instance=ExtResource("pad")]
+position = Vector3(1.65, 137.14, -1024.25)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_241_Speed_Boat" parent="." instance=ExtResource("p329")]
+position = Vector3(1.65, 137.59, -1024.25)
+rotation_degrees = Vector3(0, 277, 0)
+[node name="Pad_242" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 137.68, -1028.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_242_Farm_shark" parent="." instance=ExtResource("p97")]
+position = Vector3(5.20, 138.13, -1028.50)
+rotation_degrees = Vector3(-1, 314, 0)
+[node name="Pad_243" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 138.22, -1032.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_243_School_curtains" parent="." instance=ExtResource("p277")]
+position = Vector3(2.40, 138.67, -1032.75)
+rotation_degrees = Vector3(2, 351, 2)
+[node name="Pad_244" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.28, 138.76, -1037.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_244_Wood_BoatV1" parent="." instance=ExtResource("p330")]
+position = Vector3(-0.28, 139.21, -1037.00)
+rotation_degrees = Vector3(0, 28, 0)
+[node name="Pad_245" parent="." instance=ExtResource("pad")]
+position = Vector3(-1.81, 139.30, -1041.25)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_245_Farm_smelter_lv3" parent="." instance=ExtResource("p98")]
+position = Vector3(-1.81, 139.75, -1041.25)
+rotation_degrees = Vector3(0, 65, 0)
+[node name="Pad_246" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 139.84, -1045.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_246_School_curtains_" parent="." instance=ExtResource("p278")]
+position = Vector3(-5.00, 140.29, -1045.50)
+rotation_degrees = Vector3(1, 102, -1)
+[node name="Pad_247" parent="." instance=ExtResource("pad")]
+position = Vector3(-1.21, 140.38, -1049.75)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_247_Wood_BoatV2" parent="." instance=ExtResource("p331")]
+position = Vector3(-1.21, 140.83, -1049.75)
+rotation_degrees = Vector3(0, 139, 0)
+[node name="Pad_248" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 140.92, -1054.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_248_Farm_smelter_lvl1" parent="." instance=ExtResource("p99")]
+position = Vector3(1.00, 141.37, -1054.00)
+rotation_degrees = Vector3(2, 176, 2)
+[node name="Pad_249" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 141.46, -1058.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_249_School_desk" parent="." instance=ExtResource("p279")]
+position = Vector3(3.80, 141.91, -1058.25)
+rotation_degrees = Vector3(-2, 213, -2)
+[node name="Pad_250" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 142.00, -1062.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_250_Farm_smelter_lvl2" parent="." instance=ExtResource("p100")]
+position = Vector3(0.00, 142.45, -1062.50)
+rotation_degrees = Vector3(0, 250, 1)
+[node name="Pad_251" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 142.54, -1066.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_251_School_lamp" parent="." instance=ExtResource("p280")]
+position = Vector3(3.00, 142.99, -1066.75)
+rotation_degrees = Vector3(1, 287, -1)
+[node name="Pad_252" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 143.08, -1071.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_252_Farm_soil" parent="." instance=ExtResource("p101")]
+position = Vector3(5.20, 143.53, -1071.00)
+rotation_degrees = Vector3(-1, 324, 0)
+[node name="Checkpoint_21" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(5.20, 143.78, -1071.00)
+[node name="Star_21" parent="." instance=ExtResource("star")]
+position = Vector3(7.40, 145.48, -1070.50)
+[node name="Pad_253" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 143.62, -1075.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_253_School_locker" parent="." instance=ExtResource("p281")]
+position = Vector3(2.40, 144.07, -1075.25)
+rotation_degrees = Vector3(2, 1, 2)
+[node name="Pad_254" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 144.16, -1079.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_254_Farm_sword" parent="." instance=ExtResource("p102")]
+position = Vector3(-0.50, 144.61, -1079.50)
+rotation_degrees = Vector3(-2, 38, -2)
+[node name="Pad_255" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 144.70, -1083.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_255_School_locker_001" parent="." instance=ExtResource("p282")]
+position = Vector3(-3.30, 145.15, -1083.75)
+rotation_degrees = Vector3(0, 75, 1)
+[node name="Pad_256" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 145.24, -1088.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_256_Farm_sword_001" parent="." instance=ExtResource("p103")]
+position = Vector3(-5.00, 145.69, -1088.00)
+rotation_degrees = Vector3(1, 112, -1)
+[node name="Pad_257" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 145.78, -1092.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_257_School_markers" parent="." instance=ExtResource("p283")]
+position = Vector3(-2.20, 146.23, -1092.25)
+rotation_degrees = Vector3(-1, 149, 0)
+[node name="Pad_258" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 146.32, -1096.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_258_Farm_tomato" parent="." instance=ExtResource("p104")]
+position = Vector3(1.00, 146.77, -1096.50)
+rotation_degrees = Vector3(2, 186, 2)
+[node name="Pad_259" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 146.86, -1100.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_259_School_markers_001" parent="." instance=ExtResource("p284")]
+position = Vector3(3.80, 147.31, -1100.75)
+rotation_degrees = Vector3(-2, 223, -2)
+[node name="Pad_260" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 147.40, -1105.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_260_Farm_tool" parent="." instance=ExtResource("p105")]
+position = Vector3(0.00, 147.85, -1105.00)
+rotation_degrees = Vector3(0, 260, 1)
+[node name="Pad_261" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 147.94, -1109.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_261_School_markers_002" parent="." instance=ExtResource("p285")]
+position = Vector3(3.00, 148.39, -1109.25)
+rotation_degrees = Vector3(1, 297, -1)
+[node name="Pad_262" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 148.48, -1113.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_262_Farm_tool_001" parent="." instance=ExtResource("p106")]
+position = Vector3(5.20, 148.93, -1113.50)
+rotation_degrees = Vector3(-1, 334, 0)
+[node name="Pad_263" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 149.02, -1117.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_263_School_pen" parent="." instance=ExtResource("p286")]
+position = Vector3(2.40, 149.47, -1117.75)
+rotation_degrees = Vector3(2, 11, 2)
+[node name="Pad_264" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 149.56, -1122.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_264_Farm_tool_002" parent="." instance=ExtResource("p107")]
+position = Vector3(-0.50, 150.01, -1122.00)
+rotation_degrees = Vector3(-2, 48, -2)
+[node name="Checkpoint_22" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(-0.50, 150.26, -1122.00)
+[node name="Star_22" parent="." instance=ExtResource("star")]
+position = Vector3(1.70, 151.96, -1121.50)
+[node name="Pad_265" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 150.10, -1126.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_265_School_pen4colors" parent="." instance=ExtResource("p287")]
+position = Vector3(-3.30, 150.55, -1126.25)
+rotation_degrees = Vector3(0, 85, 1)
+[node name="Pad_266" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 150.64, -1130.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_266_Farm_tool_003" parent="." instance=ExtResource("p108")]
+position = Vector3(-5.00, 151.09, -1130.50)
+rotation_degrees = Vector3(1, 122, -1)
+[node name="Pad_267" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 151.18, -1134.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_267_School_pen_001" parent="." instance=ExtResource("p288")]
+position = Vector3(-2.20, 151.63, -1134.75)
+rotation_degrees = Vector3(-1, 159, 0)
+[node name="Pad_268" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 151.72, -1139.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_268_Farm_tool_004" parent="." instance=ExtResource("p109")]
+position = Vector3(1.00, 152.17, -1139.00)
+rotation_degrees = Vector3(2, 196, 2)
+[node name="Pad_269" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 152.26, -1143.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_269_School_pen_002" parent="." instance=ExtResource("p289")]
+position = Vector3(3.80, 152.71, -1143.25)
+rotation_degrees = Vector3(-2, 233, -2)
+[node name="Pad_270" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 152.80, -1147.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_270_Farm_tool_005" parent="." instance=ExtResource("p110")]
+position = Vector3(0.00, 153.25, -1147.50)
+rotation_degrees = Vector3(0, 270, 1)
+[node name="Pad_271" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 153.34, -1151.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_271_School_pencil" parent="." instance=ExtResource("p290")]
+position = Vector3(3.00, 153.79, -1151.75)
+rotation_degrees = Vector3(1, 307, -1)
+[node name="Pad_272" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 153.88, -1156.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_272_Farm_towerlv2" parent="." instance=ExtResource("p111")]
+position = Vector3(5.20, 154.33, -1156.00)
+rotation_degrees = Vector3(-1, 344, 0)
+[node name="Pad_273" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 154.42, -1160.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_273_School_pencil_001" parent="." instance=ExtResource("p291")]
+position = Vector3(2.40, 154.87, -1160.25)
+rotation_degrees = Vector3(2, 21, 2)
+[node name="Pad_274" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.28, 154.96, -1164.50)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_274_Farm_towerlv3" parent="." instance=ExtResource("p112")]
+position = Vector3(-0.28, 155.41, -1164.50)
+rotation_degrees = Vector3(0, 58, 0)
+[node name="Pad_275" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 155.50, -1168.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_275_School_pencil_002" parent="." instance=ExtResource("p292")]
+position = Vector3(-3.30, 155.95, -1168.75)
+rotation_degrees = Vector3(0, 95, 1)
+[node name="Pad_276" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 156.04, -1173.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_276_Farm_towerlvl1" parent="." instance=ExtResource("p113")]
+position = Vector3(-5.00, 156.49, -1173.00)
+rotation_degrees = Vector3(1, 132, -1)
+[node name="Checkpoint_23" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(-5.00, 156.74, -1173.00)
+[node name="Star_23" parent="." instance=ExtResource("star")]
+position = Vector3(-2.80, 158.44, -1172.50)
+[node name="Pad_277" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 156.58, -1177.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_277_School_pencil_003" parent="." instance=ExtResource("p293")]
+position = Vector3(-2.20, 157.03, -1177.25)
+rotation_degrees = Vector3(-1, 169, 0)
+[node name="Pad_278" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 157.12, -1181.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_278_Farm_truck" parent="." instance=ExtResource("p114")]
+position = Vector3(1.00, 157.57, -1181.50)
+rotation_degrees = Vector3(2, 206, 2)
+[node name="Pad_279" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 157.66, -1185.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_279_School_pencil_004" parent="." instance=ExtResource("p294")]
+position = Vector3(3.80, 158.11, -1185.75)
+rotation_degrees = Vector3(-2, 243, -2)
+[node name="Pad_280" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 158.20, -1190.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_280_Farm_truck_001" parent="." instance=ExtResource("p115")]
+position = Vector3(0.00, 158.65, -1190.00)
+rotation_degrees = Vector3(0, 280, 1)
+[node name="Pad_281" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 158.74, -1194.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_281_School_pencil_005" parent="." instance=ExtResource("p295")]
+position = Vector3(3.00, 159.19, -1194.25)
+rotation_degrees = Vector3(1, 317, -1)
+[node name="Pad_282" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 159.28, -1198.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_282_Farm_truck_002" parent="." instance=ExtResource("p116")]
+position = Vector3(5.20, 159.73, -1198.50)
+rotation_degrees = Vector3(-1, 354, 0)
+[node name="Pad_283" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 159.82, -1202.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_283_School_pencil_006" parent="." instance=ExtResource("p296")]
+position = Vector3(2.40, 160.27, -1202.75)
+rotation_degrees = Vector3(2, 31, 2)
+[node name="Pad_284" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 160.36, -1207.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_284_Farm_waterdrop" parent="." instance=ExtResource("p117")]
+position = Vector3(-0.50, 160.81, -1207.00)
+rotation_degrees = Vector3(-2, 68, -2)
+[node name="Pad_285" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 160.90, -1211.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_285_School_pencil_007" parent="." instance=ExtResource("p297")]
+position = Vector3(-3.30, 161.35, -1211.25)
+rotation_degrees = Vector3(0, 105, 1)
+[node name="Pad_286" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 161.44, -1215.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_286_Farm_waterdrop_001" parent="." instance=ExtResource("p118")]
+position = Vector3(-5.00, 161.89, -1215.50)
+rotation_degrees = Vector3(1, 142, -1)
+[node name="Pad_287" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 161.98, -1219.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_287_School_pencilcase" parent="." instance=ExtResource("p298")]
+position = Vector3(-2.20, 162.43, -1219.75)
+rotation_degrees = Vector3(-1, 179, 0)
+[node name="Pad_288" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 162.52, -1224.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_288_Farm_waterdrop_002" parent="." instance=ExtResource("p119")]
+position = Vector3(1.00, 162.97, -1224.00)
+rotation_degrees = Vector3(2, 216, 2)
+[node name="Checkpoint_24" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(1.00, 163.22, -1224.00)
+[node name="Star_24" parent="." instance=ExtResource("star")]
+position = Vector3(3.20, 164.92, -1223.50)
+[node name="Pad_289" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 163.06, -1228.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_289_School_postit" parent="." instance=ExtResource("p299")]
+position = Vector3(3.80, 163.51, -1228.25)
+rotation_degrees = Vector3(-2, 253, -2)
+[node name="Pad_290" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 163.60, -1232.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_290_Farm_wateringcan_001" parent="." instance=ExtResource("p120")]
+position = Vector3(0.00, 164.05, -1232.50)
+rotation_degrees = Vector3(0, 290, 1)
+[node name="Pad_291" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 164.14, -1236.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_291_School_postit_001" parent="." instance=ExtResource("p300")]
+position = Vector3(3.00, 164.59, -1236.75)
+rotation_degrees = Vector3(1, 327, -1)
+[node name="Pad_292" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 164.68, -1241.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_292_Farm_wateringcan_003" parent="." instance=ExtResource("p121")]
+position = Vector3(5.20, 165.13, -1241.00)
+rotation_degrees = Vector3(-1, 4, 0)
+[node name="Pad_293" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 165.22, -1245.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_293_School_radio" parent="." instance=ExtResource("p301")]
+position = Vector3(2.40, 165.67, -1245.25)
+rotation_degrees = Vector3(2, 41, 2)
+[node name="Pad_294" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 165.76, -1249.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_294_Farm_wateringcan_005" parent="." instance=ExtResource("p122")]
+position = Vector3(-0.50, 166.21, -1249.50)
+rotation_degrees = Vector3(-2, 78, -2)
+[node name="Pad_295" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 166.30, -1253.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_295_School_schoolbus" parent="." instance=ExtResource("p302")]
+position = Vector3(-3.30, 166.75, -1253.75)
+rotation_degrees = Vector3(0, 115, 1)
+[node name="Pad_296" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 166.84, -1258.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_296_Farm_wateringcanwflower" parent="." instance=ExtResource("p123")]
+position = Vector3(-5.00, 167.29, -1258.00)
+rotation_degrees = Vector3(1, 152, -1)
+[node name="Pad_297" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 167.38, -1262.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_297_School_scissors_1" parent="." instance=ExtResource("p303")]
+position = Vector3(-2.20, 167.83, -1262.25)
+rotation_degrees = Vector3(-1, 189, 0)
+[node name="Pad_298" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 167.92, -1266.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_298_Farm_wateringcanwflower_001" parent="." instance=ExtResource("p124")]
+position = Vector3(1.00, 168.37, -1266.50)
+rotation_degrees = Vector3(2, 226, 2)
+[node name="Pad_299" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 168.46, -1270.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_299_School_shelf" parent="." instance=ExtResource("p304")]
+position = Vector3(3.80, 168.91, -1270.75)
+rotation_degrees = Vector3(-2, 263, -2)
+[node name="Pad_300" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 169.00, -1275.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_300_Farm_wateringcanwflower_002" parent="." instance=ExtResource("p125")]
+position = Vector3(0.00, 169.45, -1275.00)
+rotation_degrees = Vector3(0, 300, 1)
+[node name="Checkpoint_25" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(0.00, 169.70, -1275.00)
+[node name="Star_25" parent="." instance=ExtResource("star")]
+position = Vector3(2.20, 171.40, -1274.50)
+[node name="Pad_301" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 169.54, -1279.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_301_School_shelf_001" parent="." instance=ExtResource("p305")]
+position = Vector3(3.00, 169.99, -1279.25)
+rotation_degrees = Vector3(1, 337, -1)
+[node name="Pad_302" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 170.08, -1283.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_302_Farm_wheat" parent="." instance=ExtResource("p126")]
+position = Vector3(5.20, 170.53, -1283.50)
+rotation_degrees = Vector3(-1, 14, 0)
+[node name="Pad_303" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 170.62, -1287.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_303_School_shelfwithwheels" parent="." instance=ExtResource("p306")]
+position = Vector3(2.40, 171.07, -1287.75)
+rotation_degrees = Vector3(2, 51, 2)
+[node name="Pad_304" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 171.16, -1292.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_304_Farm_woodenbox" parent="." instance=ExtResource("p127")]
+position = Vector3(-0.50, 171.61, -1292.00)
+rotation_degrees = Vector3(-2, 88, -2)
+[node name="Pad_305" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 171.70, -1296.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_305_School_table" parent="." instance=ExtResource("p307")]
+position = Vector3(-3.30, 172.15, -1296.25)
+rotation_degrees = Vector3(0, 125, 1)
+[node name="Pad_306" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 172.24, -1300.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_306_Farm_woodenbox_001" parent="." instance=ExtResource("p128")]
+position = Vector3(-5.00, 172.69, -1300.50)
+rotation_degrees = Vector3(1, 162, -1)
+[node name="Pad_307" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 172.78, -1304.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_307_School_toiletbasictoilet" parent="." instance=ExtResource("p308")]
+position = Vector3(-2.20, 173.23, -1304.75)
+rotation_degrees = Vector3(-1, 199, 0)
+[node name="Pad_308" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 173.32, -1309.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_308_Farm_woodenboxvar" parent="." instance=ExtResource("p129")]
+position = Vector3(1.00, 173.77, -1309.00)
+rotation_degrees = Vector3(2, 236, 2)
+[node name="Pad_309" parent="." instance=ExtResource("pad")]
+position = Vector3(2.09, 173.86, -1313.25)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_309_School_toiletdemoscene" parent="." instance=ExtResource("p309")]
+position = Vector3(2.09, 174.31, -1313.25)
+rotation_degrees = Vector3(0, 273, 0)
+[node name="Pad_310" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 174.40, -1317.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_310_Farm_woodenmixer" parent="." instance=ExtResource("p130")]
+position = Vector3(0.00, 174.85, -1317.50)
+rotation_degrees = Vector3(0, 310, 1)
+[node name="Pad_311" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 174.94, -1321.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_311_School_toiletdoor" parent="." instance=ExtResource("p310")]
+position = Vector3(3.00, 175.39, -1321.75)
+rotation_degrees = Vector3(1, 347, -1)
+[node name="Pad_312" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 175.48, -1326.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_312_Farm_yaourt" parent="." instance=ExtResource("p131")]
+position = Vector3(5.20, 175.93, -1326.00)
+rotation_degrees = Vector3(-1, 24, 0)
+[node name="Checkpoint_26" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(5.20, 176.18, -1326.00)
+[node name="Star_26" parent="." instance=ExtResource("star")]
+position = Vector3(7.40, 177.88, -1325.50)
+[node name="Pad_313" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 176.02, -1330.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_313_School_toiletpaper" parent="." instance=ExtResource("p311")]
+position = Vector3(2.40, 176.47, -1330.25)
+rotation_degrees = Vector3(2, 61, 2)
+[node name="Pad_314" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 176.56, -1334.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_314_Farm_yaourt_001" parent="." instance=ExtResource("p132")]
+position = Vector3(-0.50, 177.01, -1334.50)
+rotation_degrees = Vector3(-2, 98, -2)
+[node name="Pad_315" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 177.10, -1338.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_315_School_toiletpaperhandler" parent="." instance=ExtResource("p312")]
+position = Vector3(-3.30, 177.55, -1338.75)
+rotation_degrees = Vector3(0, 135, 1)
+[node name="Pad_316" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 177.64, -1343.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_316_Farm_yaourt_002" parent="." instance=ExtResource("p133")]
+position = Vector3(-5.00, 178.09, -1343.00)
+rotation_degrees = Vector3(1, 172, -1)
+[node name="Pad_317" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 178.18, -1347.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_317_School_toiletpartition" parent="." instance=ExtResource("p313")]
+position = Vector3(-2.20, 178.63, -1347.25)
+rotation_degrees = Vector3(-1, 209, 0)
+[node name="Pad_318" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 178.72, -1351.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_318_School_toiletpartition_001" parent="." instance=ExtResource("p314")]
+position = Vector3(1.00, 179.17, -1351.50)
+rotation_degrees = Vector3(2, 246, 2)
+[node name="Pad_319" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 179.26, -1355.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_319_School_toiletpipeforsink" parent="." instance=ExtResource("p315")]
+position = Vector3(3.80, 179.71, -1355.75)
+rotation_degrees = Vector3(-2, 283, -2)
+[node name="Pad_320" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 179.80, -1360.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_320_School_toiletpipteforurinal" parent="." instance=ExtResource("p316")]
+position = Vector3(0.00, 180.25, -1360.00)
+rotation_degrees = Vector3(0, 320, 1)
+[node name="Pad_321" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 180.34, -1364.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_321_School_toiletpoop" parent="." instance=ExtResource("p317")]
+position = Vector3(3.00, 180.79, -1364.25)
+rotation_degrees = Vector3(1, 357, -1)
+[node name="Pad_322" parent="." instance=ExtResource("pad")]
+position = Vector3(5.20, 180.88, -1368.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_322_School_toiletsink" parent="." instance=ExtResource("p318")]
+position = Vector3(5.20, 181.33, -1368.50)
+rotation_degrees = Vector3(-1, 34, 0)
+[node name="Pad_323" parent="." instance=ExtResource("pad")]
+position = Vector3(2.40, 181.42, -1372.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_323_School_toiletsoap" parent="." instance=ExtResource("p319")]
+position = Vector3(2.40, 181.87, -1372.75)
+rotation_degrees = Vector3(2, 71, 2)
+[node name="Pad_324" parent="." instance=ExtResource("pad")]
+position = Vector3(-0.50, 181.96, -1377.00)
+scale = Vector3(1.65, 1, 1.65)
+[node name="Asset_324_School_toiletsoap_001" parent="." instance=ExtResource("p320")]
+position = Vector3(-0.50, 182.41, -1377.00)
+rotation_degrees = Vector3(-2, 108, -2)
+[node name="Checkpoint_27" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(-0.50, 182.66, -1377.00)
+[node name="Star_27" parent="." instance=ExtResource("star")]
+position = Vector3(1.70, 184.36, -1376.50)
+[node name="Pad_325" parent="." instance=ExtResource("pad")]
+position = Vector3(-3.30, 182.50, -1381.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_325_School_toiletsoap_002" parent="." instance=ExtResource("p321")]
+position = Vector3(-3.30, 182.95, -1381.25)
+rotation_degrees = Vector3(0, 145, 1)
+[node name="Pad_326" parent="." instance=ExtResource("pad")]
+position = Vector3(-5.00, 183.04, -1385.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_326_School_toiletsoapdish" parent="." instance=ExtResource("p322")]
+position = Vector3(-5.00, 183.49, -1385.50)
+rotation_degrees = Vector3(1, 182, -1)
+[node name="Pad_327" parent="." instance=ExtResource("pad")]
+position = Vector3(-2.20, 183.58, -1389.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_327_School_toileturinal" parent="." instance=ExtResource("p323")]
+position = Vector3(-2.20, 184.03, -1389.75)
+rotation_degrees = Vector3(-1, 219, 0)
+[node name="Pad_328" parent="." instance=ExtResource("pad")]
+position = Vector3(1.00, 184.12, -1394.00)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_328_School_toiletwallsfloor" parent="." instance=ExtResource("p324")]
+position = Vector3(1.00, 184.57, -1394.00)
+rotation_degrees = Vector3(2, 256, 2)
+[node name="Pad_329" parent="." instance=ExtResource("pad")]
+position = Vector3(3.80, 184.66, -1398.25)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_329_School_toiletwater_1" parent="." instance=ExtResource("p325")]
+position = Vector3(3.80, 185.11, -1398.25)
+rotation_degrees = Vector3(-2, 293, -2)
+[node name="Pad_330" parent="." instance=ExtResource("pad")]
+position = Vector3(0.00, 185.20, -1402.50)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_330_School_wallsfloor" parent="." instance=ExtResource("p326")]
+position = Vector3(0.00, 185.65, -1402.50)
+rotation_degrees = Vector3(0, 330, 1)
+[node name="Pad_331" parent="." instance=ExtResource("pad")]
+position = Vector3(3.00, 185.74, -1406.75)
+scale = Vector3(1.00, 1, 1.00)
+[node name="Asset_331_School_watch" parent="." instance=ExtResource("p327")]
+position = Vector3(3.00, 186.19, -1406.75)
+rotation_degrees = Vector3(1, 7, -1)
+[node name="Checkpoint_28" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(3.00, 186.44, -1406.75)
+[node name="Star_28" parent="." instance=ExtResource("star")]
+position = Vector3(5.20, 188.14, -1406.25)

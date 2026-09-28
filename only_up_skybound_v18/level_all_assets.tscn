@@ -1,0 +1,186 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://world_manual.gd" id="1_world"]
+[ext_resource type="PackedScene" path="res://all_assets_level.tscn" id="2_assets"]
+[ext_resource type="PackedScene" path="res://player.tscn" id="3_player"]
+[ext_resource type="Script" path="res://mobile_controls.gd" id="4_mobile"]
+[ext_resource type="PackedScene" path="res://finish.tscn" id="6_finish"]
+
+[sub_resource type="Environment" id="Environment_game"]
+background_mode = 1
+background_color = Color(0.08, 0.18, 0.38, 1)
+ambient_light_source = 3
+ambient_light_color = Color(0.48, 0.58, 0.9, 1)
+ambient_light_energy = 0.9
+tonemap_mode = 2
+glow_enabled = true
+glow_intensity = 1.1
+fog_enabled = true
+fog_light_color = Color(0.34, 0.55, 0.82, 1)
+fog_density = 0.0035
+fog_height = 8.0
+fog_height_density = 0.018
+
+[sub_resource type="StyleBoxFlat" id="Results_panel"]
+bg_color = Color(0.035, 0.07, 0.14, 0.97)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.3, 0.75, 0.95, 0.85)
+corner_radius_top_left = 18
+corner_radius_top_right = 18
+corner_radius_bottom_right = 18
+corner_radius_bottom_left = 18
+shadow_color = Color(0, 0, 0, 0.45)
+shadow_size = 20
+
+[node name="Game" type="Node3D"]
+script = ExtResource("1_world")
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_game")
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-48, -28, 0)
+light_color = Color(0.68, 0.8, 1, 1)
+light_energy = 1.25
+shadow_enabled = true
+[node name="SkyLight" type="OmniLight3D" parent="."]
+position = Vector3(0, 70, 0)
+omni_range = 150.0
+light_color = Color(0.26, 0.42, 1, 1)
+light_energy = 5.0
+[node name="AssetClimb" parent="." instance=ExtResource("2_assets")]
+[node name="Finish" parent="." instance=ExtResource("6_finish")]
+position = Vector3(3.00, 188.0, -1406.75)
+[node name="Player" parent="." instance=ExtResource("3_player")]
+position = Vector3(0, 8.2, -1.0)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+[node name="Title" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 20.0
+offset_right = 600.0
+offset_bottom = 52.0
+theme_override_colors/font_color = Color(0.7, 0.88, 1, 1)
+theme_override_font_sizes/font_size = 26
+text = "ONLY UP: ALL ASSETS SKYWAY"
+[node name="Height" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 58.0
+offset_right = 330.0
+offset_bottom = 90.0
+theme_override_font_sizes/font_size = 22
+text = "YÜKSEKLİK  0000 m"
+[node name="Checkpoint" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 90.0
+offset_right = 400.0
+offset_bottom = 120.0
+theme_override_colors/font_color = Color(0.45, 0.9, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "CHECKPOINT  0000 m"
+[node name="Score" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 120.0
+offset_right = 350.0
+offset_bottom = 150.0
+theme_override_colors/font_color = Color(1, 0.82, 0.2, 1)
+theme_override_font_sizes/font_size = 18
+text = "SKOR  000000"
+[node name="Timer" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 148.0
+offset_right = 350.0
+offset_bottom = 178.0
+theme_override_font_sizes/font_size = 18
+text = "SÜRE  000.0"
+[node name="Status" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 600.0
+offset_right = 900.0
+offset_bottom = 635.0
+theme_override_font_sizes/font_size = 19
+text = ""
+[node name="Crosshair" type="Label" parent="HUD"]
+offset_left = 634.0
+offset_top = 338.0
+offset_right = 646.0
+offset_bottom = 380.0
+theme_override_font_sizes/font_size = 24
+text = "+"
+[node name="RespawnButton" type="Button" parent="HUD"]
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -250.0
+offset_top = 24.0
+offset_right = -24.0
+offset_bottom = 78.0
+custom_minimum_size = Vector2(226, 54)
+theme_override_colors/font_color = Color(0.9, 0.97, 1, 1)
+theme_override_colors/font_hover_color = Color(1, 1, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "SON CHECKPOINT"
+tooltip_text = "Son checkpoint noktasında yeniden doğ"
+[node name="CameraButton" type="Button" parent="HUD"]
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -250.0
+offset_top = 88.0
+offset_right = -24.0
+offset_bottom = 142.0
+custom_minimum_size = Vector2(226, 54)
+theme_override_colors/font_color = Color(0.9, 0.97, 1, 1)
+theme_override_font_sizes/font_size = 16
+text = "KAMERA: 3. ŞAHIS"
+tooltip_text = "1. ve 3. şahıs kamera arasında geçiş yap"
+[node name="MobileControls" type="Control" parent="HUD"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("4_mobile")
+
+[node name="Results" type="PanelContainer" parent="HUD"]
+visible = false
+offset_left = 430.0
+offset_top = 160.0
+offset_right = 850.0
+offset_bottom = 540.0
+theme_override_styles/panel = SubResource("Results_panel")
+[node name="VBox" type="VBoxContainer" parent="HUD/Results"]
+layout_mode = 2
+theme_override_constants/separation = 14
+[node name="Title" type="Label" parent="HUD/Results/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.9, 1, 1)
+theme_override_font_sizes/font_size = 34
+text = "ZİRVEYE ULAŞTIN"
+horizontal_alignment = 1
+[node name="Subtitle" type="Label" parent="HUD/Results/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.8, 0.9, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "Gökyüzünün sonuna ulaştın."
+horizontal_alignment = 1
+[node name="Stats" type="Label" parent="HUD/Results/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.82, 0.3, 1)
+theme_override_font_sizes/font_size = 20
+text = ""
+horizontal_alignment = 1
+[node name="RestartButton" type="Button" parent="HUD/Results/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 46)
+text = "TEKRAR OYNA"
+[node name="MenuButton" type="Button" parent="HUD/Results/VBox"]
+layout_mode = 2
+custom_minimum_size = Vector2(0, 42)
+text = "ANA MENÜ"
+
+[connection signal="pressed" from="HUD/Results/VBox/RestartButton" to="." method="_on_restart_button_pressed"]
+[connection signal="pressed" from="HUD/Results/VBox/MenuButton" to="." method="_on_menu_button_pressed"]
+[connection signal="pressed" from="HUD/RespawnButton" to="." method="_on_respawn_button_pressed"]
+[connection signal="pressed" from="HUD/CameraButton" to="." method="_on_camera_button_pressed"]
