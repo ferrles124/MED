@@ -1,40 +1,48 @@
-# Prop Hunt Skybound v2
+# Prop Hunt Skybound v3
 
-Bu, Only Up projesinden bağımsız ilk Prop Hunt prototipidir.
+Bu, Only Up projesinden bağımsız, mobil destekli Prop Hunt prototipidir.
 
 ## Modlar
 
 ### Oyuncu Modu
 
-- Oyuncu karakteriyle haritada dolaş.
-- Yakınındaki eşyaya `E` veya mobilde **SAKLAN** butonuyla dönüş.
-- Aynı etkileşimle tekrar karakter formuna dön.
-- Şimdilik avcı yapay zekâsı yok; serbestçe eşya dönüşümünü test et.
+- Merkezdeki `+` imlecini bir eşyanın üzerine getir.
+- Altındaki hedef yazısı doğru eşyayı gösterir.
+- `E` veya mobil **SAKLAN** butonuyla seçili eşyaya dönüş.
+- Dönüşünce oyuncunun gerçek karakter modeli gizlenir ve seçilen eşyanın görünümü oyuncuya taşınır.
+- Tekrar `E` ile karakter formuna dön.
 
 ### Avcı Modu
 
-- Oyuncu karakteriyle haritada dolaş.
-- Kameranın önündeki eşyayı `E` veya mobilde **VUR** butonuyla hedefle.
-- Eşya kısa bir vurulma animasyonuyla tepki verir.
-- Şimdilik amaç, eşya vurma etkileşimini test etmektir; yapay zekâ avcı daha sonra eklenecek.
+- Yapay zekâ yoktur.
+- Merkezdeki `+` imlecini bir eşyanın üzerine getir.
+- Hedef yazısı seçilen eşyayı gösterir.
+- `E` veya mobil **VUR** butonuyla hedef eşyaya vur.
+- Eşya kısa bir tepki hareketi yapar.
 
 ## Kontroller
 
-| Platform | İşlev |
+### Bilgisayar
+
+| Tuş | İşlev |
 |---|---|
-| WASD / sol sanal joystick | Hareket |
-| Mouse | Kamera |
-| Space / ZIPLA | Zıplama |
-| E / SAKLAN veya VUR | Moda göre etkileşim |
+| WASD | Hareket |
+| Mouse | Kamerayı döndür |
+| Space | Zıpla |
+| E | Moda göre dönüş / vurma |
 | Esc | Mouse imlecini serbest bırak |
 
-## Mobil destek
+### Mobil
 
-Ekranın sol altındaki sanal joystick ile hareket edilir. Sağ tarafta moda göre değişen etkileşim butonu ve zıplama butonu bulunur. Mobil arayüz tüm temel test akışını destekleyecek şekilde sahneye eklendi.
+- Sol alt sanal joystick: hareket
+- Sağ orta ekranda sürükleme: kamera
+- Sağdaki **SAKLAN** veya **VUR**: moda göre etkileşim
+- Sağ alttaki **ZIPLA**: zıplama
+- Ortadaki `+`: hedef seçim imleci
 
-## Karakter animasyonları
+## Animasyonlar
 
-`Character.glb` içindeki gerçek klip adları kullanılır:
+Karakterin gerçek `Character.glb` animasyon klipleri kullanılır:
 
 - `Idle_Loop`
 - `Walk_Loop`
@@ -42,17 +50,9 @@ Ekranın sol altındaki sanal joystick ile hareket edilir. Sağ tarafta moda gö
 - `Jump_Start`
 - `Jump_Loop`
 - `Jump_Land`
-- `Roll` / `Roll_RM` hazır durumda
 
-Ayrıca modelde 46 toplam animasyon klibi bulunur; etkileşim, oturma, konuşma, itme, dövüş ve yüzme animasyonları sonraki mekaniklerde kullanılabilir.
+Modelde toplam 46 animasyon klibi vardır.
 
-## Kullanılan kaynaklar
+## Teknik not
 
-Toplam 24 asset, baked mesh collision ile kullanılmıştır: mobilya, sınıf, ofis, kafeterya, laboratuvar, tuvalet ve çiftlik objeleri.
-
-## Sonraki geliştirme sırası
-
-1. Eşya vurulma efektleri ve sesleri
-2. Gerçek avcı karakteri ve yapay zekâ
-3. Daha büyük harita ve rastgele prop yerleşimi
-4. Multiplayer mod
+Dönüşüm sırasında seçilen propun orijinal görünümü sahneden geçici olarak gizlenir; aynı prop sahnesi oyuncunun altına görsel olarak eklenir. Böylece kamera boşluğa bakmaz ve oyuncu gerçekten seçtiği eşyaya dönüşmüş gibi görünür. Orijinal propun collision’ı geçici olarak devre dışı bırakılır.

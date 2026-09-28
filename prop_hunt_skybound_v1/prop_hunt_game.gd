@@ -4,6 +4,8 @@ extends Node3D
 @onready var timer_label: Label = $HUD/Timer
 @onready var status_label: Label = $HUD/Status
 @onready var hint_label: Label = $HUD/Hint
+@onready var target_label: Label = $HUD/TargetLabel
+@onready var crosshair: Label = $HUD/Crosshair
 @onready var mode_panel: Panel = $HUD/ModePanel
 @onready var result_panel: Panel = $HUD/ResultPanel
 @onready var mobile_controls = $HUD/MobileControls
@@ -16,6 +18,8 @@ func _ready() -> void:
     for node in get_tree().get_nodes_in_group("hide_props"):
         props.append(node as Node3D)
     mode_panel.visible = true
+    crosshair.visible = false
+    target_label.visible = false
     result_panel.visible = false
     timer_label.text = "MOD SEÇ"
     status_label.text = "Oyuncu olarak eşyaya dönüş veya Avcı olarak eşya vurma modunu seç."
@@ -28,19 +32,31 @@ func choose_mode(new_mode: String) -> void:
     mode = new_mode
     player.set_mode(mode)
     mode_panel.visible = false
+    crosshair.visible = true
     mobile_controls.set_mode(mode)
     if mode == "player":
         timer_label.text = "OYUNCU MODU"
-        status_label.text = "Yakındaki eşyaya dönüşmek için E'ye bas."
-        hint_label.text = "E / SAKLAN: en yakın eşyaya dönüş  •  Tekrar bas: çık"
+        status_label.text = "İmleci eşyaya getir ve E / SAKLAN'a bas."
+        hint_label.text = "İmleç: hedef seç  •  E / SAKLAN: eşyaya dönüş  •  sağ ekranı sürükle: kamera"
     else:
         timer_label.text = "AVCI MODU"
-        status_label.text = "Eşyaları hedefleyip E veya VUR butonuna bas."
-        hint_label.text = "E / VUR: kameranın önündeki eşyayı kontrol et"
+        status_label.text = "İmleci eşyaya getir ve E / VUR'a bas."
+        hint_label.text = "İmleç: hedef seç  •  E / VUR: eşyaya vur  •  sağ ekranı sürükle: kamera"
 
 func _process(_delta: float) -> void:
+    if mode_panel.visible:
+        return
+    var target := _get_target_prop()
+    if target:
+        target_label.visible = true
+        target_label.text = ("DÖNÜŞ: " if mode == "player" else "VUR: ") + _pretty_name(target.name)
+    else:
+        target_label.visible = false
     if mode == "player" and player.disguised:
         status_label.text = "EŞYAYA DÖNÜŞTÜN. Tekrar E ile çık."
+
+func _pretty_name(raw: String) -> String:
+    return raw.replace("HideProp_", "").replace("_", " ")
 
 func perform_mode_action() -> void:
     if mode == "player":
@@ -48,37 +64,29 @@ func perform_mode_action() -> void:
             player.clear_disguise()
             status_label.text = "Karakter formuna döndün."
             return
-        var nearest: Node3D = null
-        var nearest_distance: float = 3.5
-        for prop in props:
-            if not is_instance_valid(prop):
-                continue
-            var distance: float = player.global_position.distance_to(prop.global_position)
-            if distance < nearest_distance:
-                nearest_distance = distance
-                nearest = prop
-        if nearest:
-            player.set_disguised(nearest)
+        var target := _get_target_prop()
+        if target:
+            player.set_disguised(target)
             status_label.text = "EŞYAYA DÖNÜŞTÜN."
         else:
-            status_label.text = "Yakında dönüşebileceğin bir eşya yok."
+            status_label.text = "İmleci bir eşyanın üzerine getir."
     else:
         var target := _get_target_prop()
         if target:
             hit_prop(target)
         else:
-            status_label.text = "Önünde vurulabilir bir eşya yok."
+            status_label.text = "İmleci vurmak istediğin eşyanın üzerine getir."
 
 func _get_target_prop() -> Node3D:
     var best: Node3D = null
-    var best_score := 0.72
+    var best_score: float = 0.90
     var forward: Vector3 = -player.camera.global_transform.basis.z
     for prop in props:
-        if not is_instance_valid(prop):
+        if not is_instance_valid(prop) or not prop.visible:
             continue
         var offset: Vector3 = prop.global_position - player.camera.global_position
         var distance: float = offset.length()
-        if distance > 9.0 or distance < 0.1:
+        if distance > 10.0 or distance < 0.1:
             continue
         var score: float = forward.dot(offset.normalized())
         if score > best_score:
@@ -88,7 +96,7 @@ func _get_target_prop() -> Node3D:
 
 func hit_prop(prop: Node3D) -> void:
     action_count += 1
-    var original := prop.rotation_degrees
+    var original: Vector3 = prop.rotation_degrees
     var tween := create_tween()
     tween.tween_property(prop, "rotation_degrees", original + Vector3(0, 18, 8), 0.08)
     tween.tween_property(prop, "rotation_degrees", original, 0.16)

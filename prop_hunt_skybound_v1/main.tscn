@@ -205,6 +205,30 @@ offset_right = 1000.0
 offset_bottom = 700.0
 theme_override_colors/font_color = Color(0.72, 0.8, 0.9, 1)
 theme_override_font_sizes/font_size = 16
+[node name="Crosshair" type="Label" parent="HUD"]
+offset_left = 628.0
+offset_top = 338.0
+offset_right = 652.0
+offset_bottom = 374.0
+theme_override_colors/font_color = Color(0.8, 1, 1, 0.95)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.9)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 30
+text = "+"
+horizontal_alignment = 1
+[node name="TargetLabel" type="Label" parent="HUD"]
+offset_left = 430.0
+offset_top = 545.0
+offset_right = 850.0
+offset_bottom = 582.0
+theme_override_colors/font_color = Color(0.8, 1, 0.9, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 0.9)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 18
+text = "HEDEF"
+horizontal_alignment = 1
 [node name="ModePanel" type="Panel" parent="HUD"]
 offset_left = 350.0
 offset_top = 180.0
