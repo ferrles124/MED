@@ -1,0 +1,56 @@
+[gd_scene format=4]
+
+[ext_resource type="PackedScene" path="res://assets/Done_Wood_Plank_B.glb" id="1_x8svf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_wnvgm"]
+resource_name = "wood_1"
+cull_mode = 2
+albedo_color = Color(0.5396707, 0.35608336, 0.2236607, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_tc3a2"]
+_surfaces = [{
+"aabb": AABB(-2.6587672, -0.057137012, -0.3219788, 5.20986, 0.114274025, 0.74242866),
+"format": 34896613377,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAwAEAAEABAACAAEAAAAFAAMAAwAFAAQAAAAGAAUABgAEAAUAAAAHAAYABAAGAAcABwAAAAIAAgAEAAgABAAHAAgABwACAAkAAgAIAAkACAAHAAkA"),
+"name": "wood_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 10,
+"vertex_data": PackedByteArray("5gYAAMgHAAD/////AAAAAOYGSt/IBwAA//8AAAAAAAD/////Ct4AAP//AAAK3gAAAAAAAP//AAAAACcuev4AALQE//8d9wAA7gCU+zfXAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_bqudw"]
+resource_name = "Done_Wood_Plank_B_Cube_008"
+_surfaces = [{
+"aabb": AABB(-2.6587672, -0.057137012, -0.3219788, 5.20986, 0.114274025, 0.74242866),
+"attribute_data": PackedByteArray("/1//v/+f/3//n/+//1//f/9f/3//n/8//5//f/9f/z//H/9//1//P/9f/3//H/8//58tAYlr/3//36NI/18AAP+f/z//X/8/iWv/f/+fLQH/X/+/iWv///9f////n/+//59b9/+f/z//3/9//5//f9He/z//36NI"),
+"format": 34896613399,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAAADAAEABAAFAAYABAAHAAUACAAJAAoACAALAAkADAANAA4ADwAQABEAEAAPABIAEAASABMAFAAVABYAFQAUABcAFQAXABgAGQAaABsAGgAZABwAGgAcAB0A"),
+"material": SubResource("StandardMaterial3D_wnvgm"),
+"name": "wood_1",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 30,
+"vertex_data": PackedByteArray("5gYAAMgH3f//////AADd/+YGSt/IB93///8AAAAA3f///wAAAABU1f////8K3lTV/////wAAVNX//wAACt5U1eYGAADIBwDA//8AAAre/7///wAAAAD/vwAAAAD//wDAtAT//x33fCIAACcuev58Iu4AlPs313wiAAAAAP//kHv/////Ct6Qe///AAAK3ibAAAAnLnr+kHu0BP//HfddhOYGAADIB6raAAAnLnr+wN4AAAAA//8A3+YGSt/IB+/a7gCU+zfXAN//////Ct7N/+YGSt/IB5D//////wAA0/+0BP//HfeL/+4AlPs314v/EcARwBHAEcARwBHAEcARwKoqqiqqKqoqqiqqKqoqqio/At9+ugCif5EAtn9fAs9+yO6MK8jujCvI7owrTvC3XU7wt13t+CYFTvC3XX7vDWaE0h/T79cY0EDY68/j0urSQNjrzx6AScBigCfAF4BNwGiAJMBogCTA")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_tc3a2")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_lp3yk"]
+data = PackedVector3Array(-2.5184, -0.057099998, -0.2994, 2.5511, 0.057099998, -0.322, -2.5184, 0.0425, -0.2994, -2.5184, -0.057099998, -0.2994, 2.5511, -0.057099998, -0.322, 2.5511, 0.057099998, -0.322, 2.5511, -0.057099998, -0.322, 2.5511, 0.057099998, 0.322, 2.5511, 0.057099998, -0.322, 2.5511, -0.057099998, -0.322, 2.5511, -0.057099998, 0.322, 2.5511, 0.057099998, 0.322, -2.5184, -0.057099998, -0.2994, 2.5511, -0.057099998, 0.322, 2.5511, -0.057099998, -0.322, -2.5184, -0.057099998, -0.2994, -2.6588, -0.057099998, 0.4204, 2.5511, -0.057099998, 0.322, -2.5630999, 0.057099998, 0.3947, -2.6588, -0.0365, 0.41599998, -2.6397998, 0.0552, 0.3022, -2.6588, -0.057099998, 0.4204, 2.5511, 0.057099998, 0.322, 2.5511, -0.057099998, 0.322, 2.5511, 0.057099998, 0.322, -2.6588, -0.057099998, 0.4204, -2.6588, -0.0365, 0.41599998, 2.5511, 0.057099998, 0.322, -2.6588, -0.0365, 0.41599998, -2.5630999, 0.057099998, 0.3947, -2.5184, -0.057099998, -0.2994, -2.6588, -0.0365, 0.41599998, -2.6588, -0.057099998, 0.4204, -2.6588, -0.0365, 0.41599998, -2.5184, -0.057099998, -0.2994, -2.5184, 0.0425, -0.2994, -2.6588, -0.0365, 0.41599998, -2.5184, 0.0425, -0.2994, -2.6397998, 0.0552, 0.3022, 2.5511, 0.057099998, 0.322, -2.5184, 0.0425, -0.2994, 2.5511, 0.057099998, -0.322, -2.5184, 0.0425, -0.2994, 2.5511, 0.057099998, 0.322, -2.5630999, 0.057099998, 0.3947, -2.5184, 0.0425, -0.2994, -2.5630999, 0.057099998, 0.3947, -2.6397998, 0.0552, 0.3022)
+
+[node name="Prop_Done_Wood_Plank_B" type="StaticBody3D" unique_id=1995365783]
+
+[node name="Model" type="Node3D" parent="." unique_id=802341857 instance=ExtResource("1_x8svf")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+
+[node name="Wood Plank B" type="MeshInstance3D" parent="Model" unique_id=499450485]
+mesh = SubResource("ArrayMesh_bqudw")
+
+[node name="BakedSurface_Wood Plank B" type="CollisionShape3D" parent="." unique_id=841711056]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_lp3yk")

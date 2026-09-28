@@ -1,0 +1,656 @@
+[gd_scene load_steps=69 format=3]
+[ext_resource type="PackedScene" path="res://props/ComPlaneV1.tscn" id="p0"]
+[ext_resource type="PackedScene" path="res://props/ComPlaneV2.tscn" id="p1"]
+[ext_resource type="PackedScene" path="res://props/ComPlaneV3.tscn" id="p2"]
+[ext_resource type="PackedScene" path="res://props/Done_Barril.tscn" id="p3"]
+[ext_resource type="PackedScene" path="res://props/Done_Battle_Axe.tscn" id="p4"]
+[ext_resource type="PackedScene" path="res://props/Done_Chair.tscn" id="p5"]
+[ext_resource type="PackedScene" path="res://props/Done_Chope_A.tscn" id="p6"]
+[ext_resource type="PackedScene" path="res://props/Done_Chope_B.tscn" id="p7"]
+[ext_resource type="PackedScene" path="res://props/Done_Cup.tscn" id="p8"]
+[ext_resource type="PackedScene" path="res://props/Done_Lamp.tscn" id="p9"]
+[ext_resource type="PackedScene" path="res://props/Done_Panel.tscn" id="p10"]
+[ext_resource type="PackedScene" path="res://props/Done_Pole.tscn" id="p11"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_1.tscn" id="p12"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_10.tscn" id="p13"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_2.tscn" id="p14"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_3.tscn" id="p15"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_4.tscn" id="p16"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_5.tscn" id="p17"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_6.tscn" id="p18"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_7.tscn" id="p19"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_8.tscn" id="p20"]
+[ext_resource type="PackedScene" path="res://props/Done_Rock_9.tscn" id="p21"]
+[ext_resource type="PackedScene" path="res://props/Done_Seat.tscn" id="p22"]
+[ext_resource type="PackedScene" path="res://props/Done_Shield.tscn" id="p23"]
+[ext_resource type="PackedScene" path="res://props/Done_Signal.tscn" id="p24"]
+[ext_resource type="PackedScene" path="res://props/Done_Stone.tscn" id="p25"]
+[ext_resource type="PackedScene" path="res://props/Done_Sword.tscn" id="p26"]
+[ext_resource type="PackedScene" path="res://props/Done_Table.tscn" id="p27"]
+[ext_resource type="PackedScene" path="res://props/Done_Wood_Axe.tscn" id="p28"]
+[ext_resource type="PackedScene" path="res://props/Done_Wood_Plank_A.tscn" id="p29"]
+[ext_resource type="PackedScene" path="res://props/Done_Wood_Plank_B.tscn" id="p30"]
+[ext_resource type="PackedScene" path="res://props/Done_Wood_Trunk.tscn" id="p31"]
+[ext_resource type="PackedScene" path="res://props/EaglePlane.tscn" id="p32"]
+[ext_resource type="PackedScene" path="res://props/Fisher_Boat.tscn" id="p33"]
+[ext_resource type="PackedScene" path="res://props/Fishing_Rod.tscn" id="p34"]
+[ext_resource type="PackedScene" path="res://props/HelicopterV1.tscn" id="p35"]
+[ext_resource type="PackedScene" path="res://props/HelicopterV2.tscn" id="p36"]
+[ext_resource type="PackedScene" path="res://props/JetskiV1.tscn" id="p37"]
+[ext_resource type="PackedScene" path="res://props/KA-F1000_FridgeSBS_V1.tscn" id="p38"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Dryer_V1.tscn" id="p39"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Fan_V1.tscn" id="p40"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Fridge_V1.tscn" id="p41"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Stove_V1.tscn" id="p42"]
+[ext_resource type="PackedScene" path="res://props/KA-F600_Washer_V1.tscn" id="p43"]
+[ext_resource type="PackedScene" path="res://props/KA-F800_Fan_V1.tscn" id="p44"]
+[ext_resource type="PackedScene" path="res://props/KAC-F1000_FridgeSBS_V1_FreezerDrawer.tscn" id="p45"]
+[ext_resource type="PackedScene" path="res://props/KAC-F1000_FridgeSBS_V1_FreezerDrawerHolder.tscn" id="p46"]
+[ext_resource type="PackedScene" path="res://props/KAC-F1000_FridgeSBS_V1_FreezerShelf.tscn" id="p47"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_Fridge_V1_Drawer.tscn" id="p48"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_Fridge_V1_DrawerHolder.tscn" id="p49"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_Fridge_V1_Shelf.tscn" id="p50"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_OvenTray_V2.tscn" id="p51"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_OvenTray_V3.tscn" id="p52"]
+[ext_resource type="PackedScene" path="res://props/KAC-F600_TrayGuide_V2.tscn" id="p53"]
+[ext_resource type="PackedScene" path="res://props/KAC_Micro_Tray_V2.tscn" id="p54"]
+[ext_resource type="PackedScene" path="res://props/KAC_Oven_Fan_V2.tscn" id="p55"]
+[ext_resource type="PackedScene" path="res://props/KA_Micro_V2.tscn" id="p57"]
+[ext_resource type="PackedScene" path="res://props/KayakPaddle.tscn" id="p58"]
+[ext_resource type="PackedScene" path="res://props/KayakV1.tscn" id="p59"]
+[ext_resource type="PackedScene" path="res://props/KayakV2.tscn" id="p60"]
+[ext_resource type="PackedScene" path="res://props/LightPlane.tscn" id="p61"]
+[ext_resource type="PackedScene" path="res://props/Paddle.tscn" id="p62"]
+[ext_resource type="PackedScene" path="res://props/Scout_Boat.tscn" id="p63"]
+[ext_resource type="PackedScene" path="res://props/Speed_Boat.tscn" id="p64"]
+[ext_resource type="PackedScene" path="res://props/Wood_BoatV1.tscn" id="p65"]
+[ext_resource type="PackedScene" path="res://props/Wood_BoatV2.tscn" id="p66"]
+[ext_resource type="PackedScene" path="res://checkpoint.tscn" id="checkpoint"]
+[ext_resource type="PackedScene" path="res://star.tscn" id="star"]
+
+[node name="ConnectedLongClimb" type="Node3D"]
+[node name="KitchenStart_000_KA-F600_Fridge_V1" parent="." instance=ExtResource("p41")]
+position = Vector3(0.00, 2.00, 0.00)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="KitchenStart_001_KA-F600_Washer_V1" parent="." instance=ExtResource("p43")]
+position = Vector3(3.10, 2.72, -2.50)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="KitchenStart_002_KA-F600_Dryer_V1" parent="." instance=ExtResource("p39")]
+position = Vector3(6.20, 3.44, -5.00)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="KitchenStart_003_KA-F600_Stove_V1" parent="." instance=ExtResource("p42")]
+position = Vector3(9.30, 4.16, -7.50)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="KitchenStart_004_KA_Micro_V2" parent="." instance=ExtResource("p57")]
+position = Vector3(12.40, 4.88, -10.00)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="Checkpoint_00" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(12.40, 7.88, -12.50)
+[node name="Star_00" parent="." instance=ExtResource("star")]
+position = Vector3(9.90, 9.48, -11.50)
+[node name="KitchenLink_005_KAC-F600_Fridge_V1_Shelf" parent="." instance=ExtResource("p50")]
+position = Vector3(12.40, 5.88, -12.50)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="KitchenLink_006_KAC-F600_Fridge_V1_DrawerHolder" parent="." instance=ExtResource("p49")]
+position = Vector3(15.50, 6.60, -15.20)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="KitchenLink_007_KAC-F600_Fridge_V1_Drawer" parent="." instance=ExtResource("p48")]
+position = Vector3(18.60, 7.32, -17.90)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="KitchenLink_008_KAC-F600_OvenTray_V2" parent="." instance=ExtResource("p51")]
+position = Vector3(21.70, 8.04, -20.60)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="KitchenLink_009_KAC-F600_TrayGuide_V2" parent="." instance=ExtResource("p53")]
+position = Vector3(24.80, 8.76, -23.30)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="Checkpoint_01" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(24.80, 11.76, -26.00)
+[node name="Star_01" parent="." instance=ExtResource("star")]
+position = Vector3(22.30, 13.36, -25.00)
+[node name="PlaneIslandEntry_010_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(24.80, 9.76, -26.00)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="PlaneIslandEntry_011_Done_Wood_Plank_B" parent="." instance=ExtResource("p30")]
+position = Vector3(24.80, 10.76, -28.50)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="PlaneIsland_012_ComPlaneV1" parent="." instance=ExtResource("p0")]
+position = Vector3(24.80, 10.96, -31.50)
+rotation_degrees = Vector3(0, 12, 0)
+[node name="PlaneIsland_013_ComPlaneV2" parent="." instance=ExtResource("p1")]
+position = Vector3(29.80, 10.96, -30.20)
+rotation_degrees = Vector3(2, -8, -2)
+[node name="PlaneIsland_014_ComPlaneV3" parent="." instance=ExtResource("p2")]
+position = Vector3(34.80, 10.96, -31.50)
+rotation_degrees = Vector3(-2, 5, 2)
+[node name="PlaneIsland_015_EaglePlane" parent="." instance=ExtResource("p32")]
+position = Vector3(39.80, 10.96, -30.20)
+rotation_degrees = Vector3(0, 12, 0)
+[node name="PlaneIsland_016_LightPlane" parent="." instance=ExtResource("p61")]
+position = Vector3(44.80, 10.96, -31.50)
+rotation_degrees = Vector3(2, -8, -2)
+[node name="PlaneIslandExit_017_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(44.80, 10.96, -36.00)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="Checkpoint_02" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(44.80, 12.96, -36.00)
+[node name="Star_02" parent="." instance=ExtResource("star")]
+position = Vector3(42.30, 14.56, -35.00)
+[node name="PlaneExit_018_Done_Wood_Trunk" parent="." instance=ExtResource("p31")]
+position = Vector3(44.80, 10.96, -36.00)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="PlaneExit_019_Done_Rock_1" parent="." instance=ExtResource("p12")]
+position = Vector3(47.80, 11.68, -38.80)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="PlaneExit_020_Done_Rock_6" parent="." instance=ExtResource("p18")]
+position = Vector3(50.80, 12.40, -41.60)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="PlaneExit_021_Done_Stone" parent="." instance=ExtResource("p25")]
+position = Vector3(53.80, 13.12, -44.40)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="PlaneExit_022_Done_Rock_10" parent="." instance=ExtResource("p13")]
+position = Vector3(56.80, 13.84, -47.20)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="PlaneExit_023_Done_Chair" parent="." instance=ExtResource("p5")]
+position = Vector3(59.80, 14.56, -50.00)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="PlaneExit_024_Done_Seat" parent="." instance=ExtResource("p22")]
+position = Vector3(62.80, 15.28, -52.80)
+rotation_degrees = Vector3(-1, 258, 1)
+[node name="Checkpoint_03" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(62.80, 18.28, -55.60)
+[node name="Star_03" parent="." instance=ExtResource("star")]
+position = Vector3(60.30, 19.88, -54.60)
+[node name="BoatHarborEntry_025_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(62.80, 16.28, -55.60)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BoatHarborEntry_026_Done_Wood_Plank_B" parent="." instance=ExtResource("p30")]
+position = Vector3(62.80, 17.28, -58.10)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BoatHarbor_027_Fisher_Boat" parent="." instance=ExtResource("p33")]
+position = Vector3(62.80, 17.48, -61.10)
+rotation_degrees = Vector3(0, 12, 0)
+[node name="BoatHarbor_028_Scout_Boat" parent="." instance=ExtResource("p63")]
+position = Vector3(69.80, 17.48, -59.80)
+rotation_degrees = Vector3(2, -8, -2)
+[node name="BoatHarbor_029_Speed_Boat" parent="." instance=ExtResource("p64")]
+position = Vector3(76.80, 17.48, -61.10)
+rotation_degrees = Vector3(-2, 5, 2)
+[node name="BoatHarborExit_030_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(76.80, 17.48, -65.60)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="Checkpoint_04" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(76.80, 19.48, -65.60)
+[node name="Star_04" parent="." instance=ExtResource("star")]
+position = Vector3(74.30, 21.08, -64.60)
+[node name="BoatExit_031_Wood_BoatV1" parent="." instance=ExtResource("p65")]
+position = Vector3(76.80, 17.48, -65.60)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="BoatExit_032_KAC-F1000_FridgeSBS_V1_FreezerShelf" parent="." instance=ExtResource("p47")]
+position = Vector3(73.60, 18.20, -68.40)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="BoatExit_033_Wood_BoatV2" parent="." instance=ExtResource("p66")]
+position = Vector3(70.40, 18.92, -71.20)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="BoatExit_034_KAC-F1000_FridgeSBS_V1_FreezerDrawerHolder" parent="." instance=ExtResource("p46")]
+position = Vector3(67.20, 19.64, -74.00)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="BoatExit_035_KAC-F1000_FridgeSBS_V1_FreezerDrawer" parent="." instance=ExtResource("p45")]
+position = Vector3(64.00, 20.36, -76.80)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="Checkpoint_05" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(64.00, 23.36, -79.60)
+[node name="Star_05" parent="." instance=ExtResource("star")]
+position = Vector3(61.50, 24.96, -78.60)
+[node name="HeliDeckEntry_036_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(64.00, 21.36, -79.60)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="HeliDeckEntry_037_Done_Wood_Plank_B" parent="." instance=ExtResource("p30")]
+position = Vector3(64.00, 22.36, -82.10)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="HeliDeck_038_HelicopterV1" parent="." instance=ExtResource("p35")]
+position = Vector3(64.00, 22.56, -85.10)
+rotation_degrees = Vector3(0, 12, 0)
+[node name="HeliDeck_039_HelicopterV2" parent="." instance=ExtResource("p36")]
+position = Vector3(69.00, 22.56, -83.80)
+rotation_degrees = Vector3(2, -8, -2)
+[node name="HeliDeck_040_HelicopterV1" parent="." instance=ExtResource("p35")]
+position = Vector3(74.00, 22.56, -85.10)
+rotation_degrees = Vector3(-2, 5, 2)
+[node name="HeliDeckExit_041_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(74.00, 22.56, -89.60)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="Checkpoint_06" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(74.00, 24.56, -89.60)
+[node name="Star_06" parent="." instance=ExtResource("star")]
+position = Vector3(71.50, 26.16, -88.60)
+[node name="WaterLink_042_Done_Panel" parent="." instance=ExtResource("p10")]
+position = Vector3(74.00, 22.56, -89.60)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="WaterLink_043_Done_Pole" parent="." instance=ExtResource("p11")]
+position = Vector3(71.00, 23.28, -92.40)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="WaterLink_044_Done_Signal" parent="." instance=ExtResource("p24")]
+position = Vector3(68.00, 24.00, -95.20)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="WaterLink_045_JetskiV1" parent="." instance=ExtResource("p37")]
+position = Vector3(65.00, 24.72, -98.00)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="WaterLink_046_KayakV1" parent="." instance=ExtResource("p59")]
+position = Vector3(62.00, 25.44, -100.80)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="WaterLink_047_KayakV2" parent="." instance=ExtResource("p60")]
+position = Vector3(59.00, 26.16, -103.60)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="WaterLink_048_KayakPaddle" parent="." instance=ExtResource("p58")]
+position = Vector3(56.00, 26.88, -106.40)
+rotation_degrees = Vector3(-1, 258, 1)
+[node name="WaterLink_049_Paddle" parent="." instance=ExtResource("p62")]
+position = Vector3(53.00, 27.60, -109.20)
+rotation_degrees = Vector3(2, 301, -1)
+[node name="WaterLink_050_Fishing_Rod" parent="." instance=ExtResource("p34")]
+position = Vector3(50.00, 28.32, -112.00)
+rotation_degrees = Vector3(-2, 344, 2)
+[node name="Checkpoint_07" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 31.32, -114.80)
+[node name="Star_07" parent="." instance=ExtResource("star")]
+position = Vector3(47.50, 32.92, -113.80)
+[node name="ConnectedJunk_051_Done_Barril" parent="." instance=ExtResource("p3")]
+position = Vector3(50.00, 29.32, -114.80)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="ConnectedJunk_052_Done_Battle_Axe" parent="." instance=ExtResource("p4")]
+position = Vector3(47.00, 30.04, -117.60)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="ConnectedJunk_053_Done_Chope_A" parent="." instance=ExtResource("p6")]
+position = Vector3(44.00, 30.76, -120.40)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="ConnectedJunk_054_Done_Chope_B" parent="." instance=ExtResource("p7")]
+position = Vector3(41.00, 31.48, -123.20)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="ConnectedJunk_055_Done_Cup" parent="." instance=ExtResource("p8")]
+position = Vector3(38.00, 32.20, -126.00)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="ConnectedJunk_056_Done_Lamp" parent="." instance=ExtResource("p9")]
+position = Vector3(35.00, 32.92, -128.80)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="ConnectedJunk_057_Done_Rock_2" parent="." instance=ExtResource("p14")]
+position = Vector3(32.00, 33.64, -131.60)
+rotation_degrees = Vector3(-1, 258, 1)
+[node name="Checkpoint_08" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(32.00, 36.64, -134.40)
+[node name="Star_08" parent="." instance=ExtResource("star")]
+position = Vector3(29.50, 38.24, -133.40)
+[node name="ConnectedJunk_058_Done_Rock_3" parent="." instance=ExtResource("p15")]
+position = Vector3(32.00, 34.64, -134.40)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="ConnectedJunk_059_Done_Rock_4" parent="." instance=ExtResource("p16")]
+position = Vector3(35.00, 35.36, -137.20)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="ConnectedJunk_060_Done_Rock_5" parent="." instance=ExtResource("p17")]
+position = Vector3(38.00, 36.08, -140.00)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="ConnectedJunk_061_Done_Rock_7" parent="." instance=ExtResource("p19")]
+position = Vector3(41.00, 36.80, -142.80)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="ConnectedJunk_062_Done_Rock_8" parent="." instance=ExtResource("p20")]
+position = Vector3(44.00, 37.52, -145.60)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="ConnectedJunk_063_Done_Rock_9" parent="." instance=ExtResource("p21")]
+position = Vector3(47.00, 38.24, -148.40)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="ConnectedJunk_064_Done_Shield" parent="." instance=ExtResource("p23")]
+position = Vector3(50.00, 38.96, -151.20)
+rotation_degrees = Vector3(-1, 258, 1)
+[node name="Checkpoint_09" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(50.00, 41.96, -154.00)
+[node name="Star_09" parent="." instance=ExtResource("star")]
+position = Vector3(47.50, 43.56, -153.00)
+[node name="ConnectedJunk_065_Done_Sword" parent="." instance=ExtResource("p26")]
+position = Vector3(50.00, 39.96, -154.00)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="ConnectedJunk_066_Done_Table" parent="." instance=ExtResource("p27")]
+position = Vector3(53.00, 40.68, -156.80)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="ConnectedJunk_067_Done_Wood_Axe" parent="." instance=ExtResource("p28")]
+position = Vector3(56.00, 41.40, -159.60)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="ConnectedJunk_068_KA-F1000_FridgeSBS_V1" parent="." instance=ExtResource("p38")]
+position = Vector3(59.00, 42.12, -162.40)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="ConnectedJunk_069_KA-F600_Fan_V1" parent="." instance=ExtResource("p40")]
+position = Vector3(62.00, 42.84, -165.20)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="ConnectedJunk_070_KA-F800_Fan_V1" parent="." instance=ExtResource("p44")]
+position = Vector3(65.00, 43.56, -168.00)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="ConnectedJunk_071_KAC-F600_OvenTray_V3" parent="." instance=ExtResource("p52")]
+position = Vector3(68.00, 44.28, -170.80)
+rotation_degrees = Vector3(-1, 258, 1)
+[node name="Checkpoint_10" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(68.00, 47.28, -173.60)
+[node name="Star_10" parent="." instance=ExtResource("star")]
+position = Vector3(65.50, 48.88, -172.60)
+[node name="ConnectedJunk_072_KAC_Micro_Tray_V2" parent="." instance=ExtResource("p54")]
+position = Vector3(68.00, 45.28, -173.60)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="ConnectedJunk_073_KAC_Oven_Fan_V2" parent="." instance=ExtResource("p55")]
+position = Vector3(71.00, 46.00, -176.40)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="ConnectedJunk_074_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(74.00, 46.72, -179.20)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="Checkpoint_11" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(74.00, 49.72, -182.00)
+[node name="Star_11" parent="." instance=ExtResource("star")]
+position = Vector3(71.50, 51.32, -181.00)
+[node name="FinalConnected_075_KA-F600_Fan_V1" parent="." instance=ExtResource("p40")]
+position = Vector3(74.00, 47.72, -182.00)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="FinalConnected_076_KA-F800_Fan_V1" parent="." instance=ExtResource("p44")]
+position = Vector3(71.00, 48.44, -184.80)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="FinalConnected_077_KA-F600_Fridge_V1" parent="." instance=ExtResource("p41")]
+position = Vector3(68.00, 49.16, -187.60)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="FinalConnected_078_Done_Table" parent="." instance=ExtResource("p27")]
+position = Vector3(65.00, 49.88, -190.40)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="FinalConnected_079_Done_Wood_Trunk" parent="." instance=ExtResource("p31")]
+position = Vector3(62.00, 50.60, -193.20)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="FinalConnected_080_Done_Chair" parent="." instance=ExtResource("p5")]
+position = Vector3(59.00, 51.32, -196.00)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="Checkpoint_12" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(59.00, 54.32, -198.80)
+[node name="Star_12" parent="." instance=ExtResource("star")]
+position = Vector3(56.50, 55.92, -197.80)
+[node name="FinalConnected_081_Done_Battle_Axe" parent="." instance=ExtResource("p4")]
+position = Vector3(59.00, 52.32, -198.80)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="FinalConnected_082_Done_Wood_Axe" parent="." instance=ExtResource("p28")]
+position = Vector3(62.00, 53.04, -201.60)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="FinalConnected_083_Done_Sword" parent="." instance=ExtResource("p26")]
+position = Vector3(65.00, 53.76, -204.40)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="FinalConnected_084_Done_Shield" parent="." instance=ExtResource("p23")]
+position = Vector3(68.00, 54.48, -207.20)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="FinalConnected_085_Done_Pole" parent="." instance=ExtResource("p11")]
+position = Vector3(71.00, 55.20, -210.00)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="FinalConnected_086_Done_Signal" parent="." instance=ExtResource("p24")]
+position = Vector3(74.00, 55.92, -212.80)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="Checkpoint_13" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(74.00, 58.92, -215.60)
+[node name="Star_13" parent="." instance=ExtResource("star")]
+position = Vector3(71.50, 60.52, -214.60)
+[node name="FinalConnected_087_KAC-F600_OvenTray_V3" parent="." instance=ExtResource("p52")]
+position = Vector3(74.00, 56.92, -215.60)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="FinalConnected_088_KAC_Micro_Tray_V2" parent="." instance=ExtResource("p54")]
+position = Vector3(71.00, 57.64, -218.40)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="FinalConnected_089_KAC_Oven_Fan_V2" parent="." instance=ExtResource("p55")]
+position = Vector3(68.00, 58.36, -221.20)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="FinalConnected_090_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(65.00, 59.08, -224.00)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="FinalConnected_091_Done_Lamp" parent="." instance=ExtResource("p9")]
+position = Vector3(62.00, 59.80, -226.80)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="FinalConnected_092_Done_Barril" parent="." instance=ExtResource("p3")]
+position = Vector3(59.00, 60.52, -229.60)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="Checkpoint_14" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(59.00, 63.52, -232.40)
+[node name="Star_14" parent="." instance=ExtResource("star")]
+position = Vector3(56.50, 65.12, -231.40)
+[node name="FinalConnected_093_Done_Chope_A" parent="." instance=ExtResource("p6")]
+position = Vector3(59.00, 61.52, -232.40)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="FinalConnected_094_Done_Chope_B" parent="." instance=ExtResource("p7")]
+position = Vector3(56.00, 62.24, -235.20)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="FinalConnected_095_Done_Cup" parent="." instance=ExtResource("p8")]
+position = Vector3(53.00, 62.96, -238.00)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="FinalConnected_096_Done_Rock_2" parent="." instance=ExtResource("p14")]
+position = Vector3(50.00, 63.68, -240.80)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="FinalConnected_097_Done_Rock_3" parent="." instance=ExtResource("p15")]
+position = Vector3(47.00, 64.40, -243.60)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="FinalConnected_098_Done_Rock_4" parent="." instance=ExtResource("p16")]
+position = Vector3(44.00, 65.12, -246.40)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="Checkpoint_15" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(44.00, 68.12, -249.20)
+[node name="Star_15" parent="." instance=ExtResource("star")]
+position = Vector3(41.50, 69.72, -248.20)
+[node name="FinalConnected_099_KA-F1000_FridgeSBS_V1" parent="." instance=ExtResource("p38")]
+position = Vector3(44.00, 66.12, -249.20)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="FinalConnected_100_KA-F600_Washer_V1" parent="." instance=ExtResource("p43")]
+position = Vector3(47.00, 66.84, -252.00)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="FinalConnected_101_KA-F600_Dryer_V1" parent="." instance=ExtResource("p39")]
+position = Vector3(50.00, 67.56, -254.80)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="FinalConnected_102_KA-F600_Stove_V1" parent="." instance=ExtResource("p42")]
+position = Vector3(53.00, 68.28, -257.60)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="FinalConnected_103_KA_Micro_V2" parent="." instance=ExtResource("p57")]
+position = Vector3(56.00, 69.00, -260.40)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="Checkpoint_16" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(56.00, 72.00, -263.20)
+[node name="Star_16" parent="." instance=ExtResource("star")]
+position = Vector3(53.50, 73.60, -262.20)
+[node name="LongFinalConnected_104_Done_Rock_5" parent="." instance=ExtResource("p17")]
+position = Vector3(56.00, 70.00, -263.20)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="LongFinalConnected_105_Done_Rock_7" parent="." instance=ExtResource("p19")]
+position = Vector3(59.00, 70.72, -266.00)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="LongFinalConnected_106_Done_Rock_8" parent="." instance=ExtResource("p20")]
+position = Vector3(62.00, 71.44, -268.80)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="LongFinalConnected_107_Done_Rock_9" parent="." instance=ExtResource("p21")]
+position = Vector3(65.00, 72.16, -271.60)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="LongFinalConnected_108_Done_Stone" parent="." instance=ExtResource("p25")]
+position = Vector3(68.00, 72.88, -274.40)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="LongFinalConnected_109_Done_Barril" parent="." instance=ExtResource("p3")]
+position = Vector3(71.00, 73.60, -277.20)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="Checkpoint_17" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(71.00, 76.60, -280.00)
+[node name="Star_17" parent="." instance=ExtResource("star")]
+position = Vector3(68.50, 78.20, -279.00)
+[node name="LongFinalConnected_110_KA-F600_Fan_V1" parent="." instance=ExtResource("p40")]
+position = Vector3(71.00, 74.60, -280.00)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="LongFinalConnected_111_KA-F800_Fan_V1" parent="." instance=ExtResource("p44")]
+position = Vector3(74.00, 75.32, -282.80)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="LongFinalConnected_112_Done_Panel" parent="." instance=ExtResource("p10")]
+position = Vector3(77.00, 76.04, -285.60)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="LongFinalConnected_113_Done_Pole" parent="." instance=ExtResource("p11")]
+position = Vector3(80.00, 76.76, -288.40)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="LongFinalConnected_114_Done_Signal" parent="." instance=ExtResource("p24")]
+position = Vector3(83.00, 77.48, -291.20)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="LongFinalConnected_115_Done_Lamp" parent="." instance=ExtResource("p9")]
+position = Vector3(86.00, 78.20, -294.00)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="Checkpoint_18" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(86.00, 81.20, -296.80)
+[node name="Star_18" parent="." instance=ExtResource("star")]
+position = Vector3(83.50, 82.80, -295.80)
+[node name="LongFinalConnected_116_KAC-F600_Fridge_V1_Shelf" parent="." instance=ExtResource("p50")]
+position = Vector3(86.00, 79.20, -296.80)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="LongFinalConnected_117_KAC-F600_Fridge_V1_Drawer" parent="." instance=ExtResource("p48")]
+position = Vector3(83.00, 79.92, -299.60)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="LongFinalConnected_118_KAC-F600_Fridge_V1_DrawerHolder" parent="." instance=ExtResource("p49")]
+position = Vector3(80.00, 80.64, -302.40)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="LongFinalConnected_119_KAC-F600_OvenTray_V2" parent="." instance=ExtResource("p51")]
+position = Vector3(77.00, 81.36, -305.20)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="LongFinalConnected_120_KAC-F600_TrayGuide_V2" parent="." instance=ExtResource("p53")]
+position = Vector3(74.00, 82.08, -308.00)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="Checkpoint_19" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(74.00, 85.08, -310.80)
+[node name="Star_19" parent="." instance=ExtResource("star")]
+position = Vector3(71.50, 86.68, -309.80)
+[node name="LongFinalConnected_121_Done_Chair" parent="." instance=ExtResource("p5")]
+position = Vector3(74.00, 83.08, -310.80)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="LongFinalConnected_122_Done_Seat" parent="." instance=ExtResource("p22")]
+position = Vector3(71.00, 83.80, -313.60)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="LongFinalConnected_123_Done_Table" parent="." instance=ExtResource("p27")]
+position = Vector3(68.00, 84.52, -316.40)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="LongFinalConnected_124_Done_Wood_Trunk" parent="." instance=ExtResource("p31")]
+position = Vector3(65.00, 85.24, -319.20)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="LongFinalConnected_125_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(62.00, 85.96, -322.00)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="LongFinalConnected_126_Done_Wood_Plank_B" parent="." instance=ExtResource("p30")]
+position = Vector3(59.00, 86.68, -324.80)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="Checkpoint_20" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(59.00, 89.68, -327.60)
+[node name="Star_20" parent="." instance=ExtResource("star")]
+position = Vector3(56.50, 91.28, -326.60)
+[node name="LongFinalConnected_127_KA-F600_Fridge_V1" parent="." instance=ExtResource("p41")]
+position = Vector3(59.00, 87.68, -327.60)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="LongFinalConnected_128_KA-F1000_FridgeSBS_V1" parent="." instance=ExtResource("p38")]
+position = Vector3(56.00, 88.40, -330.40)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="LongFinalConnected_129_KA-F600_Washer_V1" parent="." instance=ExtResource("p43")]
+position = Vector3(53.00, 89.12, -333.20)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="LongFinalConnected_130_KA-F600_Dryer_V1" parent="." instance=ExtResource("p39")]
+position = Vector3(50.00, 89.84, -336.00)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="LongFinalConnected_131_KA-F600_Stove_V1" parent="." instance=ExtResource("p42")]
+position = Vector3(47.00, 90.56, -338.80)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="Checkpoint_21" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(47.00, 93.56, -341.60)
+[node name="Star_21" parent="." instance=ExtResource("star")]
+position = Vector3(44.50, 95.16, -340.60)
+[node name="LongFinalConnected_132_Done_Battle_Axe" parent="." instance=ExtResource("p4")]
+position = Vector3(47.00, 91.56, -341.60)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="LongFinalConnected_133_Done_Wood_Axe" parent="." instance=ExtResource("p28")]
+position = Vector3(44.00, 92.28, -344.40)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="LongFinalConnected_134_Done_Sword" parent="." instance=ExtResource("p26")]
+position = Vector3(41.00, 93.00, -347.20)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="LongFinalConnected_135_Done_Shield" parent="." instance=ExtResource("p23")]
+position = Vector3(38.00, 93.72, -350.00)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="LongFinalConnected_136_Done_Rock_1" parent="." instance=ExtResource("p12")]
+position = Vector3(35.00, 94.44, -352.80)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="LongFinalConnected_137_Done_Rock_2" parent="." instance=ExtResource("p14")]
+position = Vector3(32.00, 95.16, -355.60)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="Checkpoint_22" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(32.00, 98.16, -358.40)
+[node name="Star_22" parent="." instance=ExtResource("star")]
+position = Vector3(29.50, 99.76, -357.40)
+[node name="LongFinalConnected_138_KAC-F1000_FridgeSBS_V1_FreezerShelf" parent="." instance=ExtResource("p47")]
+position = Vector3(32.00, 96.16, -358.40)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="LongFinalConnected_139_KAC-F1000_FridgeSBS_V1_FreezerDrawer" parent="." instance=ExtResource("p45")]
+position = Vector3(35.00, 96.88, -361.20)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="LongFinalConnected_140_KAC-F1000_FridgeSBS_V1_FreezerDrawerHolder" parent="." instance=ExtResource("p46")]
+position = Vector3(38.00, 97.60, -364.00)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="LongFinalConnected_141_KAC_Oven_Fan_V2" parent="." instance=ExtResource("p55")]
+position = Vector3(41.00, 98.32, -366.80)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="Checkpoint_23" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(41.00, 101.32, -369.60)
+[node name="Star_23" parent="." instance=ExtResource("star")]
+position = Vector3(38.50, 102.92, -368.60)
+[node name="LongFinalConnected_142_Done_Chope_A" parent="." instance=ExtResource("p6")]
+position = Vector3(41.00, 99.32, -369.60)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="LongFinalConnected_143_Done_Chope_B" parent="." instance=ExtResource("p7")]
+position = Vector3(44.00, 100.04, -372.40)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="LongFinalConnected_144_Done_Cup" parent="." instance=ExtResource("p8")]
+position = Vector3(47.00, 100.76, -375.20)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="LongFinalConnected_145_Done_Lamp" parent="." instance=ExtResource("p9")]
+position = Vector3(50.00, 101.48, -378.00)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="LongFinalConnected_146_Done_Panel" parent="." instance=ExtResource("p10")]
+position = Vector3(53.00, 102.20, -380.80)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="LongFinalConnected_147_Done_Signal" parent="." instance=ExtResource("p24")]
+position = Vector3(56.00, 102.92, -383.60)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="Checkpoint_24" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(56.00, 105.92, -386.40)
+[node name="Star_24" parent="." instance=ExtResource("star")]
+position = Vector3(53.50, 107.52, -385.40)
+[node name="LongFinalConnected_148_KA_Micro_V2" parent="." instance=ExtResource("p57")]
+position = Vector3(56.00, 103.92, -386.40)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="LongFinalConnected_149_KAC-F600_OvenTray_V3" parent="." instance=ExtResource("p52")]
+position = Vector3(53.00, 104.64, -389.20)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="LongFinalConnected_150_KAC_Micro_Tray_V2" parent="." instance=ExtResource("p54")]
+position = Vector3(50.00, 105.36, -392.00)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="LongFinalConnected_151_Done_Wood_Plank_A" parent="." instance=ExtResource("p29")]
+position = Vector3(47.00, 106.08, -394.80)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="LongFinalConnected_152_Done_Stone" parent="." instance=ExtResource("p25")]
+position = Vector3(44.00, 106.80, -397.60)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="Checkpoint_25" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(44.00, 109.80, -400.40)
+[node name="Star_25" parent="." instance=ExtResource("star")]
+position = Vector3(41.50, 111.40, -399.40)
+[node name="LongFinalConnected_153_Done_Rock_3" parent="." instance=ExtResource("p15")]
+position = Vector3(44.00, 107.80, -400.40)
+rotation_degrees = Vector3(-2, 0, 2)
+[node name="LongFinalConnected_154_Done_Rock_4" parent="." instance=ExtResource("p16")]
+position = Vector3(41.00, 108.52, -403.20)
+rotation_degrees = Vector3(1, 43, -2)
+[node name="LongFinalConnected_155_Done_Rock_6" parent="." instance=ExtResource("p18")]
+position = Vector3(38.00, 109.24, -406.00)
+rotation_degrees = Vector3(-1, 86, 1)
+[node name="LongFinalConnected_156_Done_Rock_10" parent="." instance=ExtResource("p13")]
+position = Vector3(35.00, 109.96, -408.80)
+rotation_degrees = Vector3(2, 129, -1)
+[node name="LongFinalConnected_157_Done_Wood_Trunk" parent="." instance=ExtResource("p31")]
+position = Vector3(32.00, 110.68, -411.60)
+rotation_degrees = Vector3(-2, 172, 2)
+[node name="LongFinalConnected_158_Done_Table" parent="." instance=ExtResource("p27")]
+position = Vector3(29.00, 111.40, -414.40)
+rotation_degrees = Vector3(1, 215, -2)
+[node name="Checkpoint_26" parent="." instance=ExtResource("checkpoint")]
+position = Vector3(29.00, 114.40, -417.20)
+[node name="Star_26" parent="." instance=ExtResource("star")]
+position = Vector3(26.50, 116.00, -416.20)

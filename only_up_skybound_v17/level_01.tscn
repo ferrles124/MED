@@ -1,0 +1,160 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="PackedScene" path="res://platform.tscn" id="1_platform"]
+[ext_resource type="PackedScene" path="res://star.tscn" id="2_star"]
+[ext_resource type="PackedScene" path="res://checkpoint.tscn" id="3_checkpoint"]
+[ext_resource type="PackedScene" path="res://pipe.tscn" id="4_pipe"]
+
+[node name="Level01" type="Node3D"]
+
+[node name="StartPlatform" parent="." instance=ExtResource("1_platform")]
+position = Vector3(0, 0, 0)
+[node name="Star01" parent="." instance=ExtResource("2_star")]
+position = Vector3(0, 1.2, 0)
+[node name="Checkpoint01" parent="." instance=ExtResource("3_checkpoint")]
+position = Vector3(0, 1.0, 0)
+
+[node name="Platform01" parent="." instance=ExtResource("1_platform")]
+position = Vector3(2.2, 2.1, -1.0)
+[node name="Platform02" parent="." instance=ExtResource("1_platform")]
+position = Vector3(-1.3, 4.2, -2.2)
+[node name="Platform03" parent="." instance=ExtResource("1_platform")]
+position = Vector3(2.7, 6.3, -3.0)
+[node name="Platform04" parent="." instance=ExtResource("1_platform")]
+position = Vector3(-2.6, 8.4, -4.5)
+behavior = "moving"
+movement_axis = Vector3(1, 0, 0)
+movement_distance = 1.4
+[node name="Star02" parent="." instance=ExtResource("2_star")]
+position = Vector3(-2.6, 9.6, -4.5)
+
+[node name="Platform05" parent="." instance=ExtResource("1_platform")]
+position = Vector3(0.4, 10.5, -5.5)
+[node name="Platform06" parent="." instance=ExtResource("1_platform")]
+position = Vector3(3.1, 12.6, -6.4)
+behavior = "bounce"
+bounce_force = 11.5
+[node name="Platform07" parent="." instance=ExtResource("1_platform")]
+position = Vector3(0.2, 14.7, -7.7)
+[node name="Checkpoint02" parent="." instance=ExtResource("3_checkpoint")]
+position = Vector3(0.2, 15.7, -7.7)
+[node name="Platform08" parent="." instance=ExtResource("1_platform")]
+position = Vector3(-3.0, 16.8, -9.0)
+behavior = "breakable"
+[node name="Star03" parent="." instance=ExtResource("2_star")]
+position = Vector3(-3.0, 18.0, -9.0)
+
+[node name="Platform09" parent="." instance=ExtResource("1_platform")]
+position = Vector3(-0.2, 18.9, -10.1)
+[node name="Platform10" parent="." instance=ExtResource("1_platform")]
+position = Vector3(3.2, 21.0, -11.3)
+behavior = "rotating"
+[node name="PipeRun01" parent="." instance=ExtResource("4_pipe")]
+position = Vector3(1.5, 20.1, -10.6)
+[node name="Platform11" parent="." instance=ExtResource("1_platform")]
+position = Vector3(1.0, 23.1, -13.0)
+[node name="Platform12" parent="." instance=ExtResource("1_platform")]
+position = Vector3(-2.4, 25.2, -14.0)
+behavior = "moving"
+movement_axis = Vector3(0, 0, 1)
+movement_distance = 1.8
+[node name="Checkpoint03" parent="." instance=ExtResource("3_checkpoint")]
+position = Vector3(-2.4, 26.2, -14.0)
+[node name="Star04" parent="." instance=ExtResource("2_star")]
+position = Vector3(-2.4, 26.4, -14.0)
+
+[node name="Platform13" parent="." instance=ExtResource("1_platform")]
+position = Vector3(0.8, 27.3, -15.5)
+[node name="Platform14" parent="." instance=ExtResource("1_platform")]
+position = Vector3(3.4, 29.4, -17.0)
+behavior = "bounce"
+bounce_force = 12.5
+[node name="Platform15" parent="." instance=ExtResource("1_platform")]
+position = Vector3(0.0, 31.5, -18.8)
+[node name="Platform16" parent="." instance=ExtResource("1_platform")]
+position = Vector3(-3.1, 33.6, -20.0)
+behavior = "breakable"
+[node name="Star05" parent="." instance=ExtResource("2_star")]
+position = Vector3(-3.1, 34.8, -20.0)
+[node name="Checkpoint04" parent="." instance=ExtResource("3_checkpoint")]
+position = Vector3(-3.1, 34.6, -20.0)
+
+[node name="Platform17" parent="." instance=ExtResource("1_platform")]
+position = Vector3(-0.2, 35.7, -21.8)
+[node name="Platform18" parent="." instance=ExtResource("1_platform")]
+position = Vector3(3.0, 37.8, -23.0)
+behavior = "rotating"
+[node name="Platform19" parent="." instance=ExtResource("1_platform")]
+position = Vector3(1.2, 39.9, -24.7)
+[node name="Platform20" parent="." instance=ExtResource("1_platform")]
+position = Vector3(-2.6, 42.0, -26.0)
+behavior = "moving"
+movement_axis = Vector3(1, 0, 0)
+movement_distance = 2.0
+[node name="Star06" parent="." instance=ExtResource("2_star")]
+position = Vector3(-2.6, 43.2, -26.0)
+[node name="Checkpoint05" parent="." instance=ExtResource("3_checkpoint")]
+position = Vector3(-2.6, 43.0, -26.0)
+
+[node name="Platform21" parent="." instance=ExtResource("1_platform")]
+position = Vector3(0.0, 44.1, -28.0)
+[node name="Platform22" parent="." instance=ExtResource("1_platform")]
+position = Vector3(3.0, 46.2, -29.0)
+behavior = "bounce"
+[node name="Platform23" parent="." instance=ExtResource("1_platform")]
+position = Vector3(0.5, 48.3, -30.5)
+[node name="PipeRun02" parent="." instance=ExtResource("4_pipe")]
+position = Vector3(-1.0, 49.3, -31.2)
+[node name="Platform24" parent="." instance=ExtResource("1_platform")]
+position = Vector3(-3.0, 50.4, -32.0)
+behavior = "breakable"
+[node name="Star07" parent="." instance=ExtResource("2_star")]
+position = Vector3(-3.0, 51.6, -32.0)
+[node name="Checkpoint06" parent="." instance=ExtResource("3_checkpoint")]
+position = Vector3(-3.0, 51.4, -32.0)
+
+[node name="Platform25" parent="." instance=ExtResource("1_platform")]
+position = Vector3(-0.2, 52.5, -34.0)
+[node name="Platform26" parent="." instance=ExtResource("1_platform")]
+position = Vector3(3.2, 54.6, -35.2)
+behavior = "moving"
+movement_axis = Vector3(0, 0, 1)
+movement_distance = 2.2
+[node name="Platform27" parent="." instance=ExtResource("1_platform")]
+position = Vector3(0.6, 56.7, -37.0)
+[node name="Platform28" parent="." instance=ExtResource("1_platform")]
+position = Vector3(-2.8, 58.8, -38.5)
+behavior = "rotating"
+[node name="Star08" parent="." instance=ExtResource("2_star")]
+position = Vector3(-2.8, 60.0, -38.5)
+[node name="Checkpoint07" parent="." instance=ExtResource("3_checkpoint")]
+position = Vector3(-2.8, 59.8, -38.5)
+
+[node name="Platform29" parent="." instance=ExtResource("1_platform")]
+position = Vector3(0.0, 60.9, -40.5)
+[node name="Platform30" parent="." instance=ExtResource("1_platform")]
+position = Vector3(3.0, 63.0, -42.0)
+behavior = "bounce"
+[node name="Platform31" parent="." instance=ExtResource("1_platform")]
+position = Vector3(0.4, 65.1, -44.0)
+[node name="Platform32" parent="." instance=ExtResource("1_platform")]
+position = Vector3(-3.0, 67.2, -45.5)
+behavior = "breakable"
+[node name="Star09" parent="." instance=ExtResource("2_star")]
+position = Vector3(-3.0, 68.4, -45.5)
+[node name="Checkpoint08" parent="." instance=ExtResource("3_checkpoint")]
+position = Vector3(-3.0, 68.2, -45.5)
+
+[node name="Platform33" parent="." instance=ExtResource("1_platform")]
+position = Vector3(0.0, 69.3, -47.5)
+[node name="Platform34" parent="." instance=ExtResource("1_platform")]
+position = Vector3(3.0, 71.4, -49.0)
+behavior = "moving"
+movement_axis = Vector3(1, 0, 0)
+movement_distance = 2.2
+[node name="Platform35" parent="." instance=ExtResource("1_platform")]
+position = Vector3(0.0, 73.5, -51.0)
+[node name="FinalCheckpoint" parent="." instance=ExtResource("3_checkpoint")]
+position = Vector3(0.0, 74.5, -51.0)
+[node name="FinalStar" parent="." instance=ExtResource("2_star")]
+position = Vector3(0.0, 74.9, -51.0)

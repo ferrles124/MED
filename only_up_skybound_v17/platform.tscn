@@ -1,0 +1,46 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://platform_behaviors.gd" id="1_script"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_platform"]
+size = Vector3(3.6, 0.35, 3.6)
+[sub_resource type="StandardMaterial3D" id="Material_platform"]
+albedo_color = Color(0.23, 0.62, 0.96, 1)
+roughness = 0.72
+emission_enabled = true
+emission = Color(0.03, 0.12, 0.3, 1)
+emission_energy_multiplier = 1.4
+[sub_resource type="BoxShape3D" id="BoxShape_platform"]
+size = Vector3(3.6, 0.35, 3.6)
+[sub_resource type="BoxMesh" id="BoxMesh_trim"]
+size = Vector3(3.3, 0.055, 0.12)
+[sub_resource type="StandardMaterial3D" id="Material_trim"]
+albedo_color = Color(0.5, 0.75, 0.85, 1)
+emission_enabled = true
+emission = Color(0.12, 0.3, 0.42, 1)
+emission_energy_multiplier = 1.6
+
+[node name="Platform" type="StaticBody3D"]
+script = ExtResource("1_script")
+
+[node name="Mesh" type="MeshInstance3D" parent="."]
+mesh = SubResource("BoxMesh_platform")
+material_override = SubResource("Material_platform")
+
+[node name="Trim" type="MeshInstance3D" parent="."]
+position = Vector3(0, 0.205, -1.45)
+mesh = SubResource("BoxMesh_trim")
+material_override = SubResource("Material_trim")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape_platform")
+
+[node name="Trigger" type="Area3D" parent="."]
+collision_layer = 0
+collision_mask = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Trigger"]
+position = Vector3(0, 0.4, 0)
+shape = SubResource("BoxShape_platform")
+
+[connection signal="body_entered" from="Trigger" to="." method="_on_body_entered"]
