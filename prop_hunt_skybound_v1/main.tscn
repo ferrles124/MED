@@ -1,0 +1,245 @@
+[gd_scene load_steps=40 format=3]
+[ext_resource type="Script" path="res://prop_hunt_game.gd" id="1_game"]
+[ext_resource type="Script" path="res://prop_hunt_player.gd" id="2_player"]
+[ext_resource type="PackedScene" path="res://Character.glb" id="3_character"]
+[ext_resource type="Script" path="res://hunter.gd" id="4_hunter"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Chair01.tscn" id="prop0"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Chair02.tscn" id="prop1"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Couch01.tscn" id="prop2"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Table01.tscn" id="prop3"]
+[ext_resource type="PackedScene" path="res://props/Furniture_Bookshelf01.tscn" id="prop4"]
+[ext_resource type="PackedScene" path="res://props/School_chair.tscn" id="prop5"]
+[ext_resource type="PackedScene" path="res://props/School_desk.tscn" id="prop6"]
+[ext_resource type="PackedScene" path="res://props/School_locker.tscn" id="prop7"]
+[ext_resource type="PackedScene" path="res://props/School_shelf_001.tscn" id="prop8"]
+[ext_resource type="PackedScene" path="res://props/School_lamp.tscn" id="prop9"]
+[ext_resource type="PackedScene" path="res://props/School_blackboardbig.tscn" id="prop10"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIAvendingmachine.tscn" id="prop11"]
+[ext_resource type="PackedScene" path="res://props/School_CAFETERIApingpongtable.tscn" id="prop12"]
+[ext_resource type="PackedScene" path="res://props/School_PRINCIPALOFFICEdesk.tscn" id="prop13"]
+[ext_resource type="PackedScene" path="res://props/School_toiletdoor.tscn" id="prop14"]
+[ext_resource type="PackedScene" path="res://props/School_toiletbasictoilet.tscn" id="prop15"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERpc.tscn" id="prop16"]
+[ext_resource type="PackedScene" path="res://props/Lab_COMPUTERscreen.tscn" id="prop17"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMESTRYtable.tscn" id="prop18"]
+[ext_resource type="PackedScene" path="res://props/Lab_CHEMISTRYmicroscope.tscn" id="prop19"]
+[ext_resource type="PackedScene" path="res://props/Farm_haystackround.tscn" id="prop20"]
+[ext_resource type="PackedScene" path="res://props/Farm_woodenbox.tscn" id="prop21"]
+[ext_resource type="PackedScene" path="res://props/Farm_barrel.tscn" id="prop22"]
+[ext_resource type="PackedScene" path="res://props/Done_Wood_Plank_A.tscn" id="prop23"]
+[sub_resource type="BoxMesh" id="FloorMesh"]
+size = Vector3(28, 0.4, 28)
+[sub_resource type="StandardMaterial3D" id="FloorMaterial"]
+albedo_color = Color(0.08, 0.12, 0.18, 1)
+roughness = 0.86
+[sub_resource type="BoxShape3D" id="FloorShape"]
+size = Vector3(28, 0.4, 28)
+[sub_resource type="CapsuleMesh" id="HunterMesh"]
+radius = 0.42
+height = 1.9
+[sub_resource type="StandardMaterial3D" id="HunterMaterial"]
+albedo_color = Color(0.75, 0.08, 0.12, 1)
+emission_enabled = true
+emission = Color(0.18, 0.01, 0.01, 1)
+[sub_resource type="CapsuleShape3D" id="HunterShape"]
+radius = 0.42
+height = 1.9
+[sub_resource type="CapsuleShape3D" id="PlayerShape"]
+radius = 0.38
+height = 1.8
+[sub_resource type="StyleBoxFlat" id="ResultStyle"]
+bg_color = Color(0.02, 0.04, 0.08, 0.96)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.3, 0.8, 1, 0.9)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_left = 16
+corner_radius_bottom_right = 16
+
+[node name="PropHunt" type="Node3D"]
+script = ExtResource("1_game")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-52, -28, 0)
+light_color = Color(0.65, 0.78, 1, 1)
+light_energy = 1.1
+shadow_enabled = true
+
+[node name="Floor" type="StaticBody3D" parent="."]
+collision_layer = 1
+[node name="Mesh" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("FloorMesh")
+material_override = SubResource("FloorMaterial")
+position = Vector3(0, -0.2, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("FloorShape")
+position = Vector3(0, -0.2, 0)
+[node name="Wall0" type="StaticBody3D" parent="."]
+position = Vector3(0, 2, -14)
+[node name="Collision" type="CollisionShape3D" parent="Wall0"]
+shape = SubResource("FloorShape")
+scale = Vector3(1.000, 10.000, 0.014)
+[node name="Wall1" type="StaticBody3D" parent="."]
+position = Vector3(0, 2, 14)
+[node name="Collision" type="CollisionShape3D" parent="Wall1"]
+shape = SubResource("FloorShape")
+scale = Vector3(1.000, 10.000, 0.014)
+[node name="Wall2" type="StaticBody3D" parent="."]
+position = Vector3(-14, 2, 0)
+[node name="Collision" type="CollisionShape3D" parent="Wall2"]
+shape = SubResource("FloorShape")
+scale = Vector3(0.014, 10.000, 1.000)
+[node name="Wall3" type="StaticBody3D" parent="."]
+position = Vector3(14, 2, 0)
+[node name="Collision" type="CollisionShape3D" parent="Wall3"]
+shape = SubResource("FloorShape")
+scale = Vector3(0.014, 10.000, 1.000)
+[node name="HideProp_00_Furniture_Chair01" parent="." groups=["hide_props"] instance=ExtResource("prop0")]
+position = Vector3(-8.00, 0.00, -5.00)
+rotation_degrees = Vector3(0, 25, 0)
+[node name="HideProp_01_Furniture_Chair02" parent="." groups=["hide_props"] instance=ExtResource("prop1")]
+position = Vector3(-4.00, 0.00, -5.00)
+rotation_degrees = Vector3(0, -15, 0)
+[node name="HideProp_02_Furniture_Couch01" parent="." groups=["hide_props"] instance=ExtResource("prop2")]
+position = Vector3(5.00, 0.00, -6.00)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="HideProp_03_Furniture_Table01" parent="." groups=["hide_props"] instance=ExtResource("prop3")]
+position = Vector3(0.00, 0.00, -3.00)
+rotation_degrees = Vector3(0, 20, 0)
+[node name="HideProp_04_Furniture_Bookshelf01" parent="." groups=["hide_props"] instance=ExtResource("prop4")]
+position = Vector3(9.00, 0.00, -4.00)
+rotation_degrees = Vector3(0, -90, 0)
+[node name="HideProp_05_School_chair" parent="." groups=["hide_props"] instance=ExtResource("prop5")]
+position = Vector3(-9.00, 0.00, 2.00)
+rotation_degrees = Vector3(0, 180, 0)
+[node name="HideProp_06_School_desk" parent="." groups=["hide_props"] instance=ExtResource("prop6")]
+position = Vector3(-5.00, 0.00, 3.00)
+rotation_degrees = Vector3(0, -20, 0)
+[node name="HideProp_07_School_locker" parent="." groups=["hide_props"] instance=ExtResource("prop7")]
+position = Vector3(9.00, 0.00, 3.00)
+rotation_degrees = Vector3(0, 0, 0)
+[node name="HideProp_08_School_shelf_001" parent="." groups=["hide_props"] instance=ExtResource("prop8")]
+position = Vector3(5.00, 0.00, 4.00)
+rotation_degrees = Vector3(0, 180, 0)
+[node name="HideProp_09_School_lamp" parent="." groups=["hide_props"] instance=ExtResource("prop9")]
+position = Vector3(-1.00, 0.00, 6.00)
+rotation_degrees = Vector3(0, 15, 0)
+[node name="HideProp_10_School_blackboardbig" parent="." groups=["hide_props"] instance=ExtResource("prop10")]
+position = Vector3(0.00, 0.00, -10.00)
+rotation_degrees = Vector3(0, 0, 0)
+[node name="HideProp_11_School_CAFETERIAvendingmachine" parent="." groups=["hide_props"] instance=ExtResource("prop11")]
+position = Vector3(10.00, 0.00, 8.00)
+rotation_degrees = Vector3(0, 0, 0)
+[node name="HideProp_12_School_CAFETERIApingpongtable" parent="." groups=["hide_props"] instance=ExtResource("prop12")]
+position = Vector3(-7.00, 0.00, 9.00)
+rotation_degrees = Vector3(0, 25, 0)
+[node name="HideProp_13_School_PRINCIPALOFFICEdesk" parent="." groups=["hide_props"] instance=ExtResource("prop13")]
+position = Vector3(5.00, 0.00, 10.00)
+rotation_degrees = Vector3(0, -10, 0)
+[node name="HideProp_14_School_toiletdoor" parent="." groups=["hide_props"] instance=ExtResource("prop14")]
+position = Vector3(-10.00, 0.00, -10.00)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="HideProp_15_School_toiletbasictoilet" parent="." groups=["hide_props"] instance=ExtResource("prop15")]
+position = Vector3(-7.00, 0.00, -10.00)
+rotation_degrees = Vector3(0, 0, 0)
+[node name="HideProp_16_Lab_COMPUTERpc" parent="." groups=["hide_props"] instance=ExtResource("prop16")]
+position = Vector3(3.00, 0.00, -8.00)
+rotation_degrees = Vector3(0, 40, 0)
+[node name="HideProp_17_Lab_COMPUTERscreen" parent="." groups=["hide_props"] instance=ExtResource("prop17")]
+position = Vector3(6.00, 0.00, -8.00)
+rotation_degrees = Vector3(0, -20, 0)
+[node name="HideProp_18_Lab_CHEMESTRYtable" parent="." groups=["hide_props"] instance=ExtResource("prop18")]
+position = Vector3(3.00, 0.00, 6.00)
+rotation_degrees = Vector3(0, 180, 0)
+[node name="HideProp_19_Lab_CHEMISTRYmicroscope" parent="." groups=["hide_props"] instance=ExtResource("prop19")]
+position = Vector3(7.00, 0.00, 6.00)
+rotation_degrees = Vector3(0, 30, 0)
+[node name="HideProp_20_Farm_haystackround" parent="." groups=["hide_props"] instance=ExtResource("prop20")]
+position = Vector3(-11.00, 0.00, 7.00)
+rotation_degrees = Vector3(0, 10, 0)
+[node name="HideProp_21_Farm_woodenbox" parent="." groups=["hide_props"] instance=ExtResource("prop21")]
+position = Vector3(-4.00, 0.00, 10.00)
+rotation_degrees = Vector3(0, 0, 0)
+[node name="HideProp_22_Farm_barrel" parent="." groups=["hide_props"] instance=ExtResource("prop22")]
+position = Vector3(0.00, 0.00, 10.00)
+rotation_degrees = Vector3(0, 45, 0)
+[node name="HideProp_23_Done_Wood_Plank_A" parent="." groups=["hide_props"] instance=ExtResource("prop23")]
+position = Vector3(11.00, 0.00, -9.00)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="Player" type="CharacterBody3D" parent="."]
+position = Vector3(0, 1.2, 9)
+script = ExtResource("2_player")
+[node name="Character" parent="Player" instance=ExtResource("3_character")]
+rotation = Vector3(0, 3.141593, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+position = Vector3(0, 0.9, 0)
+shape = SubResource("PlayerShape")
+[node name="CameraPivot" type="Node3D" parent="Player"]
+position = Vector3(0, 1.2, 0)
+[node name="Camera3D" type="Camera3D" parent="Player/CameraPivot"]
+position = Vector3(0, 2.2, 6.4)
+current = true
+fov = 70.0
+[node name="Hunter" type="CharacterBody3D" parent="."]
+position = Vector3(0, 1.2, -8)
+script = ExtResource("4_hunter")
+[node name="Mesh" type="MeshInstance3D" parent="Hunter"]
+mesh = SubResource("HunterMesh")
+material_override = SubResource("HunterMaterial")
+position = Vector3(0, 0.95, 0)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Hunter"]
+position = Vector3(0, 0.9, 0)
+shape = SubResource("HunterShape")
+[node name="HUD" type="CanvasLayer" parent="."]
+[node name="Title" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 18.0
+offset_right = 600.0
+offset_bottom = 55.0
+theme_override_colors/font_color = Color(0.7, 0.9, 1, 1)
+theme_override_font_sizes/font_size = 26
+text = "PROP HUNT: KAYIP KAMPÜS"
+[node name="Timer" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 60.0
+offset_right = 380.0
+offset_bottom = 92.0
+theme_override_font_sizes/font_size = 22
+text = "KALAN SÜRE  02:00"
+[node name="Status" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 98.0
+offset_right = 900.0
+offset_bottom = 130.0
+theme_override_colors/font_color = Color(0.5, 1, 0.75, 1)
+theme_override_font_sizes/font_size = 18
+[node name="Hint" type="Label" parent="HUD"]
+offset_left = 24.0
+offset_top = 660.0
+offset_right = 1000.0
+offset_bottom = 700.0
+theme_override_colors/font_color = Color(0.72, 0.8, 0.9, 1)
+theme_override_font_sizes/font_size = 16
+[node name="ResultPanel" type="Panel" parent="HUD"]
+visible = false
+offset_left = 430.0
+offset_top = 240.0
+offset_right = 850.0
+offset_bottom = 470.0
+theme_override_styles/panel = SubResource("ResultStyle")
+[node name="Result" type="Label" parent="HUD/ResultPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(0.9, 0.97, 1, 1)
+theme_override_font_sizes/font_size = 24
+horizontal_alignment = 1
+vertical_alignment = 1
