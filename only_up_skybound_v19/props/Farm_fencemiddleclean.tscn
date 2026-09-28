@@ -1,0 +1,57 @@
+[gd_scene format=4]
+
+[ext_resource type="PackedScene" path="res://assets/Farm_fencemiddleclean.glb" id="1_p0tyv"]
+[ext_resource type="Texture2D" path="res://assets/Farm_fencemiddleclean_styloomodifiedimphezia-256-Gradient.png" id="2_c0bb1"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_51o36"]
+resource_name = "normal"
+cull_mode = 2
+albedo_texture = ExtResource("2_c0bb1")
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_3sjct"]
+_surfaces = [{
+"aabb": AABB(-0.41129532, -0.09750189, -0.031741638, 0.82259065, 0.19500378, 0.063483275),
+"format": 34896613377,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAgABAAMAAQAEAAMABQACAAMAAQAGAAQABgABAAAAAwAEAAcABwAEAAYAAwAHAAUACAAGAAAABwAGAAgACQAAAAIABQAJAAIACAAAAAkABwAJAAUABwAIAAkA"),
+"name": "normal",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 10,
+"vertex_data": PackedByteArray("EwWV6v//AAAAAJXqOb4AABMF//85vgAAiQJK9QAAAAAAAAAAAAAAAP////8AAAAAiQIAABzfAAD//wAAAAAAAP//AAD//wAA//9K9RzfAAA=")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_ulq6h"]
+resource_name = "Farm_fencemiddleclean_Cube_077"
+_surfaces = [{
+"aabb": AABB(-0.41129532, -0.09750189, -0.031741638, 0.82259065, 0.19500378, 0.063483275),
+"attribute_data": PackedByteArray("XaVEhN6kN4QJpfGDGKVbiN6kN4RdpUSECaXxg96kN4QJpCyERai/hV2lRIQJpfGDnq0qkbimvJLcqM6Sn64vkeundodQqLiOLaaljhOuGY1QqLiOyaiMhyGsbYivrHyIDql2hjGoTov/p0+Qv6w7j7asJY3jrbeO5K68jrOuyIvWrbCL66d2hy2mpY51pmKHE64ZjcmojIfirSWKIaxtiA6pdobup7iG"),
+"format": 34896613399,
+"index_count": 48,
+"index_data": PackedByteArray("AAABAAIAAwAEAAUABgAHAAgACQAKAAsADAANAA4ADAAOAA8AEAARABIAEwAUABUAFgAXABgAGQAaABsAGQAbABwAHQAeAB8AHQAfACAAIQAiACMAJAAlACYAJwAoACkA"),
+"material": SubResource("StandardMaterial3D_51o36"),
+"name": "normal",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 42,
+"vertex_data": PackedByteArray("EwWV6v//OqcAAJXqOb46pxMF//85vjqniQIAABzfMaAAAJXqOb4xoBMFler//zGgEwX//zm+lMgAAJXqOb6UyIkCSvUAAJTI//9K9RzfgqATBZXq//+CoBMF//85voKg//8AAAAAqC4AAAAAAACPOIkCAAAc3y84//8AAP//Ki4AAJXqOb4WuokCAAAc3xa6AAAAAAAAFrr//wAA///BgokCAAAc38GCEwWV6v//wYL/////AADbIv//SvUc39siEwX//zm+2yKJAkr1AAAAAAAAAAAAAAAA//8AAAAAAAD/////AAAAAP//AAAAAEAA//8AAP//jwD//0r1HN/NAP////8AAB4BAACV6jm+8cYAAAAAAADxxokCSvUAAPHG//8AAP//y4gTBZXq///LiP//SvUc38uI/////wAAHTgTBf//Ob4dOIkCSvUAAB04Tbenvk23p75Nt6e++pAF+/qQBfv6kAX7zZYQx82WEMfNlhDHjviZZo74mWaO+JlmFygv0AsfFr6FHwq/bSjb0Jl6Mv+ZejL/mXoy//5H+Ir+R/iK/kf4iiueMK0rnjCtK54wrVD/UH/t/O58bfWQimXzmIxHANs/ngCwP42/HH9hv8R+w3ob8sN6G/LDehvyLflEFC35RBQt+UQUkeB9kZHgfZGR4H2R")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_3sjct")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_dk8gq"]
+data = PackedVector3Array(-0.39499998, 0.081199996, 0.0317, -0.4113, 0.081199996, 0.0154, -0.39499998, 0.0975, 0.0154, -0.40309998, -0.0975, 0.023599999, -0.4113, 0.081199996, 0.0154, -0.39499998, 0.081199996, 0.0317, -0.39499998, 0.0975, 0.0154, -0.4113, 0.081199996, 0.0154, -0.40309998, 0.0893, -0.0317, 0.4113, 0.0893, 0.023599999, -0.39499998, 0.081199996, 0.0317, -0.39499998, 0.0975, 0.0154, 0.4113, -0.0975, -0.0317, -0.4113, -0.0975, -0.0317, -0.40309998, -0.0975, 0.023599999, 0.4113, -0.0975, -0.0317, -0.40309998, -0.0975, 0.023599999, 0.4113, -0.0975, 0.0317, -0.4113, 0.081199996, 0.0154, -0.40309998, -0.0975, 0.023599999, -0.4113, -0.0975, -0.0317, 0.4113, -0.0975, 0.0317, -0.40309998, -0.0975, 0.023599999, -0.39499998, 0.081199996, 0.0317, 0.4113, 0.0975, -0.0317, 0.4113, 0.0893, 0.023599999, -0.39499998, 0.0975, 0.0154, -0.40309998, 0.0893, -0.0317, -0.4113, -0.0975, -0.0317, 0.4113, -0.0975, -0.0317, -0.40309998, 0.0893, -0.0317, 0.4113, -0.0975, -0.0317, 0.4113, 0.0975, -0.0317, 0.4113, -0.0975, -0.0317, 0.4113, -0.0975, 0.0317, 0.4113, 0.0893, 0.023599999, 0.4113, -0.0975, -0.0317, 0.4113, 0.0893, 0.023599999, 0.4113, 0.0975, -0.0317, -0.4113, 0.081199996, 0.0154, -0.4113, -0.0975, -0.0317, -0.40309998, 0.0893, -0.0317, 0.4113, -0.0975, 0.0317, -0.39499998, 0.081199996, 0.0317, 0.4113, 0.0893, 0.023599999, 0.4113, 0.0975, -0.0317, -0.39499998, 0.0975, 0.0154, -0.40309998, 0.0893, -0.0317)
+
+[node name="Prop_Farm_fencemiddleclean" type="StaticBody3D" unique_id=285207239]
+
+[node name="Model" type="Node3D" parent="." unique_id=1393691205 instance=ExtResource("1_p0tyv")]
+transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 0, 0, 0)
+
+[node name="fencemiddleclean" type="MeshInstance3D" parent="Model" unique_id=1097738471]
+mesh = SubResource("ArrayMesh_ulq6h")
+
+[node name="BakedSurface_fencemiddleclean" type="CollisionShape3D" parent="." unique_id=1525293507]
+transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_dk8gq")

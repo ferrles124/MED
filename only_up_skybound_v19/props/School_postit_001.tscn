@@ -1,0 +1,59 @@
+[gd_scene format=4]
+
+[ext_resource type="PackedScene" path="res://assets/School_postit_001.glb" id="1_sql6i"]
+[ext_resource type="Texture2D" path="res://assets/School_postit_001_ImphenziaPalette01-256-Gradient.png" id="2_6ywlf"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w5rnf"]
+resource_name = "normal "
+cull_mode = 2
+albedo_texture = ExtResource("2_6ywlf")
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_vbbu1"]
+_surfaces = [{
+"aabb": AABB(-1, -0.2541409, -1, 2, 0.2541409, 2),
+"format": 34896613377,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAgABAAQAAgAEAAUABgAFAAQABgAHAAUACAAHAAYACAAJAAcACQAIAAoACQAKAAsA"),
+"name": "normal ",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AAAAAP//AAD///lAVesAAAAA+UBV6wAA//8AAP//AAD//+vbSZIAAAAA69tJkgAA///461BtAAAAAPjrUG0AAP/////4EAAAAAD///gQAAD/////AAAAAAAA//8AAAAA")
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_j3mbh"]
+resource_name = "School_postit_001_Plane_004"
+_surfaces = [{
+"aabb": AABB(-1, -0.2541409, -1, 2, 0.2541409, 2),
+"attribute_data": PackedByteArray("nKSZRsGlgUacpIFGwaWZRsGlG0acpBtGwaXxRZyk8UXBpYdFnKSHRcGldEWcpHRF"),
+"format": 34896613399,
+"index_count": 30,
+"index_data": PackedByteArray("AAABAAIAAAADAAEAAgABAAQAAgAEAAUABgAFAAQABgAHAAUACAAHAAYACAAJAAcACQAIAAoACQAKAAsA"),
+"material": SubResource("StandardMaterial3D_w5rnf"),
+"name": "normal ",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 12,
+"vertex_data": PackedByteArray("AAAAAP//gzD///lAVevSMwAA+UBV69Iz//8AAP//gzD//+vbSZJxOgAA69tJknE6///461BtUD4AAPjrUG1QPv/////4EG8/AAD///gQbz//////AAD/PwAA//8AAP8/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/AAD/fwAA/38AAP9/")
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_vbbu1")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_eo5oc"]
+data = PackedVector3Array(-1, -0.2541, 1, 1, -0.18959999, 0.8386, -1, -0.18959999, 0.8386, -1, -0.2541, 1, 1, -0.2541, 1, 1, -0.18959999, 0.8386, -1, -0.18959999, 0.8386, 1, -0.18959999, 0.8386, 1, -0.0358, 0.14289999, -1, -0.18959999, 0.8386, 1, -0.0358, 0.14289999, -1, -0.0358, 0.14289999, 1, -0.0199, -0.146, -1, -0.0358, 0.14289999, 1, -0.0358, 0.14289999, 1, -0.0199, -0.146, -1, -0.0199, -0.146, -1, -0.0358, 0.14289999, 1, 0, -0.8674, -1, -0.0199, -0.146, 1, -0.0199, -0.146, 1, 0, -0.8674, -1, 0, -0.8674, -1, -0.0199, -0.146, -1, 0, -0.8674, 1, 0, -0.8674, 1, 0, -1, -1, 0, -0.8674, 1, 0, -1, -1, 0, -1)
+
+[node name="Prop_School_postit_001" type="StaticBody3D" unique_id=1192192030]
+
+[node name="Model" type="Node3D" parent="." unique_id=84573511 instance=ExtResource("1_sql6i")]
+transform = Transform3D(1.25, 0, 0, 0, 1.25, 0, 0, 0, 1.25, 0, 0, 0)
+
+[node name="postit_001" type="MeshInstance3D" parent="Model" unique_id=1522067175]
+transform = Transform3D(0.22105657, 0, 0, 0, 0.22105657, 0, 0, 0, 0.22105657, 0, 0, 0)
+mesh = SubResource("ArrayMesh_j3mbh")
+
+[node name="BakedSurface_postit_001" type="CollisionShape3D" parent="." unique_id=1954263786]
+transform = Transform3D(0.2763207, 0, 0, 0, 0.2763207, 0, 0, 0, 0.2763207, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_eo5oc")

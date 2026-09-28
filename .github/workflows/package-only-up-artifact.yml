@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   push:
     paths:
-      - "only_up_skybound_v18/**"
+      - "only_up_skybound_v19/**"
       - ".github/workflows/package-only-up-artifact.yml"
 
 permissions:
@@ -12,7 +12,7 @@ permissions:
 
 jobs:
   package-game:
-    name: Zip Only Up Skybound v18
+    name: Zip Only Up Skybound v19
     runs-on: ubuntu-latest
 
     steps:
@@ -25,15 +25,15 @@ jobs:
           set -euo pipefail
           rm -rf artifact
           mkdir -p artifact
-          zip -qr "artifact/only_up_skybound_v18.zip" "only_up_skybound_v18" \
-            -x "only_up_skybound_v18/.godot/*"
-          unzip -t "artifact/only_up_skybound_v18.zip" >/dev/null
-          ls -lh "artifact/only_up_skybound_v18.zip"
+          zip -qr "artifact/only_up_skybound_v19.zip" "only_up_skybound_v19" \
+            -x "only_up_skybound_v19/.godot/*"
+          unzip -t "artifact/only_up_skybound_v19.zip" >/dev/null
+          ls -lh "artifact/only_up_skybound_v19.zip"
 
       - name: Upload ZIP as GitHub Actions artifact
         uses: actions/upload-artifact@v4
         with:
-          name: only-up-skybound-v18
-          path: artifact/only_up_skybound_v18.zip
+          name: only-up-skybound-v19
+          path: artifact/only_up_skybound_v19.zip
           if-no-files-found: error
           retention-days: 30

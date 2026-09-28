@@ -1,0 +1,57 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://assets/Farm_grassblade_002.glb" id="1_fwbs0"]
+[ext_resource type="Texture2D" path="res://assets/Farm_grassblade_002_styloomodifiedimphezia-256-Gradient.png" id="2_qj3s5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6agi6"]
+resource_name = "normal"
+cull_mode = 2
+albedo_texture = ExtResource("2_qj3s5")
+metadata/_gltf_primary_texture_coord = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_fquac"]
+_surfaces = [{
+"aabb": AABB(-0.028431572, -0.0036491996, -0.011198195, 0.16455355, 0.7030675, 0.033100612),
+"format": 34896613377,
+"index_count": 9,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 3, 0, 1, 0, 0, 0, 3, 0, 4, 0, 1, 0),
+"name": "normal",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 5,
+"vertex_data": PackedByteArray(32, 105, 215, 70, 255, 255, 0, 0, 94, 32, 124, 67, 166, 98, 0, 0, 255, 255, 255, 255, 24, 57, 0, 0, 120, 88, 0, 0, 53, 173, 0, 0, 0, 0, 168, 2, 0, 0, 0, 0)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_iw7yc"]
+resource_name = "Farm_grassblade_002_Cylinder_047"
+_surfaces = [{
+"aabb": AABB(-0.028431572, -0.0036491996, -0.011198195, 0.16455355, 0.7030675, 0.033100612),
+"attribute_data": PackedByteArray(48, 168, 196, 54, 210, 167, 237, 54, 6, 168, 208, 52, 75, 168, 131, 56, 210, 167, 146, 56),
+"format": 34896613399,
+"index_count": 9,
+"index_data": PackedByteArray(0, 0, 1, 0, 2, 0, 3, 0, 1, 0, 0, 0, 3, 0, 4, 0, 1, 0),
+"material": SubResource("StandardMaterial3D_6agi6"),
+"name": "normal",
+"primitive": 3,
+"uv_scale": Vector4(0, 0, 0, 0),
+"vertex_count": 5,
+"vertex_data": PackedByteArray(32, 105, 215, 70, 255, 255, 119, 153, 94, 32, 124, 67, 166, 98, 66, 150, 255, 255, 255, 255, 24, 57, 133, 160, 120, 88, 0, 0, 53, 173, 195, 145, 0, 0, 168, 2, 0, 0, 194, 145, 57, 123, 205, 187, 34, 121, 63, 193, 223, 125, 211, 179, 56, 115, 152, 202, 66, 115, 47, 201)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_fquac")
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_pb3f3"]
+data = PackedVector3Array(0.0391, 0.1909, 0.0219, -0.0075999997, 0.18169999, 0.0016, 0.1361, 0.6994, -0.0037999998, 0.0284, -0.0036, 0.0112, -0.0075999997, 0.18169999, 0.0016, 0.0391, 0.1909, 0.0219, 0.0284, -0.0036, 0.0112, -0.0284, 0.0036, -0.0112, -0.0075999997, 0.18169999, 0.0016)
+
+[node name="Prop_Farm_grassblade_002" type="StaticBody3D" unique_id=508331322]
+
+[node name="Model" type="Node3D" parent="." unique_id=1876442758 instance=ExtResource("1_fwbs0")]
+transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 0, 0, 0)
+
+[node name="grassblade_002" type="MeshInstance3D" parent="Model" unique_id=826221019]
+mesh = SubResource("ArrayMesh_iw7yc")
+
+[node name="BakedSurface_grassblade_002" type="CollisionShape3D" parent="." unique_id=1269372070]
+transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 0, 0, 0)
+shape = SubResource("ConcavePolygonShape3D_pb3f3")
