@@ -1,42 +1,58 @@
-# Prop Hunt Skybound v1
+# Prop Hunt Skybound v2
 
 Bu, Only Up projesinden bağımsız ilk Prop Hunt prototipidir.
 
-## Oynanış
+## Modlar
 
-- Oyuncu küçük bir sınıf/laboratuvar alanında başlar.
-- Kırmızı avcı devriye gezer ve görünür oyuncuyu kovalar.
-- Yakındaki bir asset’in yanına gelip **E** tuşuna basınca oyuncu o eşyaya saklanır.
-- Saklanırken tekrar **E** ile insan formuna dönülür.
-- 120 saniye boyunca yakalanmadan kalırsan kazanırsın.
-- Avcı sana yaklaşırsa yakalanırsın.
+### Oyuncu Modu
+
+- Oyuncu karakteriyle haritada dolaş.
+- Yakınındaki eşyaya `E` veya mobilde **SAKLAN** butonuyla dönüş.
+- Aynı etkileşimle tekrar karakter formuna dön.
+- Şimdilik avcı yapay zekâsı yok; serbestçe eşya dönüşümünü test et.
+
+### Avcı Modu
+
+- Oyuncu karakteriyle haritada dolaş.
+- Kameranın önündeki eşyayı `E` veya mobilde **VUR** butonuyla hedefle.
+- Eşya kısa bir vurulma animasyonuyla tepki verir.
+- Şimdilik amaç, eşya vurma etkileşimini test etmektir; yapay zekâ avcı daha sonra eklenecek.
 
 ## Kontroller
 
-| Tuş | İşlev |
+| Platform | İşlev |
 |---|---|
-| WASD | Hareket |
+| WASD / sol sanal joystick | Hareket |
 | Mouse | Kamera |
-| Space | Zıplama |
-| E | Eşyaya saklan / saklanmadan çık |
-| R | Tur bittikten sonra yeniden başlat |
+| Space / ZIPLA | Zıplama |
+| E / SAKLAN veya VUR | Moda göre etkileşim |
 | Esc | Mouse imlecini serbest bırak |
 
-## Bu prototipte kullanılan asset’ler
+## Mobil destek
 
-- Mobilya: sandalye, masa, koltuk, kitaplık
-- Sınıf/ofis: sıra, dolap, lamba, tahta, müdür masası
-- Kafeterya: vending machine, ping pong masası
-- Laboratuvar: bilgisayar, ekran, mikroskop, laboratuvar masası
-- Tuvalet: kapı ve klozet
-- Çiftlik: saman balyası, varil, tahta kasa
+Ekranın sol altındaki sanal joystick ile hareket edilir. Sağ tarafta moda göre değişen etkileşim butonu ve zıplama butonu bulunur. Mobil arayüz tüm temel test akışını destekleyecek şekilde sahneye eklendi.
 
-Toplam 24 asset, baked mesh collision ile kullanılmıştır.
+## Karakter animasyonları
 
-## Sonraki doğal geliştirmeler
+`Character.glb` içindeki gerçek klip adları kullanılır:
 
-1. Birden fazla tur ve rastgele eşya seçimi
-2. Avcının yanlış eşyaya vurması ve can kaybetmesi
-3. Oyuncunun kısa süreli kaçış yeteneği
-4. Daha büyük kampüs haritası
-5. Çok oyunculu mod
+- `Idle_Loop`
+- `Walk_Loop`
+- `Sprint_Loop`
+- `Jump_Start`
+- `Jump_Loop`
+- `Jump_Land`
+- `Roll` / `Roll_RM` hazır durumda
+
+Ayrıca modelde 46 toplam animasyon klibi bulunur; etkileşim, oturma, konuşma, itme, dövüş ve yüzme animasyonları sonraki mekaniklerde kullanılabilir.
+
+## Kullanılan kaynaklar
+
+Toplam 24 asset, baked mesh collision ile kullanılmıştır: mobilya, sınıf, ofis, kafeterya, laboratuvar, tuvalet ve çiftlik objeleri.
+
+## Sonraki geliştirme sırası
+
+1. Eşya vurulma efektleri ve sesleri
+2. Gerçek avcı karakteri ve yapay zekâ
+3. Daha büyük harita ve rastgele prop yerleşimi
+4. Multiplayer mod
