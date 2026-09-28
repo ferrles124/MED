@@ -102,6 +102,9 @@ func set_disguised(prop: Node3D) -> void:
     var packed := load(current_prop.scene_file_path) as PackedScene
     if packed:
         disguise_visual = packed.instantiate()
+    else:
+        disguise_visual = current_prop.duplicate(Node.DUPLICATE_USE_INSTANTIATION | Node.DUPLICATE_SCRIPTS)
+    if disguise_visual:
         disguise_visual.name = "DisguiseCopy"
         add_child(disguise_visual)
         disguise_visual.position = Vector3.ZERO
