@@ -7,6 +7,8 @@ func _init() -> void:
     await process_frame
     _check(arena.get_node_or_null("Player/Character/AnimationPlayer") != null, "player animation player")
     _check(arena.get_node_or_null("Enemy/Character/AnimationPlayer") != null, "enemy animation player")
+    _check(arena.get_node_or_null("Enemy/RecoveryAnimationPlayer") != null, "enemy recovery animation player")
+    _check(arena.get_node_or_null("Player/RecoveryAnimationPlayer") != null, "node-based recovery animation player")
     _check(arena.get_node_or_null("HUD/MobileControls/Joystick/Base") != null, "node-based analog joystick")
     _check(arena.get_node_or_null("HUD/MobileControls/Actions/Jab") != null, "jab button")
     var player := arena.get_node("Player") as FightPlayer
@@ -48,6 +50,15 @@ func _init() -> void:
     await process_frame
     _check(player.attacking, "player jab starts")
     _check(player.get_node("PunchHitArea") != null, "punch hit area")
+    player.take_damage(100)
+    await create_timer(7.0).timeout
+    await process_frame
+    await process_frame
+    _check(not player.dead and not player.recovering, "death to getup recovery")
+    _check(arena.get_node("HUD/Status").text == "TEKRAR AYAĞA KALKTI", "idle after getup")
+    enemy.take_hit(&"head", 100)
+    await create_timer(7.0).timeout
+    _check(not enemy.dead and not enemy.recovering, "enemy death to getup recovery")
     if failures.is_empty():
         print("FIGHT ARENA SMOKE PASS")
         quit(0)

@@ -15,7 +15,11 @@ Rakip artık oyuncuya yürümez, saldırmaz ve olduğu yerde `Idle` animasyonund
 - `HeadHitZone`: `Hit_Head` animasyonu.
 - `ChestHitZone`: `Hit_Chest` animasyonu.
 
-Bu bölgeler `Enemy` sahnesinde düğüm olarak tanımlıdır; saldırı sistemi yalnızca bu düğümlere temas ettiğinde hasar verir. Rakip canı sıfıra inerse `Death01` oynar.
+Bu bölgeler `Enemy` sahnesinde düğüm olarak tanımlıdır; saldırı sistemi yalnızca bu düğümlere temas ettiğinde hasar verir.
+
+## Ölümden kalkma
+
+Oyuncu ve rakip sahnesinde ayrı birer `RecoveryAnimationPlayer` düğümü bulunur. `Death01` tamamlanınca Skeleton3D kemiklerini anahtarlayan özgün `GetUp` AnimationLibrary oynar; kalça, omurga, kollar ve bacaklar kademeli olarak ayağa gelir. Klip bitince ana `AnimationPlayer` tekrar `Idle` oynatır ve karakter yeniden aktif olur.
 
 ## Sahne özeti
 
@@ -23,10 +27,12 @@ Bu bölgeler `Enemy` sahnesinde düğüm olarak tanımlıdır; saldırı sistemi
 Arena
 ├── Player
 │   ├── Character / AnimationPlayer
+│   ├── RecoveryAnimationPlayer / GetUp
 │   ├── PunchHitArea
 │   └── CameraPivot / Camera3D
 ├── Enemy
 │   ├── Character / AnimationPlayer
+│   ├── RecoveryAnimationPlayer / GetUp
 │   ├── HeadHitZone
 │   └── ChestHitZone
 └── HUD

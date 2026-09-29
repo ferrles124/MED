@@ -9,6 +9,7 @@ class_name FightPlayer
 @onready var character: Node3D = $Character
 @onready var camera_pivot: Node3D = $CameraPivot
 @onready var animation_player: AnimationPlayer = $Character/AnimationPlayer
+@onready var recovery_animation_player: AnimationPlayer = $RecoveryAnimationPlayer
 @onready var hit_area: Area3D = $PunchHitArea
 @onready var hud: CanvasLayer = get_node_or_null("../HUD")
 var mobile_move := Vector2.ZERO
@@ -19,11 +20,15 @@ var attack_time := 0.0
 var attack_kind := &"Punch_Jab"
 var health := 100
 var hit_targets: Dictionary = {}
+var dead := false
+var recovering := false
 
 func _ready() -> void:
     add_to_group("player")
     hit_area.monitoring = false
     hit_area.area_entered.connect(_on_punch_area_entered)
+    animation_player.animation_finished.connect(_on_character_animation_finished)
+    recovery_animation_player.animation_finished.connect(_on_recovery_animation_finished)
     camera_pivot.rotation.x = pitch
     camera_pivot.rotation.y = yaw
     _play(&"Idle")
@@ -87,11 +92,30 @@ func punch(kind: StringName) -> void:
     _status("JAB" if kind == &"Punch_Jab" else "CROSS")
 
 func take_damage(amount: int) -> void:
+    if dead or recovering: return
     health = max(health - amount, 0)
     _status("DARBE ALDI  %d HP" % health)
     if health == 0:
-        _play(&"Death01")
+        dead = true
+        attacking = false
+        hit_area.monitoring = false
+        animation_player.play(&"Death01")
         set_physics_process(false)
+
+func _on_character_animation_finished(name: StringName) -> void:
+    if name == &"Death01" and dead:
+        recovery_animation_player.play(&"GetUp")
+        recovering = true
+        _status("KALKIYOR...")
+
+func _on_recovery_animation_finished(name: StringName) -> void:
+    if name != &"GetUp": return
+    recovering = false
+    dead = false
+    health = 100
+    animation_player.play(&"Idle")
+    set_physics_process(true)
+    _status("TEKRAR AYAĞA KALKTI")
 
 func _play(name: StringName) -> void:
     if animation_player.has_animation(name) and animation_player.current_animation != name:
