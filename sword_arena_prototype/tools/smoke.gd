@@ -1,0 +1,33 @@
+extends SceneTree
+
+var failures: Array[String] = []
+
+func _init() -> void:
+    var packed := load("res://scenes/prototype.tscn") as PackedScene
+    if packed == null:
+        failures.append("prototype scene could not load")
+    else:
+        var world := packed.instantiate()
+        root.add_child(world)
+        await process_frame
+        _check(world.get_node_or_null("Floor/Mesh") != null, "floor mesh exists")
+        _check(world.get_node_or_null("Player/Character/Rig/Skeleton3D/RightHandWeapon/Sword/Model") != null, "sword is attached under right-hand BoneAttachment3D")
+        _check(world.get_node_or_null("Player/Character/AnimationPlayer") != null, "character AnimationPlayer exists")
+        _check(world.get_node_or_null("HUD/MobileControls/MovePad/Up") != null, "node-based mobile movement controls exist")
+        _check(world.get_node_or_null("HUD/MobileControls/LookPanel") != null, "node-based mobile look panel exists")
+        var player := world.get_node("Player")
+        player.request_attack()
+        await process_frame
+        _check(player.attacking, "sword attack can start")
+        world.queue_free()
+    if failures.is_empty():
+        print("SWORD PROTOTYPE SMOKE PASS")
+        quit(0)
+    else:
+        for failure in failures:
+            push_error(failure)
+        quit(1)
+
+func _check(condition: bool, message: String) -> void:
+    if not condition:
+        failures.append(message)

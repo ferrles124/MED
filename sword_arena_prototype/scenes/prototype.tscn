@@ -1,0 +1,197 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/world.gd" id="1_world"]
+[ext_resource type="PackedScene" path="res://scenes/player.tscn" id="2_player"]
+[ext_resource type="Script" path="res://scripts/mobile_controls.gd" id="3_mobile"]
+
+[sub_resource type="BoxMesh" id="FloorMesh"]
+size = Vector3(30, 0.2, 30)
+
+[sub_resource type="BoxShape3D" id="FloorShape"]
+size = Vector3(30, 0.2, 30)
+
+[sub_resource type="StandardMaterial3D" id="FloorMaterial"]
+albedo_color = Color(0.12, 0.16, 0.2, 1)
+roughness = 0.82
+
+[sub_resource type="Environment" id="Environment"]
+background_mode = 1
+background_color = Color(0.035, 0.055, 0.09, 1)
+ambient_light_source = 3
+ambient_light_color = Color(0.35, 0.48, 0.72, 1)
+ambient_light_energy = 0.8
+fog_enabled = true
+fog_light_color = Color(0.12, 0.19, 0.3, 1)
+fog_density = 0.008
+
+[sub_resource type="StyleBoxFlat" id="ButtonStyle"]
+bg_color = Color(0.05, 0.12, 0.2, 0.82)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.28, 0.7, 1, 0.72)
+corner_radius_top_left = 16
+corner_radius_top_right = 16
+corner_radius_bottom_left = 16
+corner_radius_bottom_right = 16
+
+[sub_resource type="StyleBoxFlat" id="AttackStyle"]
+bg_color = Color(0.62, 0.12, 0.12, 0.9)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(1, 0.5, 0.25, 0.9)
+corner_radius_top_left = 42
+corner_radius_top_right = 42
+corner_radius_bottom_left = 42
+corner_radius_bottom_right = 42
+
+[node name="Prototype" type="Node3D"]
+script = ExtResource("1_world")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment")
+
+[node name="Sun" type="DirectionalLight3D" parent="."]
+rotation_degrees = Vector3(-52, -25, 0)
+light_color = Color(0.68, 0.82, 1, 1)
+light_energy = 1.25
+shadow_enabled = true
+
+[node name="RimLight" type="OmniLight3D" parent="."]
+position = Vector3(0, 3.5, -2)
+omni_range = 9.0
+light_color = Color(0.2, 0.65, 1, 1)
+light_energy = 6.0
+
+[node name="Floor" type="StaticBody3D" parent="."]
+
+[node name="Mesh" type="MeshInstance3D" parent="Floor"]
+mesh = SubResource("FloorMesh")
+material_override = SubResource("FloorMaterial")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
+shape = SubResource("FloorShape")
+
+[node name="Player" parent="." instance=ExtResource("2_player")]
+position = Vector3(0, 1.1, 0)
+
+[node name="HUD" type="CanvasLayer" parent="."]
+
+[node name="Title" type="Label" parent="HUD"]
+offset_left = 26.0
+offset_top = 22.0
+offset_right = 600.0
+offset_bottom = 58.0
+theme_override_colors/font_color = Color(0.65, 0.88, 1, 1)
+theme_override_font_sizes/font_size = 28
+text = "SWORD ARENA  ·  PROTOTİP"
+
+[node name="Status" type="Label" parent="HUD"]
+offset_left = 26.0
+offset_top = 64.0
+offset_right = 700.0
+offset_bottom = 94.0
+theme_override_colors/font_color = Color(0.85, 0.92, 1, 1)
+theme_override_font_sizes/font_size = 18
+text = "Kılıç hazır"
+
+[node name="Hint" type="Label" parent="HUD"]
+offset_left = 26.0
+offset_top = 104.0
+offset_right = 650.0
+offset_bottom = 132.0
+theme_override_colors/font_color = Color(0.55, 0.7, 0.82, 1)
+theme_override_font_sizes/font_size = 16
+text = "WASD hareket  ·  Fare kamera  ·  F / Sol tık saldırı  ·  Space zıpla"
+
+[node name="MobileControls" type="Control" parent="HUD"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+script = ExtResource("3_mobile")
+
+[node name="LookPanel" type="Control" parent="HUD/MobileControls"]
+layout_mode = 1
+anchors_preset = 15
+anchor_left = 0.35
+anchor_top = 0.18
+anchor_right = 1.0
+anchor_bottom = 0.86
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 0
+
+[node name="MovePad" type="Control" parent="HUD/MobileControls"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 470.0
+offset_right = 300.0
+offset_bottom = 700.0
+
+[node name="Up" type="Button" parent="HUD/MobileControls/MovePad"]
+offset_left = 90.0
+offset_top = 0.0
+offset_right = 180.0
+offset_bottom = 70.0
+theme_override_styles/normal = SubResource("ButtonStyle")
+theme_override_font_sizes/font_size = 22
+text = "▲"
+
+[node name="Down" type="Button" parent="HUD/MobileControls/MovePad"]
+offset_left = 90.0
+offset_top = 150.0
+offset_right = 180.0
+offset_bottom = 220.0
+theme_override_styles/normal = SubResource("ButtonStyle")
+theme_override_font_sizes/font_size = 22
+text = "▼"
+
+[node name="Left" type="Button" parent="HUD/MobileControls/MovePad"]
+offset_left = 0.0
+offset_top = 75.0
+offset_right = 90.0
+offset_bottom = 145.0
+theme_override_styles/normal = SubResource("ButtonStyle")
+theme_override_font_sizes/font_size = 22
+text = "◀"
+
+[node name="Right" type="Button" parent="HUD/MobileControls/MovePad"]
+offset_left = 180.0
+offset_top = 75.0
+offset_right = 270.0
+offset_bottom = 145.0
+theme_override_styles/normal = SubResource("ButtonStyle")
+theme_override_font_sizes/font_size = 22
+text = "▶"
+
+[node name="Actions" type="Control" parent="HUD/MobileControls"]
+layout_mode = 0
+offset_left = 1010.0
+offset_top = 500.0
+offset_right = 1260.0
+offset_bottom = 700.0
+
+[node name="Jump" type="Button" parent="HUD/MobileControls/Actions"]
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 100.0
+offset_bottom = 62.0
+theme_override_styles/normal = SubResource("ButtonStyle")
+theme_override_font_sizes/font_size = 18
+text = "ZIPLA"
+
+[node name="Attack" type="Button" parent="HUD/MobileControls/Actions"]
+offset_left = 108.0
+offset_top = -20.0
+offset_right = 240.0
+offset_bottom = 112.0
+theme_override_styles/normal = SubResource("AttackStyle")
+theme_override_font_sizes/font_size = 19
+text = "SALDIR"
