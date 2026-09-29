@@ -65,9 +65,9 @@ material_override = SubResource("floor_mat")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Floor"]
 shape = SubResource("floor_shape")
 [node name="Player" parent="." instance=ExtResource("2")]
-position = Vector3(-2.2, 1.1, 2)
+position = Vector3(-2.2, 0.1, 2)
 [node name="Enemy" parent="." instance=ExtResource("3")]
-position = Vector3(2.0, 1.1, -0.3)
+position = Vector3(2.0, 0.1, -0.3)
 rotation_degrees = Vector3(0, 180, 0)
 [node name="HUD" type="CanvasLayer" parent="."]
 [node name="Title" type="Label" parent="HUD"]

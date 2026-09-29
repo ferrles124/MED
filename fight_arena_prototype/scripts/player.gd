@@ -56,8 +56,6 @@ func _physics_process(delta: float) -> void:
         velocity.y = jump_velocity
     if not attacking:
         _play(&"Walk" if direction.length_squared() > 0.01 else &"Idle")
-        if direction.length_squared() > 0.01:
-            rotation.y = lerp_angle(rotation.y, atan2(direction.x, direction.z) + PI, delta * 9.0)
     else:
         attack_time += delta
         hit_area.monitoring = attack_time > 0.22 and attack_time < 0.52
@@ -75,7 +73,8 @@ func _movement_direction(input: Vector2) -> Vector3:
 func _look(delta_look: Vector2) -> void:
     yaw -= delta_look.x
     pitch = clamp(pitch - delta_look.y, deg_to_rad(-28.0), deg_to_rad(18.0))
-    camera_pivot.rotation.y = yaw
+    rotation.y = yaw
+    camera_pivot.rotation.y = 0.0
     camera_pivot.rotation.x = pitch
 
 func punch(kind: StringName) -> void:

@@ -7,6 +7,8 @@ var jab_requested := false
 var cross_requested := false
 var _move_touch_id := -1
 var _look_touch_id := -1
+var _mouse_moving := false
+var _mouse_looking := false
 var _center := Vector2.ZERO
 @onready var base: Panel = $Joystick/Base
 @onready var knob: Panel = $Joystick/Knob
@@ -35,6 +37,14 @@ func _on_joystick_input(event: InputEvent) -> void:
             move_vector = Vector2.ZERO
     elif event is InputEventScreenDrag and event.index == _move_touch_id:
         _move_knob(event.position)
+    elif event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+        _mouse_moving = event.pressed
+        if _mouse_moving:
+            _move_knob(event.position)
+        else:
+            move_vector = Vector2.ZERO
+    elif event is InputEventMouseMotion and _mouse_moving:
+        _move_knob(event.position)
 
 func _on_look_input(event: InputEvent) -> void:
     if event is InputEventScreenTouch:
@@ -44,6 +54,10 @@ func _on_look_input(event: InputEvent) -> void:
             _look_touch_id = -1
     elif event is InputEventScreenDrag and event.index == _look_touch_id:
         look_delta += event.relative
+    elif event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT:
+        _mouse_looking = event.pressed
+    elif event is InputEventMouseMotion and _mouse_looking:
+        look_delta += event.relative
 
 func consume_look_delta() -> Vector2:
     var result := look_delta
@@ -51,7 +65,7 @@ func consume_look_delta() -> Vector2:
     return result
 
 func _move_knob(pos: Vector2) -> void:
-    var local := base.get_global_transform().affine_inverse() * pos
+    var local := pos
     var radius: float = min(base.size.x, base.size.y) * 0.34
     var delta := local - _center
     if delta.length() > radius: delta = delta.normalized() * radius

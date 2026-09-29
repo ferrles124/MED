@@ -23,6 +23,6 @@ shape = SubResource("shape")
 [node name="CameraPivot" type="Node3D" parent="."]
 position = Vector3(0, 0.9, 0)
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
-position = Vector3(0, 2.6, 6.5)
+position = Vector3(0, 1.8, 5.8)
 current = true
 fov = 58.0
