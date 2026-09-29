@@ -15,14 +15,14 @@ shape = SubResource("shape")
 [node name="PunchHitArea" type="Area3D" parent="."]
 monitoring = false
 collision_layer = 2
-collision_mask = 1
+collision_mask = 12
 [node name="CollisionShape3D" type="CollisionShape3D" parent="PunchHitArea"]
 position = Vector3(0, 1.1, -0.65)
 scale = Vector3(0.7, 0.7, 0.7)
 shape = SubResource("shape")
 [node name="CameraPivot" type="Node3D" parent="."]
-position = Vector3(0, 0.45, 0)
+position = Vector3(0, 0.9, 0)
 [node name="Camera3D" type="Camera3D" parent="CameraPivot"]
-position = Vector3(0, 4.6, 9.0)
+position = Vector3(0, 2.6, 6.5)
 current = true
 fov = 58.0
