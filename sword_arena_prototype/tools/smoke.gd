@@ -19,6 +19,10 @@ func _init() -> void:
         player.request_attack()
         await process_frame
         _check(player.attacking, "sword attack can start")
+        await create_timer(0.8).timeout
+        _check(player.attacking, "sword attack is not cut off before the 1.53s animation ends")
+        await create_timer(0.9).timeout
+        _check(not player.attacking, "sword attack returns to idle after the full animation")
         world.queue_free()
     if failures.is_empty():
         print("SWORD PROTOTYPE SMOKE PASS")

@@ -22,6 +22,7 @@ var attacking := false
 var attack_cooldown := 0.0
 var attack_elapsed := 0.0
 var attack_hit_done := false
+var attack_duration := 1.53
 var sword_color := Color(0.25, 0.75, 1.0)
 
 func _ready() -> void:
@@ -90,20 +91,22 @@ func request_attack() -> void:
     attacking = true
     attack_elapsed = 0.0
     attack_hit_done = false
-    attack_cooldown = 0.6
+    attack_duration = animation_player.get_animation(&"Sword_Attack").length if animation_player.has_animation(&"Sword_Attack") else 1.53
+    attack_cooldown = attack_duration + 0.08
     hit_area.monitoring = false
     play_animation(&"Sword_Attack")
     _set_status("KILIÇ SALDIRISI")
 
 func _update_attack(delta: float) -> void:
     attack_elapsed += delta
-    if attack_elapsed > 0.18 and attack_elapsed < 0.42 and not attack_hit_done:
+    # Vuruş penceresi animasyonun orta bölümünde açılır; saldırı artık kesilmez.
+    if attack_elapsed > attack_duration * 0.38 and attack_elapsed < attack_duration * 0.66 and not attack_hit_done:
         attack_hit_done = true
         hit_area.monitoring = true
         _set_status("Kılıç menzili aktif")
-        await get_tree().create_timer(0.10).timeout
+        await get_tree().create_timer(attack_duration * 0.16).timeout
         hit_area.monitoring = false
-    if attack_elapsed > 0.62:
+    if attack_elapsed > attack_duration + 0.03:
         attacking = false
         hit_area.monitoring = false
         play_animation(&"Sword_Idle")

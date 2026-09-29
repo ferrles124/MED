@@ -16,6 +16,7 @@ rotation_degrees = Vector3(0, 180, 0)
 
 [node name="RightHandWeapon" type="BoneAttachment3D" parent="Character/Rig/Skeleton3D"]
 bone_name = "DEF-hand.R"
+override_pose = false
 
 [node name="Sword" parent="Character/Rig/Skeleton3D/RightHandWeapon" instance=ExtResource("3_sword")]
 
