@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=13 format=3]
 
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_player"]
 [ext_resource type="PackedScene" path="res://assets/Character.glb" id="2_character"]
@@ -8,17 +8,79 @@
 radius = 0.38
 height = 1.8
 
+[sub_resource type="AnimationNodeAnimation" id="IdleAnim"]
+resource_local_to_scene = true
+animation = &"Sword_Idle"
+
+[sub_resource type="AnimationNodeAnimation" id="WalkAnim"]
+resource_local_to_scene = true
+animation = &"Walk"
+
+[sub_resource type="AnimationNodeAnimation" id="AttackAnim"]
+resource_local_to_scene = true
+animation = &"Sword_Attack"
+
+[sub_resource type="AnimationNodeTransition" id="LocomotionTransition"]
+resource_local_to_scene = true
+xfade_time = 0.12
+input_0/name = "idle"
+input_0/reset = true
+input_1/name = "walk"
+input_1/reset = true
+
+[sub_resource type="AnimationNodeOneShot" id="AttackOneShot"]
+resource_local_to_scene = true
+fadein_time = 0.08
+fadeout_time = 0.14
+mix_mode = 0
+
+[sub_resource type="AnimationNodeBlendTree" id="AnimationBlendTree"]
+resource_local_to_scene = true
+nodes/output/position = Vector2(900, 260)
+nodes/locomotion/node = SubResource("LocomotionTransition")
+nodes/locomotion/position = Vector2(220, 320)
+nodes/idle/node = SubResource("IdleAnim")
+nodes/idle/position = Vector2(-20, 260)
+nodes/walk/node = SubResource("WalkAnim")
+nodes/walk/position = Vector2(-20, 380)
+nodes/attack_layer/node = SubResource("AttackOneShot")
+nodes/attack_layer/position = Vector2(560, 260)
+nodes/attack/node = SubResource("AttackAnim")
+nodes/attack/position = Vector2(220, 520)
+node_connections = [&"output", 0, &"attack_layer", &"attack_layer", 0, &"locomotion", &"attack_layer", 1, &"attack", &"locomotion", 0, &"idle", &"locomotion", 1, &"walk"]
+
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_player")
 
 [node name="Character" parent="." instance=ExtResource("2_character")]
 rotation_degrees = Vector3(0, 180, 0)
 
-[node name="RightHandWeapon" type="BoneAttachment3D" parent="Character/Rig/Skeleton3D"]
+[node name="WeaponSocket" type="BoneAttachment3D" parent="Character/Rig/Skeleton3D"]
 bone_name = "DEF-hand.R"
 override_pose = false
 
-[node name="Sword" parent="Character/Rig/Skeleton3D/RightHandWeapon" instance=ExtResource("3_sword")]
+[node name="Sword" parent="Character/Rig/Skeleton3D/WeaponSocket" instance=ExtResource("3_sword")]
+
+[node name="LeftElbowPole" type="Marker3D" parent="Character/Rig/Skeleton3D"]
+position = Vector3(-0.75, 1.45, 0.35)
+
+[node name="LeftHandIK" type="TwoBoneIK3D" parent="Character/Rig/Skeleton3D"]
+setting_count = 1
+settings/0/target_node = NodePath("../WeaponSocket/Sword/LeftHandGrip")
+settings/0/pole_node = NodePath("../LeftElbowPole")
+settings/0/root_bone_name = "DEF-upper_arm.L"
+settings/0/middle_bone_name = "DEF-forearm.L"
+settings/0/end_bone_name = "DEF-hand.L"
+settings/0/pole_direction = 0
+settings/0/use_virtual_end = false
+settings/0/extend_end_bone = false
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+active = true
+tree_root = SubResource("AnimationBlendTree")
+anim_player = NodePath("../Character/AnimationPlayer")
+parameters/locomotion/transition_request = "idle"
+parameters/attack_layer/request = 0
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 position = Vector3(0, 0.9, 0)

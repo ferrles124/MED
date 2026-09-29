@@ -6,12 +6,15 @@ class_name SwordPrototypePlayer
 @export var gravity := 22.0
 @export var jump_velocity := 7.5
 @export var look_sensitivity := 0.004
+@export var use_two_hand_ik := false
 
 @onready var character: Node3D = $Character
 @onready var camera_pivot: Node3D = $CameraPivot
 @onready var camera: Camera3D = $CameraPivot/Camera3D
 @onready var animation_player: AnimationPlayer = $Character/AnimationPlayer
-@onready var hit_area: Area3D = $Character/Rig/Skeleton3D/RightHandWeapon/Sword/HitArea
+@onready var animation_tree: AnimationTree = $AnimationTree
+@onready var hit_area: Area3D = $Character/Rig/Skeleton3D/WeaponSocket/Sword/HitArea
+@onready var left_hand_ik: TwoBoneIK3D = $Character/Rig/Skeleton3D/LeftHandIK
 @onready var hud: CanvasLayer = get_node_or_null("../HUD")
 
 var yaw := 0.0
@@ -28,7 +31,8 @@ var sword_color := Color(0.25, 0.75, 1.0)
 func _ready() -> void:
     add_to_group("player")
     hit_area.monitoring = false
-    animation_player.animation_finished.connect(_on_animation_finished)
+    animation_tree.active = true
+    left_hand_ik.active = use_two_hand_ik
     play_animation(&"Sword_Idle")
     _set_status("Kılıç hazır — F veya ekrandaki SALDIR düğmesine bas")
     Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
@@ -127,8 +131,12 @@ func _update_camera() -> void:
     camera_pivot.rotation.x = pitch
 
 func play_animation(name: StringName) -> void:
-    if animation_player.has_animation(name) and animation_player.current_animation != name:
-        animation_player.play(name, 0.10)
+    if name == &"Sword_Attack":
+        animation_tree["parameters/attack_layer/request"] = 1
+    elif name == &"Walk":
+        animation_tree["parameters/locomotion/transition_request"] = "walk"
+    else:
+        animation_tree["parameters/locomotion/transition_request"] = "idle"
 
 func _set_status(message: String) -> void:
     if hud:

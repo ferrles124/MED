@@ -11,7 +11,10 @@ func _init() -> void:
         root.add_child(world)
         await process_frame
         _check(world.get_node_or_null("Floor/Mesh") != null, "floor mesh exists")
-        _check(world.get_node_or_null("Player/Character/Rig/Skeleton3D/RightHandWeapon/Sword/Model") != null, "sword is attached under right-hand BoneAttachment3D")
+        _check(world.get_node_or_null("Player/Character/Rig/Skeleton3D/WeaponSocket/Sword/Model") != null, "sword is attached under the WeaponSocket BoneAttachment3D")
+        _check(world.get_node_or_null("Player/Character/Rig/Skeleton3D/WeaponSocket/Sword/GripMarker") != null, "weapon grip marker exists")
+        _check(world.get_node_or_null("Player/Character/Rig/Skeleton3D/LeftHandIK") != null, "TwoBoneIK3D node exists")
+        _check(world.get_node_or_null("Player/AnimationTree") != null, "AnimationTree node exists")
         _check(world.get_node_or_null("Player/Character/AnimationPlayer") != null, "character AnimationPlayer exists")
         _check(world.get_node_or_null("HUD/MobileControls/MovePad/Up") != null, "node-based mobile movement controls exist")
         _check(world.get_node_or_null("HUD/MobileControls/LookPanel") != null, "node-based mobile look panel exists")
