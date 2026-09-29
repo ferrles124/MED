@@ -1,0 +1,130 @@
+[gd_scene load_steps=16 format=3]
+
+[ext_resource type="Script" path="res://scripts/fps/player.gd" id="1_player"]
+[ext_resource type="PackedScene" path="res://scenes/weapons/strider_carbine.tscn" id="2_weapon"]
+[ext_resource type="PackedScene" path="res://scenes/weapons/lumen_pistol.tscn" id="3_weapon"]
+
+[sub_resource type="StandardMaterial3D" id="MatSuit"]
+albedo_color = Color(0.12, 0.36, 0.48, 1)
+roughness = 0.74
+
+[sub_resource type="StandardMaterial3D" id="MatHelmet"]
+albedo_color = Color(0.12, 0.16, 0.19, 1)
+metallic = 0.25
+roughness = 0.48
+
+[sub_resource type="StandardMaterial3D" id="MatVisor"]
+albedo_color = Color(0.25, 0.82, 0.9, 1)
+emission_enabled = true
+emission = Color(0.08, 0.4, 0.48, 1)
+emission_energy_multiplier = 1.6
+
+[sub_resource type="StandardMaterial3D" id="MatGlove"]
+albedo_color = Color(0.36, 0.41, 0.4, 1)
+roughness = 0.82
+
+[sub_resource type="CapsuleMesh" id="MeshBody"]
+radius = 0.34
+height = 1.2
+radial_segments = 8
+rings = 3
+
+[sub_resource type="SphereMesh" id="MeshHead"]
+radius = 0.3
+height = 0.6
+radial_segments = 8
+rings = 4
+
+[sub_resource type="BoxMesh" id="MeshPlate"]
+size = Vector3(0.65, 0.28, 0.12)
+
+[sub_resource type="CylinderMesh" id="MeshShoulder"]
+top_radius = 0.19
+bottom_radius = 0.22
+height = 0.55
+radial_segments = 8
+
+[sub_resource type="CapsuleMesh" id="MeshArm"]
+radius = 0.12
+height = 0.72
+radial_segments = 8
+rings = 2
+
+[sub_resource type="CapsuleShape3D" id="ShapeBody"]
+radius = 0.34
+height = 1.8
+
+[node name="Player" type="CharacterBody3D"]
+script = ExtResource("1_player")
+collision_layer = 1
+collision_mask = 1
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+position = Vector3(0, 0.9, 0)
+shape = SubResource("ShapeBody")
+
+[node name="Visual" type="Node3D" parent="."]
+
+[node name="Suit" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0, 0.94, 0)
+mesh = SubResource("MeshBody")
+material_override = SubResource("MatSuit")
+
+[node name="Helmet" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0, 1.73, 0)
+mesh = SubResource("MeshHead")
+material_override = SubResource("MatHelmet")
+
+[node name="Visor" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0, 1.74, -0.265)
+scale = Vector3(0.74, 0.36, 0.22)
+mesh = SubResource("MeshHead")
+material_override = SubResource("MatVisor")
+
+[node name="ChestPlate" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0, 1.04, -0.31)
+mesh = SubResource("MeshPlate")
+material_override = SubResource("MatVisor")
+
+[node name="ShoulderLeft" type="MeshInstance3D" parent="Visual"]
+position = Vector3(-0.39, 1.32, 0)
+rotation_degrees = Vector3(0, 0, 90)
+mesh = SubResource("MeshShoulder")
+material_override = SubResource("MatSuit")
+
+[node name="ShoulderRight" type="MeshInstance3D" parent="Visual"]
+position = Vector3(0.39, 1.32, 0)
+rotation_degrees = Vector3(0, 0, 90)
+mesh = SubResource("MeshShoulder")
+material_override = SubResource("MatSuit")
+
+[node name="Head" type="Node3D" parent="."]
+position = Vector3(0, 1.44, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Head"]
+position = Vector3(0, 0.02, 0)
+fov = 76.0
+current = true
+
+[node name="WeaponAnchor" type="Node3D" parent="Head/Camera3D"]
+position = Vector3(0.34, -0.29, -0.72)
+rotation_degrees = Vector3(-2, -3, 0)
+
+[node name="StriderCarbine" parent="Head/Camera3D/WeaponAnchor" instance=ExtResource("2_weapon")]
+
+[node name="LumenPistol" parent="Head/Camera3D/WeaponAnchor" instance=ExtResource("3_weapon")]
+
+[node name="ArmLeft" type="MeshInstance3D" parent="Head/Camera3D/WeaponAnchor"]
+position = Vector3(-0.18, -0.12, 0.1)
+rotation_degrees = Vector3(-18, 20, 20)
+mesh = SubResource("MeshArm")
+material_override = SubResource("MatGlove")
+
+[node name="ArmRight" type="MeshInstance3D" parent="Head/Camera3D/WeaponAnchor"]
+position = Vector3(0.18, -0.14, 0.02)
+rotation_degrees = Vector3(-15, -16, -18)
+mesh = SubResource("MeshArm")
+material_override = SubResource("MatGlove")
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+value = 100.0

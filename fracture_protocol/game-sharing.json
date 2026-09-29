@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 2,
+  "title": "Fracture Protocol",
+  "description": "Özgün low-poly taktik FPS vertical slice: turu kazan, hedef cihazını kur ve Harbor Ruins arenasında rakip timi etkisizleştir.",
+  "defaultCaptions": {
+    "x": "Fracture Protocol — özgün low-poly taktik FPS vertical slice.",
+    "facebook": "Fracture Protocol: tur tabanlı çatışma, hedef cihazı ve özgün low-poly Harbor Ruins arenası.",
+    "reddit": "Fracture Protocol — offline tactical FPS vertical slice built with Godot scenes.",
+    "discord": "Fracture Protocol: Harbor Ruins operasyonu başlıyor."
+  },
+  "assets": {
+    "og": "assets/share/og.png",
+    "favicon": "assets/share/favicon.png"
+  }
+}

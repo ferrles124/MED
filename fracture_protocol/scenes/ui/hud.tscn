@@ -1,0 +1,269 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/fps/hud.gd" id="1_hud"]
+[ext_resource type="Script" path="res://scripts/fps/mobile_controls.gd" id="2_mobile"]
+
+[sub_resource type="StyleBoxFlat" id="TopStyle"]
+bg_color = Color(0.035, 0.055, 0.07, 0.92)
+border_width_bottom = 2
+border_color = Color(0.12, 0.65, 0.72, 0.7)
+
+[sub_resource type="StyleBoxFlat" id="PanelStyle"]
+bg_color = Color(0.035, 0.055, 0.07, 0.96)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.22, 0.55, 0.6, 0.8)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="ResultStyle"]
+bg_color = Color(0.02, 0.03, 0.04, 0.97)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.96, 0.57, 0.18, 0.95)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="BuyStyle"]
+bg_color = Color(0.025, 0.045, 0.055, 0.97)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.12, 0.65, 0.72, 0.9)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="FractureHUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+
+[node name="Layer" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="TopBar" type="Panel" parent="Layer"]
+layout_mode = 0
+offset_right = 1280.0
+offset_bottom = 62.0
+theme_override_styles/panel = SubResource("TopStyle")
+
+[node name="Title" type="Label" parent="Layer/TopBar"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 12.0
+offset_right = 300.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.33, 0.82, 0.88, 1)
+theme_override_font_sizes/font_size = 21
+text = "FRACTURE / PROTOCOL"
+
+[node name="Phase" type="Label" parent="Layer/TopBar"]
+layout_mode = 0
+offset_left = 405.0
+offset_top = 13.0
+offset_right = 700.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.98, 0.72, 0.26, 1)
+theme_override_font_sizes/font_size = 20
+text = "SATIN ALMA FAZI"
+horizontal_alignment = 1
+
+[node name="Score" type="Label" parent="Layer/TopBar"]
+layout_mode = 0
+offset_left = 780.0
+offset_top = 14.0
+offset_right = 1050.0
+offset_bottom = 48.0
+theme_override_colors/font_color = Color(0.78, 0.85, 0.86, 1)
+theme_override_font_sizes/font_size = 18
+text = "MAVİ  0   —   0  AMBER"
+horizontal_alignment = 1
+
+[node name="Timer" type="Label" parent="Layer/TopBar"]
+layout_mode = 0
+offset_left = 1100.0
+offset_top = 12.0
+offset_right = 1240.0
+offset_bottom = 50.0
+theme_override_colors/font_color = Color(0.98, 0.98, 0.96, 1)
+theme_override_font_sizes/font_size = 22
+text = "00:12"
+horizontal_alignment = 2
+
+[node name="Objective" type="Label" parent="Layer"]
+layout_mode = 0
+offset_left = 445.0
+offset_top = 82.0
+offset_right = 835.0
+offset_bottom = 116.0
+theme_override_colors/font_color = Color(1, 0.66, 0.23, 1)
+theme_override_font_sizes/font_size = 18
+text = "HEDEF HAZIR"
+horizontal_alignment = 1
+
+[node name="Reticle" type="Label" parent="Layer"]
+layout_mode = 0
+offset_left = 630.0
+offset_top = 346.0
+offset_right = 650.0
+offset_bottom = 378.0
+theme_override_colors/font_color = Color(0.78, 0.96, 0.96, 0.95)
+theme_override_font_sizes/font_size = 26
+text = "+"
+horizontal_alignment = 1
+
+[node name="BottomLeft" type="Control" parent="Layer"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 620.0
+offset_right = 360.0
+offset_bottom = 690.0
+
+[node name="Health" type="Label" parent="Layer/BottomLeft"]
+layout_mode = 0
+offset_bottom = 34.0
+theme_override_colors/font_color = Color(0.48, 0.92, 0.78, 1)
+theme_override_font_sizes/font_size = 22
+text = "SAĞLIK  100"
+
+[node name="Hint" type="Label" parent="Layer/BottomLeft"]
+layout_mode = 0
+offset_top = 34.0
+offset_right = 350.0
+offset_bottom = 62.0
+theme_override_colors/font_color = Color(0.65, 0.72, 0.73, 1)
+theme_override_font_sizes/font_size = 13
+text = "WASD  ·  SOL TIK  ·  1/2  ·  R  ·  E"
+
+[node name="BottomRight" type="Control" parent="Layer"]
+layout_mode = 0
+offset_left = 890.0
+offset_top = 612.0
+offset_right = 1245.0
+offset_bottom = 700.0
+
+[node name="Ammo" type="Label" parent="Layer/BottomRight"]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 0.0
+offset_right = 355.0
+offset_bottom = 36.0
+theme_override_colors/font_color = Color(0.91, 0.96, 0.96, 1)
+theme_override_font_sizes/font_size = 22
+text = "STRIDER-7  24 / 24"
+horizontal_alignment = 2
+
+[node name="Credits" type="Label" parent="Layer/BottomRight"]
+layout_mode = 0
+offset_left = 0.0
+offset_top = 39.0
+offset_right = 355.0
+offset_bottom = 68.0
+theme_override_colors/font_color = Color(0.98, 0.72, 0.26, 1)
+theme_override_font_sizes/font_size = 16
+text = "KREDİ  2400"
+horizontal_alignment = 2
+
+[node name="Message" type="Label" parent="Layer"]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 650.0
+offset_right = 1050.0
+offset_bottom = 690.0
+theme_override_colors/font_color = Color(0.76, 0.84, 0.85, 1)
+theme_override_font_sizes/font_size = 15
+text = "ENTER ile hazırlık fazını tamamla"
+horizontal_alignment = 1
+
+[node name="BuyPanel" type="Panel" parent="Layer"]
+layout_mode = 0
+offset_left = 385.0
+offset_top = 155.0
+offset_right = 895.0
+offset_bottom = 520.0
+theme_override_styles/panel = SubResource("BuyStyle")
+
+[node name="Title" type="Label" parent="Layer/BuyPanel"]
+layout_mode = 0
+offset_left = 28.0
+offset_top = 24.0
+offset_right = 482.0
+offset_bottom = 66.0
+theme_override_colors/font_color = Color(0.33, 0.82, 0.88, 1)
+theme_override_font_sizes/font_size = 24
+text = "EKİPMAN / B-07"
+
+[node name="Items" type="Label" parent="Layer/BuyPanel"]
+layout_mode = 0
+offset_left = 30.0
+offset_top = 86.0
+offset_right = 470.0
+offset_bottom = 285.0
+theme_override_colors/font_color = Color(0.78, 0.85, 0.86, 1)
+theme_override_font_sizes/font_size = 18
+text = "STRIDER-7      ÜCRETSİZ\nHAFİF ZIRH       650\nSİS MODÜLÜ       300\n\nKredi harcama sistemi vertical slice için hazır.\nB ile paneli kapat · ENTER ile çatışmaya gir"
+
+[node name="ResultPanel" type="Panel" parent="Layer"]
+layout_mode = 0
+offset_left = 380.0
+offset_top = 225.0
+offset_right = 900.0
+offset_bottom = 495.0
+theme_override_styles/panel = SubResource("ResultStyle")
+
+[node name="Title" type="Label" parent="Layer/ResultPanel"]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 32.0
+offset_right = 495.0
+offset_bottom = 82.0
+theme_override_font_sizes/font_size = 26
+text = "MAVİ TURU KAZANDI"
+horizontal_alignment = 1
+
+[node name="Detail" type="Label" parent="Layer/ResultPanel"]
+layout_mode = 0
+offset_left = 35.0
+offset_top = 105.0
+offset_right = 485.0
+offset_bottom = 220.0
+theme_override_colors/font_color = Color(0.78, 0.85, 0.86, 1)
+theme_override_font_sizes/font_size = 17
+text = "Amber timi etkisizleştirildi.\n\nENTER ile sonraki tur"
+horizontal_alignment = 1
+
+[node name="DamageFlash" type="ColorRect" parent="Layer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.8, 0.04, 0.02, 0.32)
+
+[node name="MobileControls" type="Control" parent="Layer"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+z_index = 50
+script = ExtResource("2_mobile")

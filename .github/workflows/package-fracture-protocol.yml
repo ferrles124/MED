@@ -1,0 +1,68 @@
+name: Build Fracture Protocol ZIP
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - "fracture_protocol/**"
+      - ".github/workflows/package-fracture-protocol.yml"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: fracture-protocol-package
+  cancel-in-progress: true
+
+jobs:
+  package-game:
+    name: Package Fracture Protocol
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Godot headless
+        uses: chickensoft-games/setup-godot@v2
+        with:
+          version: 4.7.2
+          use-dotnet: false
+          include-templates: false
+
+      - name: Verify Godot project
+        working-directory: fracture_protocol
+        shell: bash
+        run: |
+          set -euo pipefail
+          godot --headless --path . --editor --quit
+          godot --headless --path . --quit-after 3
+
+      - name: Create ZIP package
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf artifact
+          mkdir -p artifact/stage
+          cp -a fracture_protocol artifact/stage/FractureProtocol
+          rm -rf artifact/stage/FractureProtocol/.godot \
+                 artifact/stage/FractureProtocol/dist \
+                 artifact/stage/FractureProtocol/site \
+                 artifact/stage/FractureProtocol/.git
+          find artifact/stage/FractureProtocol -type f \( -name '*.uid' -o -name '.manus-artifacts.json' \) -delete
+          cd artifact/stage
+          zip -9 -qr ../FractureProtocol_Godot.zip FractureProtocol
+          cd ../..
+          unzip -t artifact/FractureProtocol_Godot.zip >/dev/null
+          sha256sum artifact/FractureProtocol_Godot.zip | tee artifact/FractureProtocol_Godot.zip.sha256
+          ls -lh artifact/FractureProtocol_Godot.zip artifact/FractureProtocol_Godot.zip.sha256
+
+      - name: Upload downloadable ZIP
+        uses: actions/upload-artifact@v4
+        with:
+          name: fracture-protocol-godot
+          path: |
+            artifact/FractureProtocol_Godot.zip
+            artifact/FractureProtocol_Godot.zip.sha256
+          if-no-files-found: error
+          retention-days: 30

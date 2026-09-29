@@ -1,0 +1,26 @@
+[gd_scene load_steps=7 format=3]
+
+[ext_resource type="Script" path="res://scripts/fps/game_root.gd" id="1_root"]
+[ext_resource type="PackedScene" path="res://scenes/world/harbor_ruins.tscn" id="2_map"]
+[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="3_player"]
+[ext_resource type="PackedScene" path="res://scenes/characters/amber_bot.tscn" id="4_bot"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="5_hud"]
+
+[node name="FractureProtocol" type="Node3D"]
+script = ExtResource("1_root")
+
+[node name="Map" parent="." instance=ExtResource("2_map")]
+
+[node name="Player" parent="." instance=ExtResource("3_player")]
+position = Vector3(0, 0.2, 11.5)
+
+[node name="AmberSentinelNorth" parent="." instance=ExtResource("4_bot")]
+position = Vector3(-8, 0.2, -9.5)
+
+[node name="AmberSentinelEast" parent="." instance=ExtResource("4_bot")]
+position = Vector3(8, 0.2, -9.5)
+
+[node name="AmberSentinelCenter" parent="." instance=ExtResource("4_bot")]
+position = Vector3(0, 0.2, -11.0)
+
+[node name="HUD" parent="." instance=ExtResource("5_hud")]
